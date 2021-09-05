@@ -85,7 +85,6 @@ html_theme_options = {
     'logo_only': True,
     'home_breadcrumbs': False,
     'vcs_pageview_mode': 'blob',
-    'style_nav_header_background': '#bdbdbd',
 }
 
 html_context = {}
@@ -102,7 +101,7 @@ html_theme = "_theme"
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
 
-html_logo = str(Path(html_static_path[0]) / "logo" / "edaa_banner.svg")
+html_logo = str(Path(html_static_path[0]) / "logo" / "edaa_banner_white.svg")
 html_favicon = str(Path(html_static_path[0]) / "logo" / "edaa.svg")
 
 # Output file base name for HTML help builder.
