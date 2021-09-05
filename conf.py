@@ -83,7 +83,7 @@ except Exception as ex:
 # ==============================================================================
 html_theme_options = {
     'logo_only': True,
-    'home_breadcrumbs': True,
+    'home_breadcrumbs': False,
     'vcs_pageview_mode': 'blob',
     'style_nav_header_background': '#bdbdbd',
 }
@@ -178,6 +178,7 @@ extensions = [
 # ==============================================================================
 intersphinx_mapping = {
 	'python':   ('https://docs.python.org/3', None),
+	'osvb':     ('https://umarcor.github.io/osvb', None),
 }
 
 
