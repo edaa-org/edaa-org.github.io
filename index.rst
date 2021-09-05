@@ -33,3 +33,13 @@ Welcome to the Electronic Design Automation Abstraction (EDA²) Documentation!
    ConceptualModel
    Context
    Integration
+
+.. toctree::
+   :caption: Modules
+   :hidden:
+
+   pyCLIAbstraction <https://github.com/Paebbels/pyCLIAbstraction>
+   pyEDAA.CLITool <https://github.com/edaa-org/pyEDAA.CLITool>
+   pyEDAA.OutputFilter <https://github.com/edaa-org/pyEDAA.OutputFilter>
+   pyVHDLModel <https://github.com/vhdl/pyVHDLModel>
+   pyEDAA.ProjectModel <https://github.com/edaa-org/pyEDAA.ProjectModel>
