@@ -16,7 +16,7 @@ Unfortunately, when pyIPCMI was developed INI files were used as the main user p
 to usage of JSON and YAML not being widespread back then.
 That didn't age well, as the INI format is rarely used in open source EDA projects.
 Fortunately, the main developer of pyIPCMI is willing to rework the codebase, update it, and split the abstraction
-layers explicitly to match the :ref:`EDAA:Model`.
+layers explicitly to match the :ref:`EDAA:Concept`.
 Those modules are being reworked under the umbrella of EDA².
 
 *TBC*
