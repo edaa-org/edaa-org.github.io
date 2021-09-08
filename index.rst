@@ -1,7 +1,7 @@
 .. _EDAA:
 
-.. |shieldrepo| image:: https://img.shields.io/website.svg?label=edaa-org.github.io&longCache=true&style=flat-square&url=http%3A%2F%2Fedaa-org.github.io%2Findex.html&logo=Github&logoColor=fff
-.. _shieldrepo: https://edaa-org.github.io
+.. |shieldrepo| image:: https://img.shields.io/github/stars/edaa-org/edaa-org.github.io?longCache=true&style=flat-square&label=edaa-org&logo=github&color=78909c
+.. _shieldrepo: https://github.com/edaa-org/edaa-org.github.io
 
 .. |shieldgitter| image:: https://img.shields.io/gitter/room/hdl/community.svg?longCache=true&style=flat-square&logo=gitter&logoColor=fff&color=4db797
 .. _shieldgitter: https://gitter.im/hdl/community
