@@ -176,8 +176,9 @@ extensions = [
 # Sphinx.Ext.InterSphinx
 # ==============================================================================
 intersphinx_mapping = {
-	'python':   ('https://docs.python.org/3', None),
-	'osvb':     ('https://umarcor.github.io/osvb', None),
+	'python':               ('https://docs.python.org/3', None),
+	'osvb':                 ('https://umarcor.github.io/osvb', None),
+	'pyVHDLModel':          ('https://vhdl.github.io/pyVHDLModel', None),
 }
 
 
