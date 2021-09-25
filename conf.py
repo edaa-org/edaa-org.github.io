@@ -100,6 +100,9 @@ if (ROOT / "_theme").is_dir():
 		'home_breadcrumbs': False,
 		'vcs_pageview_mode': 'blob',
 	}
+	html_css_files = [
+		'theme_overrides.css',
+	]
 else:
 	html_theme = "alabaster"
 
@@ -175,6 +178,8 @@ extensions = [
 	'sphinx.ext.extlinks',
 	'sphinx.ext.intersphinx',
 	'sphinx.ext.todo',
+# Local extensions
+	'exec',
 ]
 
 
@@ -196,8 +201,7 @@ intersphinx_mapping = {
 extlinks = {
 	'issue': ('https://github.com/edaa-org/edaa-org.github.io/issues/%s', 'issue #'),
 	'pull':  ('https://github.com/edaa-org/edaa-org.github.io/pull/%s', 'pull request #'),
-	'src':   ('https://github.com/edaa-org/edaa-org.github.io/blob/master/pyMetaClasses/%s?ts=2', None),
-#	'test':  ('https://github.com/edaa-org/edaa-org.github.io/blob/master/test/%s?ts=2', None)
+	'src':   ('https://github.com/edaa-org/edaa-org.github.io/blob/main/%s', None)
 }
 
 

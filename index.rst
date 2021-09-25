@@ -41,3 +41,9 @@ Welcome to the Electronic Design Automation Abstraction (EDA²) Documentation!
    SyntaxModels
    Configurations
    workflows/index
+
+.. toctree::
+   :caption: Development
+   :hidden:
+
+   Status
