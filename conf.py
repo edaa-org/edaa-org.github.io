@@ -160,7 +160,6 @@ latex_documents = [
 ]
 
 
-
 # ==============================================================================
 # Extensions
 # ==============================================================================
@@ -176,10 +175,11 @@ extensions = [
 # Sphinx.Ext.InterSphinx
 # ==============================================================================
 intersphinx_mapping = {
-	'python':    ('https://docs.python.org/3', None),
-	'osvb':      ('https://umarcor.github.io/osvb', None),
-	'vhdlmodel': ('https://vhdl.github.io/pyVHDLModel', None),
-	'svmodel':   ('https://edaa-org.github.io/pySVModel', None),
+	'python':       ('https://docs.python.org/3', None),
+	'osvb':         ('https://umarcor.github.io/osvb', None),
+	'vhdlmodel':    ('https://vhdl.github.io/pyVHDLModel', None),
+	'svmodel':      ('https://edaa-org.github.io/pySVModel', None),
+	'projectmodel': ('https://edaa-org.github.io/pyEDAA.ProjectModel', None),
 }
 
 
