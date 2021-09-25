@@ -10,7 +10,7 @@ sys.path.insert(0, abspath('.'))
 # Project information
 # ==============================================================================
 project =   "Electronic Design Automation Abstraction"
-copyright = "2016-2021 Patrick Lehmann - Boetzingen, Germany"
+copyright = "2016-2021 Patrick Lehmann, Unai Martinez-Corral and contributors"
 author =    "Patrick Lehmann"
 
 
