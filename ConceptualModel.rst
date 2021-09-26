@@ -39,7 +39,7 @@ Its goal is the interoperability of diverse tools and languages with documented 
     Middle layer to translate projects into execution steps (EDA and/or CLI).
     See :ref:`OSVB: Tool <OSVB:API:Tool>` and :ref:`OSVB: Runner <OSVB:API:Runner>`.
 
-3 | Model
+3 | Language Model
     Syntax/design Document Object Model (DOM) of the language(s).
     See :ref:`OSVB: pyVHDLModelUtils <OSVB:API:Project:pyVHDLModelUtils>`.
 
