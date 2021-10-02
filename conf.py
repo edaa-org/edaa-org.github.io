@@ -178,8 +178,8 @@ extensions = [
 intersphinx_mapping = {
 	'python':    ('https://docs.python.org/3', None),
 	'osvb':      ('https://umarcor.github.io/osvb', None),
-	'vhdlmodel': ('https://vhdl.github.io/pyVHDLModel', None),
-	'svmodel':   ('https://edaa-org.github.io/pySystemVerilogModel', None),
+	'pyvhdlmodel': ('https://vhdl.github.io/pyVHDLModel', None),
+	'pysvmodel':   ('https://edaa-org.github.io/pySystemVerilogModel', None),
 }
 
 

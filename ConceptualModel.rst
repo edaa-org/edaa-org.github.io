@@ -41,7 +41,23 @@ Its goal is the interoperability of diverse tools and languages with documented 
 
 3 | Language Model
     Syntax/design Document Object Model (DOM) of the language(s).
-    See :doc:`vhdlmodel:index`, :doc:`svmodel:index` and :ref:`OSVB: pyVHDLModelUtils <OSVB:API:Project:pyVHDLModelUtils>`.
+
+    * ``ref | goals``                 :ref:`goals`
+    * ``ref | pyVHDLModel:goals``     :ref:`pyVHDLModel:goals`
+    * ``ref | pyvhdlmodel:goals``     :ref:`pyvhdlmodel:goals`
+
+    * ``doc | Glossary``              :doc:`Glossary`
+    * ``doc | pyVHDLModel:Glossary``  :doc:`pyVHDLModel:Glossary`
+    * ``doc | pyvhdlmodel:Glossary``  :doc:`pyvhdlmodel:Glossary`
+
+    * ``ref | vhdlmodel``             :ref:`vhdlmodel`
+    * ``ref | pyVHDLModel:vhdlmodel`` :ref:`pyVHDLModel:vhdlmodel`
+    * ``ref | pyvhdlmodel:vhdlmodel`` :ref:`pyvhdlmodel:vhdlmodel`
+
+    * ``doc | pySVModel:Glossary``    :doc:`pySVModel:Glossary`
+    * ``ref | pySVModel:svmodel``     :ref:`pySVModel:svmodel`
+
+    See :doc:`pyVHDLModel:index`, :doc:`pySVModel:index` and :ref:`OSVB: pyVHDLModelUtils <OSVB:API:Project:pyVHDLModelUtils>`.
 
 4 | Project
     Tool independent information (files/filesets, primary design units, testbenches, `hdl/constraints <https://github.com/hdl/constraints>`__,
