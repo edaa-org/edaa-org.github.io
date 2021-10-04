@@ -45,7 +45,7 @@ Its goal is the interoperability of diverse tools and languages with documented 
 
 4 | Project
     Tool independent information (files/filesets, primary design units, testbenches, `hdl/constraints <https://github.com/hdl/constraints>`__,
-    etc.) and tool specific parameters.
+    etc.) and tool specific parameters. See :doc:`projectmodel:index`.
 
 5 | Configuration
     INI/JSON/YAML format for providing the data used in Workflow and/or Project through files, instead of using the APIs.
