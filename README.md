@@ -18,7 +18,7 @@
   -->
   <a title="VHDL/pyVHDLModel GitHub repository" href="https://github.com/VHDL/pyVHDLModel"><img src="https://img.shields.io/badge/VHDL-pyVHDLModel-29b6f6.svg?longCache=true&style=flat-square&logo=GitHub&labelColor=0277bd"></a><!--
   -->
-  <a title="edaa-org/pySystemVerilogModel GitHub repository" href="https://github.com/edaa-org/pySystemVerilogModel"><img src="https://img.shields.io/badge/EDAA-pySystemVerilogModel-29b6f6.svg?longCache=true&style=flat-square&logo=GitHub&labelColor=0277bd"></a><!--
+  <a title="edaa-org/pySVModel GitHub repository" href="https://github.com/edaa-org/pySVModel"><img src="https://img.shields.io/badge/EDAA-pySVModel-29b6f6.svg?longCache=true&style=flat-square&logo=GitHub&labelColor=0277bd"></a><!--
   -->
   <a title="edaa-org/pyEDAA.ProjectModel GitHub repository" href="https://github.com/edaa-org/pyEDAA.ProjectModel"><img src="https://img.shields.io/badge/pyEDAA-ProjectModel-ab47bc.svg?longCache=true&style=flat-square&logo=GitHub&labelColor=6a1b9a"></a><!--
   -->
