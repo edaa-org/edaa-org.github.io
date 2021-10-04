@@ -42,5 +42,5 @@ Welcome to the Electronic Design Automation Abstraction (EDA²) Documentation!
    pyEDAA.CLITool <https://github.com/edaa-org/pyEDAA.CLITool>
    pyEDAA.OutputFilter <https://github.com/edaa-org/pyEDAA.OutputFilter>
    pyVHDLModel <https://github.com/vhdl/pyVHDLModel>
-   pySystemVerilogModel <https://github.com/edaa-org/pySystemVerilogModel>
+   pySVModel <https://github.com/edaa-org/pySVModel>
    pyEDAA.ProjectModel <https://github.com/edaa-org/pyEDAA.ProjectModel>
