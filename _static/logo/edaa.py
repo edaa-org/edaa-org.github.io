@@ -14,9 +14,9 @@ materialpalette = {
 }
 
 
-def _draw(name, colors, shades):
+def _draw(colors, shades):
     unit = 50
-    d = draw.Drawing(6 * unit, 6 * unit, displayInline=False)
+    d = draw.Drawing(60 * unit, 6 * unit, displayInline=False)
     for x in range(6):
         d.append(draw.Rectangle(2 * unit, x * unit, 2 * unit, unit, fill=materialpalette[shades[0]][colors[x]]))
         d.append(
@@ -24,7 +24,9 @@ def _draw(name, colors, shades):
                 4 * unit * (1 - (x % 2)), x * unit, 2 * unit, unit, fill=materialpalette[shades[1]][colors[x]]
             )
         )
+    return d
 
+def _save(d, name):
     d.setPixelScale(1)  # Set number of pixels per geometry unit
     # d.setRenderSize(500,500)  # Alternative to setPixelScale
     d.saveSvg("{0}.svg".format(name))
@@ -37,9 +39,9 @@ pink_orange = [6, 5, 4, 3, 2, 1]
 s800_400 = ["800", "400"]
 sA700_A100 = ["A700", "A100"]
 
-_draw("800_400_rg", red_gray, s800_400)
-_draw("800_400_pg", pink_gray, s800_400)
-_draw("800_400_po", pink_orange, s800_400)
-_draw("A700_A100_rg", red_gray, sA700_A100)
-_draw("A700_A100_pg", pink_gray, sA700_A100)
-_draw("A700_A100_po", pink_orange, sA700_A100)
+_save(_draw(red_gray, sA700_A100), "A700_A100_rg")
+_save(_draw(pink_gray, sA700_A100), "A700_A100_pg")
+_save(_draw(pink_orange, sA700_A100), "A700_A100_po")
+_save(_draw(pink_gray, s800_400), "800_400_pg")
+_save(_draw(pink_orange, s800_400), "800_400_po")
+_save(_draw(red_gray, s800_400), "800_400_rg")
