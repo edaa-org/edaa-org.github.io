@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-import drawSvg as draw
+import svgwrite
 
 # https://www.materialpalette.com/colors
 materialpalette = {
@@ -13,35 +13,203 @@ materialpalette = {
     "A700": ["#d50000", "#c51162", "#aa00ff", "#0091ea", "#64dd17", "#ffab00", "#dd2c00", "#263238"],
 }
 
-
-def _draw(colors, shades):
-    unit = 50
-    d = draw.Drawing(60 * unit, 6 * unit, displayInline=False)
-    for x in range(6):
-        d.append(draw.Rectangle(2 * unit, x * unit, 2 * unit, unit, fill=materialpalette[shades[0]][colors[x]]))
-        d.append(
-            draw.Rectangle(
-                4 * unit * (1 - (x % 2)), x * unit, 2 * unit, unit, fill=materialpalette[shades[1]][colors[x]]
-            )
-        )
-    return d
-
-def _save(d, name):
-    d.setPixelScale(1)  # Set number of pixels per geometry unit
-    # d.setRenderSize(500,500)  # Alternative to setPixelScale
-    d.saveSvg("{0}.svg".format(name))
-    # d.savePng('example.png')
-
-
-red_gray = [7, 5, 4, 3, 2, 0]
-pink_gray = [7, 5, 4, 3, 2, 1]
-pink_orange = [6, 5, 4, 3, 2, 1]
+red_gray = [0, 2, 3, 4, 5, 7]
+pink_gray = [1, 2, 3, 4, 5, 7]
+pink_orange = [1, 2, 3, 4, 5, 6]
 s800_400 = ["800", "400"]
 sA700_A100 = ["A700", "A100"]
 
-_save(_draw(red_gray, sA700_A100), "A700_A100_rg")
-_save(_draw(pink_gray, sA700_A100), "A700_A100_pg")
-_save(_draw(pink_orange, sA700_A100), "A700_A100_po")
-_save(_draw(pink_gray, s800_400), "800_400_pg")
-_save(_draw(pink_orange, s800_400), "800_400_po")
-_save(_draw(red_gray, s800_400), "800_400_rg")
+all_red = [0] * 6
+all_purple = [2] * 6
+all_blue = [3] * 6
+all_green = [4] * 6
+all_yellow = [5] * 6
+all_grey = [7] * 6
+
+#_save(_draw(red_gray, sA700_A100), "A700_A100_rg")
+#_save(_draw(pink_gray, sA700_A100), "A700_A100_pg")
+#_save(_draw(pink_orange, sA700_A100), "A700_A100_po")
+#_save(_draw(pink_gray, s800_400), "800_400_pg")
+#_save(_draw(pink_orange, s800_400), "800_400_po")
+#_save(_draw(red_gray, s800_400), "800_400_rg")
+
+def _draw(dwg, colors, shades, offset=(0, 0), unit=50):
+    for x in range(6):
+        for params in [
+            [
+                2 * unit,
+                materialpalette[shades[0]][colors[x]]
+            ],
+            [
+                4 * unit * (x % 2),
+                materialpalette[shades[1]][colors[x]]
+            ]
+        ]:
+            dwg.add(
+                dwg.rect(
+                    insert=(offset[0] + params[0], offset[1] + x * unit),
+                    size=(2 * unit, unit),
+                    fill=params[1],
+                )
+            )
+
+dwg = svgwrite.Drawing('edaa.svg', (800, 300), debug=True)
+_draw(dwg, red_gray, s800_400)
+dwg.save(pretty=True)
+
+#---
+
+def _draw_highlighted(dwg, row, color, shades, plain, stroke="", offset=(0, 0), unit=50):
+    for x in range(6):
+        for params in [
+            [
+                2 * unit,
+                materialpalette[shades[0]][color] if x == row else plain
+            ],
+            [
+                4 * unit * (x % 2),
+                materialpalette[shades[1]][color] if x == row else plain
+            ]
+        ]:
+            dwg.add(
+                dwg.rect(
+                    insert=(offset[0] + params[0], offset[1] + x * unit),
+                    size=(2 * unit, unit),
+                    fill=params[1],
+                    stroke=stroke if x != row else "",
+                )
+            )
+
+def _draw_per_color(plain="#eeeeee", stroke="", offset=(0,0)):
+    # Single color, two shades
+    for idx, col in enumerate(red_gray):
+        _draw(
+            dwg,
+            colors=[col] * 6,
+            shades=s800_400,
+            offset=(offset[0] + 200*idx, offset[1]),
+            unit=20
+        )
+
+    # Highlight color, two shades, plain
+    for idx, col in enumerate(red_gray):
+        _draw_highlighted(
+            dwg,
+            row=idx,
+            color=col,
+            shades=s800_400,
+            plain=plain,
+            stroke=stroke,
+            offset=(offset[0] + 200*idx, offset[1] + 150),
+            unit=20
+        )
+
+
+dwg = svgwrite.Drawing("backgrounds.svg", (2600, 2150), debug=True)
+
+backgrounds = [
+    "#383e46",
+    "#333333", #BTD sidebar
+    "#fcfcfc", #BTD body
+    "#0d1117", #GitHub dark
+]
+
+for sid, stroke in enumerate([
+    "",
+    "black"
+]):
+    _draw_per_color(
+        stroke=stroke,
+        offset=(sid*1300+50, 50)
+    )
+    for idx, background in enumerate(backgrounds):
+        baseoffset=(sid*1300, 350 + idx*450)
+        dwg.add(
+            dwg.rect(
+                insert=baseoffset,
+                size=(1240, 400),
+                fill=background,
+                stroke="black"
+            )
+        )
+        _draw_per_color(
+            stroke=stroke,
+            offset=(baseoffset[0]+50, baseoffset[1]+50)
+        )
+
+dwg.save(pretty=True)
+
+#---
+
+dwg = svgwrite.Drawing("projects.svg", (9200, 5500), debug=True)
+
+def web_font_embedded(dwg, text, color, offset):
+    dwg.embed_google_web_font(name="Teko", uri='http://fonts.googleapis.com/css?family=Teko')
+    dwg.embed_stylesheet("""
+    .TekoFont {
+        font-family: "Teko";
+        font-size: 180pt;
+    }
+    """)
+    # This should work stand alone and embedded in a website!
+    dwg.add(dwg.g(class_="TekoFont", )).add(dwg.text(text, insert=offset, fill=color))
+
+
+for idx, background in enumerate(backgrounds):
+    baseoffset=(idx*2300, 0)
+    dwg.add(
+        dwg.rect(
+            insert=baseoffset,
+            size=(2300, 6000),
+            fill=background,
+            stroke="black"
+        )
+    )
+
+    for pid, project in enumerate([
+        ("py", "OSVDE", 0),
+        ("py", "HWS", 0),
+        ("pyEDAA.", "ProjectModel", 1),
+        ("py", "CAPI", 1),
+        ("py", "VHDLModel", 2),
+        ("py", "SVModel", 2),
+        ("pyEDAA.", "VUnit", 3),
+        ("py", "FPGA", 3),
+        ("pyEDAA.", "SymbiFlow", 3),
+        ("pyEDAA.", "Edalize", 3),
+        ("pyEDAA.", "CLIAbstraction", 4),
+        ("pyEDAA.", "CLITool", 4),
+        ("pyEDAA.", "OutputFilter", 4),
+        ("pyEDAA.", "Containers", 5),
+        ("pyEDAA.", "LocalInstallations", 5),
+    ]):
+        poffset=(baseoffset[0]+50, 50+ pid*350)
+
+        #_draw(dwg, [red_gray[project[2]]]*6, s800_400, poffset)
+        _draw_highlighted(
+            dwg,
+            row=project[2],
+            color=red_gray[project[2]],
+            shades=s800_400,
+            plain="#eeeeee",
+            stroke="black",
+            offset=poffset,
+            unit=50
+        )
+
+        toffset=(360, 210)
+        web_font_embedded(
+            dwg,
+            text=project[0],
+            color=materialpalette["800"][red_gray[project[2]]],
+            offset=(poffset[0] + toffset[0], poffset[1] + toffset[1])
+        )
+        plen=len(project[0])
+        web_font_embedded(
+            dwg,
+            text=project[1],
+            color=materialpalette["400"][red_gray[project[2]]],
+            offset=(poffset[0] + toffset[0] + plen*(86 if plen==2 else 82), poffset[1] + toffset[1])
+        )
+
+dwg.save(pretty=True)
