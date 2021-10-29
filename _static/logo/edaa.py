@@ -59,7 +59,7 @@ dwg.save(pretty=True)
 
 #---
 
-def _draw_highlighted(dwg, row, color, shades, plain, stroke="", offset=(0, 0), unit=50):
+def _draw_highlighted(dwg, row, color, shades, plain, offset=(0, 0), unit=50):
     for x in range(6):
         for params in [
             [
@@ -76,11 +76,11 @@ def _draw_highlighted(dwg, row, color, shades, plain, stroke="", offset=(0, 0), 
                     insert=(offset[0] + params[0], offset[1] + x * unit),
                     size=(2 * unit, unit),
                     fill=params[1],
-                    stroke=stroke if x != row else "",
+                    stroke=materialpalette[shades[0]][color] if x != row else "",
                 )
             )
 
-def _draw_per_color(plain="#eeeeee", stroke="", offset=(0,0)):
+def _draw_per_color(plain="#eeeeee", offset=(0,0)):
     # Single color, two shades
     for idx, col in enumerate(red_gray):
         _draw(
@@ -99,43 +99,33 @@ def _draw_per_color(plain="#eeeeee", stroke="", offset=(0,0)):
             color=col,
             shades=s800_400,
             plain=plain,
-            stroke=stroke,
             offset=(offset[0] + 200*idx, offset[1] + 150),
             unit=20
         )
 
+#---
 
-dwg = svgwrite.Drawing("backgrounds.svg", (2600, 2150), debug=True)
+dwg = svgwrite.Drawing("backgrounds.svg", (1170, 1920), debug=True)
 
 backgrounds = [
+    "#ffffff", # white
+    "#fcfcfc", # BTD body
+    "#333333", # BTD sidebar
     "#383e46",
-    "#333333", #BTD sidebar
-    "#fcfcfc", #BTD body
-    "#0d1117", #GitHub dark
+    "#0d1117", # GitHub dark
+    "#000000", # black
 ]
 
-for sid, stroke in enumerate([
-    "",
-    "black"
-]):
-    _draw_per_color(
-        stroke=stroke,
-        offset=(sid*1300+50, 50)
+for idx, background in enumerate(backgrounds):
+    baseoffset=(0, idx*320)
+    dwg.add(
+        dwg.rect(
+            insert=baseoffset,
+            size=(1170, 320),
+            fill=background
+        )
     )
-    for idx, background in enumerate(backgrounds):
-        baseoffset=(sid*1300, 350 + idx*450)
-        dwg.add(
-            dwg.rect(
-                insert=baseoffset,
-                size=(1240, 400),
-                fill=background,
-                stroke="black"
-            )
-        )
-        _draw_per_color(
-            stroke=stroke,
-            offset=(baseoffset[0]+50, baseoffset[1]+50)
-        )
+    _draw_per_color(offset=(baseoffset[0]+25, baseoffset[1]+25))
 
 dwg.save(pretty=True)
 
@@ -154,6 +144,8 @@ def web_font_embedded(dwg, text, color, offset):
     # This should work stand alone and embedded in a website!
     dwg.add(dwg.g(class_="TekoFont", )).add(dwg.text(text, insert=offset, fill=color))
 
+shades = s800_400
+color = red_gray
 
 for idx, background in enumerate(backgrounds):
     baseoffset=(idx*2300, 0)
@@ -161,8 +153,7 @@ for idx, background in enumerate(backgrounds):
         dwg.rect(
             insert=baseoffset,
             size=(2300, 6000),
-            fill=background,
-            stroke="black"
+            fill=background
         )
     )
 
@@ -185,14 +176,13 @@ for idx, background in enumerate(backgrounds):
     ]):
         poffset=(baseoffset[0]+50, 50+ pid*350)
 
-        #_draw(dwg, [red_gray[project[2]]]*6, s800_400, poffset)
+        #_draw(dwg, [red_gray[project[2]]]*6, shades, poffset)
         _draw_highlighted(
             dwg,
             row=project[2],
-            color=red_gray[project[2]],
-            shades=s800_400,
+            color=color[project[2]],
+            shades=shades,
             plain="#eeeeee",
-            stroke="black",
             offset=poffset,
             unit=50
         )
@@ -201,14 +191,14 @@ for idx, background in enumerate(backgrounds):
         web_font_embedded(
             dwg,
             text=project[0],
-            color=materialpalette["800"][red_gray[project[2]]],
+            color=materialpalette[shades[0]][color[project[2]]],
             offset=(poffset[0] + toffset[0], poffset[1] + toffset[1])
         )
         plen=len(project[0])
         web_font_embedded(
             dwg,
             text=project[1],
-            color=materialpalette["400"][red_gray[project[2]]],
+            color=materialpalette[shades[1]][color[project[2]]],
             offset=(poffset[0] + toffset[0] + plen*(86 if plen==2 else 82), poffset[1] + toffset[1])
         )
 
