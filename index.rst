@@ -24,7 +24,7 @@ Electronic Design Automation Abstraction (EDA²) Documentation
 
     <br>
 
-Welcome to the Electronic Design Automation Abstraction (EDA²) Documentation!
+Electronic Design Automation Abstraction (EDA²) aims to provide commonly needed software layers for EDA frameworks to reduce reinventions of existing algorithms and data structures.
 
 .. toctree::
    :caption: Introduction
