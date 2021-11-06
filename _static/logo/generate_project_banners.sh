@@ -4,6 +4,8 @@ set -e
 
 cd $(dirname "$0")
 
+./edaa.py
+
 # TODO: Since we convert texts to paths through 'ObjectToPath' it should be possible to remove the embedded font.
 
 for item in ./banners/*.svg; do
