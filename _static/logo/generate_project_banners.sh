@@ -6,8 +6,6 @@ cd $(dirname "$0")
 
 ./edaa.py
 
-# TODO: Since we convert texts to paths through 'ObjectToPath' it should be possible to remove the embedded font.
-
 for item in ./banners/*.svg; do
   echo "$item"
   inkscape \
@@ -15,4 +13,5 @@ for item in ./banners/*.svg; do
     --batch-process \
     --actions 'select-all:all;ObjectToPath;FitCanvasToSelectionOrDrawing;FileSave;FileClose;FileQuit' \
     "$item"
+  svgo "$item"
 done
