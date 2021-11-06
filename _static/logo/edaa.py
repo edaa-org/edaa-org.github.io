@@ -283,10 +283,10 @@ for project in projects:
 
     if project[2] in [1, 5]:
         for isDarkBackground in [False, True]:
-            fname = f"banners/{project[0]}{project[1]}_{'dark' if isDarkBackground else 'light'}.svg"
+            fname = f"banners/raw/{project[0]}{project[1]}_{'dark' if isDarkBackground else 'light'}.svg"
             _draw_banner(fname, project, isDarkBackground)
     else:
-        _draw_banner(f"banners/{project[0]}{project[1]}.svg", project, False)
+        _draw_banner(f"banners/raw/{project[0]}{project[1]}.svg", project, False)
 
 #---
 
