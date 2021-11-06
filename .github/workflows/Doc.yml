@@ -39,9 +39,6 @@ jobs:
       - name: '🧰 Checkout'
         uses: actions/checkout@v2
 
-      - name: '⛴ Build edaa/svg'
-        run: make logo-build
-
       - name: 🖌️ Generate logos and banners
         run: make logo-run
 

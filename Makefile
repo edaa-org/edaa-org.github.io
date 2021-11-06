@@ -1,8 +1,8 @@
 logo-run:
-	docker run --rm -v /$(PWD)://wrk -w //wrk edaa/svg sh -c 'xvfb-run ./_logo/generate_project_banners.sh'
+	docker run --rm -v /$(PWD)://wrk -w //wrk ghcr.io/edaa-org/edaa/svg sh -c 'xvfb-run ./_logo/generate_project_banners.sh'
 
 logo-build:
-	docker build -t edaa/svg - < .github/edaa--svg.dockerfile
+	docker build -t ghcr.io/edaa-org/edaa/svg - < .github/edaa--svg.dockerfile
 
 #---
 
