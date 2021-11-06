@@ -101,7 +101,7 @@ def generate_edaa_svg():
     """
     Generate and save the default logo to file 'edaa.svg'
     """
-    dwg = svgwrite.Drawing(str(ROOT / 'edaa.svg'), (800, 300), debug=True)
+    dwg = svgwrite.Drawing(str(ROOT / '../_static/logo/edaa.svg'), (300, 300), debug=True)
     _draw(dwg, red_gray, sedaa)
     dwg.save(pretty=True)
 
