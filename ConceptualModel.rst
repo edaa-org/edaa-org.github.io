@@ -15,9 +15,15 @@ Its goal is the interoperability of diverse tools and languages with documented 
 .. figure:: _static/model.png
    :alt: Abstraction layers.
    :align: center
-   :width: 500px
+   :width: 600px
 
    Layers of the EDA² conceptual model.
+
+-2 | Tools
+    Development of (open source) EDA tools.
+    Organisation `github.com/hdl <https://github.com/hdl>`__ contains an *awesome* list of tools: `hdl.github.io/awesome <https://hdl.github.io/awesome>`__.
+    Most EDA tools are developed and managed independently of EDA².
+    However, since the main purpose of EDA² is easing the usage of tools, this layer represents them.
 
 -1 | Installation
     Packaging and distribution of EDA tools.
