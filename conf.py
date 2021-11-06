@@ -62,7 +62,8 @@ exclude_patterns = [
 	"_logo",
 	"_themes",
 	"Thumbs.db",
-	".DS_Store"
+	".DS_Store",
+	".github",
 ]
 
 # The name of the Pygments (syntax highlighting) style to use.
