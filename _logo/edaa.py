@@ -86,29 +86,21 @@ def _draw_highlighted(dwg, row, color, shades, offset=(0, 0), unit=50):
     """
     Draw the per-project one-highlighted-layer EDAA logo, with strokes matching the dark colour of the tuple.
     """
-    def _draw_box(xoffset, fill, stroke):
+    def _draw_box(xoffset, color):
         dwg.add(
             dwg.rect(
                 insert=(offset[0] + xoffset, offset[1] + x * unit),
                 size=(2 * unit, unit),
-                fill="#ffffff" if x != row else fill,
+                fill="#ffffff" if x != row else color,
                 fill_opacity=0.0 if x != row else 1.0,
-                stroke=stroke,
+                stroke=color,
                 stroke_width="4px"
             )
         )
     for x in range(6):
-        _draw_box(
-            4 * unit * (x % 2),
-            shades[1][color],
-            shades[1][color] if x == row else shades[0][color]
-        )
+        _draw_box(4 * unit * (x % 2), shades[1][color])
     for x in range(6):
-        _draw_box(
-            2 * unit,
-            shades[0][color],
-            shades[0][color]
-        )
+        _draw_box(2 * unit, shades[0][color])
 
 def _draw_project_banner(dwg, project, colors, shades, offset=(0, 0), unit=50):
     """
