@@ -107,7 +107,7 @@ def generate_edaa_svg():
 
 #---
 
-def _draw_highlighted(dwg, row, color, shades, plain, offset=(0, 0), unit=50):
+def _draw_highlighted(dwg, row, color, shades, offset=(0, 0), unit=50):
     """
     Draw the per-project one-highlighted-layer EDAA logo, with strokes matching the dark colour of the tuple.
     """
@@ -115,11 +115,11 @@ def _draw_highlighted(dwg, row, color, shades, plain, offset=(0, 0), unit=50):
         for params in [
             [
                 2 * unit,
-                materialpalette[shades[0]][color] if x == row else plain
+                materialpalette[shades[0]][color] if x == row else None
             ],
             [
                 4 * unit * (x % 2),
-                materialpalette[shades[1]][color] if x == row else plain
+                materialpalette[shades[1]][color] if x == row else None
             ]
         ]:
             dwg.add(
@@ -133,7 +133,7 @@ def _draw_highlighted(dwg, row, color, shades, plain, offset=(0, 0), unit=50):
                 )
             )
 
-def _draw_per_color(dwg, plain="#eeeeee", offset=(0,0)):
+def _draw_per_color(dwg, offset=(0,0)):
     """
     Draw all the per-project EDAA logos, both all-coloured and one-highlighted-layer variants, on all background test colours.
     """
@@ -147,14 +147,13 @@ def _draw_per_color(dwg, plain="#eeeeee", offset=(0,0)):
             unit=20
         )
 
-    # Highlight color, two shades, plain
+    # Highlight color, two shades
     for idx, col in enumerate(red_gray):
         _draw_highlighted(
             dwg,
             row=idx,
             color=col,
             shades=sedaa,
-            plain=plain,
             offset=(offset[0] + 200*idx, offset[1] + 150),
             unit=20
         )
@@ -180,7 +179,7 @@ def generate_backgrounds_svg():
 
 #---
 
-def _draw_project_banner(dwg, project, color, shades, plain, offset=(0, 0), unit=50):
+def _draw_project_banner(dwg, project, color, shades, offset=(0, 0), unit=50):
     """
     Draw a project banner (logo and text).
     """
@@ -202,7 +201,6 @@ def _draw_project_banner(dwg, project, color, shades, plain, offset=(0, 0), unit
         row=project[2],
         color=color[project[2]],
         shades=shades,
-        plain=plain,
         offset=offset,
         unit=50
     )
@@ -252,7 +250,6 @@ def generate_projects_svg():
                 project=project,
                 color=color,
                 shades=sedaa_on_dark if isDarkBackground else shades,
-                plain=None, # "#333333" if isDarkBackground else "#eeeeee",
                 offset=(baseoffset[0]+50, 50+ pid*350)
             )
 
@@ -276,7 +273,6 @@ for project in projects:
             project=project,
             color=red_gray,
             shades=sedaa_on_dark if isDarkBackground else sedaa,
-            plain=None, # "#333333" if isDarkBackground else "#eeeeee",
             offset=(2, 2)
         )
         dwg.save(pretty=True)
