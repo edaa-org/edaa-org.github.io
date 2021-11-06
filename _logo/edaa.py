@@ -38,41 +38,17 @@ projects = [
 # https://www.materialpalette.com/colors
 materialpalette = {
     # Red, Pink, Purple, Light Blue, Light Green, Amber, Deep Orange, Blue Grey
-    "900": ["#b71c1c", "#880e4f", "#4a148c", "#01579b", "#33691e", "#ff6f00", "#bf360c", "#263238"],
-    "800": ["#c62828", "#ad1457", "#6a1b9a", "#0277bd", "#558b2f", "#ff8f00", "#d84315", "#37474f"],
-    "400": ["#ef5350", "#ec407a", "#ab47bc", "#29b6f6", "#9ccc65", "#ffca28", "#ff7043", "#78909c"],
-    "A100": ["#ff8a80", "#ff80ab", "#ea80fc", "#80d8ff", "#ccff90", "#ffe57f", "#ff9e80", "#cfd8dc"],
-    "A400": ["#ff1744", "#f50057", "#d500f9", "#00b0ff", "#76ff03", "#ffc400", "#ff3d00", "#263238"],
-    "A700": ["#d50000", "#c51162", "#aa00ff", "#0091ea", "#64dd17", "#ffab00", "#dd2c00", "#263238"],
-    "edaa_light_on_light": ["#ef5350", "#ec407a", "#ba68c8", "#29b6f6", "#9ccc65", "#ffca28", "#ff7043", "#78909c"],
-    "edaa_dark_on_light": ["#c62828", "#ad1457", "#8e24aa", "#0277bd", "#558b2f", "#ff8f00", "#d84315", "#37474f"],
-    "edaa_light_on_dark": ["#ef5350", "#ec407a", "#ba68c8", "#29b6f6", "#9ccc65", "#ffca28", "#ff7043", "#b0bec5"],
-    "edaa_dark_on_dark": ["#c62828", "#ad1457", "#8e24aa", "#0277bd", "#558b2f", "#ff8f00", "#d84315", "#78909c"],
+    "light_on_light": ["#ef5350", "#ec407a", "#ba68c8", "#29b6f6", "#9ccc65", "#ffca28", "#ff7043", "#78909c"],
+    "dark_on_light": ["#c62828", "#ad1457", "#8e24aa", "#0277bd", "#558b2f", "#ff8f00", "#d84315", "#37474f"],
+    "light_on_dark": ["#ef5350", "#ec407a", "#ba68c8", "#29b6f6", "#9ccc65", "#ffca28", "#ff7043", "#b0bec5"],
+    "dark_on_dark": ["#c62828", "#ad1457", "#8e24aa", "#0277bd", "#558b2f", "#ff8f00", "#d84315", "#78909c"],
 }
 
 red_gray = [0, 2, 3, 4, 5, 7]
-pink_gray = [1, 2, 3, 4, 5, 7]
-pink_orange = [1, 2, 3, 4, 5, 6]
-s800_400 = ["800", "400"]
-sA700_A100 = ["A700", "A100"]
-sedaa = ["edaa_dark_on_light", "edaa_light_on_light"]
-sedaa_on_dark = ["edaa_dark_on_dark", "edaa_light_on_dark"]
-
-all_red = [0] * 6
-all_purple = [2] * 6
-all_blue = [3] * 6
-all_green = [4] * 6
-all_yellow = [5] * 6
-all_grey = [7] * 6
+sedaa = ["dark_on_light", "light_on_light"]
+sedaa_on_dark = ["dark_on_dark", "light_on_dark"]
 
 #---
-
-#_save(_draw(red_gray, sA700_A100), "A700_A100_rg")
-#_save(_draw(pink_gray, sA700_A100), "A700_A100_pg")
-#_save(_draw(pink_orange, sA700_A100), "A700_A100_po")
-#_save(_draw(pink_gray, s800_400), "800_400_pg")
-#_save(_draw(pink_orange, s800_400), "800_400_po")
-#_save(_draw(red_gray, s800_400), "800_400_rg")
 
 def _draw(dwg, colors, shades, offset=(0, 0), unit=50):
     """
