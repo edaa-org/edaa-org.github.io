@@ -40,10 +40,10 @@ jobs:
         uses: actions/checkout@v2
 
       - name: '⛴ Build edaa/svg'
-        run: docker build -t edaa/svg - < .github/edaa--svg.dockerfile
+        run: make logo-build
 
       - name: 🖌️ Generate logos and banners
-        run: docker run --rm -v $(pwd):/wrk -w /wrk edaa/svg sh -c 'xvfb-run ./_logo/generate_project_banners.sh'
+        run: make logo-run
 
       - name: 📤 Upload artifacts
         uses: actions/upload-artifact@master

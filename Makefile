@@ -1,6 +1,11 @@
-CP=cp
+logo-run:
+	docker run --rm -v /$(PWD)://wrk -w //wrk edaa/svg sh -c 'xvfb-run ./_logo/generate_project_banners.sh'
 
-# Sphinx options.
+logo-build:
+	docker build -t edaa/svg - < .github/edaa--svg.dockerfile
+
+#---
+
 SPHINXOPTS    =
 SPHINXBUILD   = sphinx-build
 PAPER         =
