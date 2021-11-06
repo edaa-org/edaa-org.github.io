@@ -185,9 +185,10 @@ def _draw_project_banner(dwg, project, color, shades, plain, offset=(0, 0), unit
     Draw a project banner (logo and text).
     """
     def web_font_embedded(dwg, text, color, offset):
-        dwg.embed_google_web_font(name="Teko", uri='http://fonts.googleapis.com/css?family=Teko')
+        #dwg.embed_google_web_font(name="Teko", uri='http://fonts.googleapis.com/css?family=Teko')
         #@import url(http://fonts.googleapis.com/css?family=Teko);
         dwg.embed_stylesheet("""
+        @import url(http://fonts.googleapis.com/css?family=Teko);
         .TekoFont {
             font-family: "Teko";
             font-size: 260pt;
