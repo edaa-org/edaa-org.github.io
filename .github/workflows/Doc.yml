@@ -20,6 +20,7 @@ jobs:
         uses: buildthedocs/btd@v0
         with:
           token: ${{ github.token }}
+          skip-deploy: ${{ github.event_name == 'pull_request' }}
 
       - name: 📤 Upload artifacts
         uses: actions/upload-artifact@master
