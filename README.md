@@ -1,7 +1,9 @@
 <p align="center">
   <a title="Documentation" href="https://edaa-org.github.io"><img src="https://img.shields.io/website.svg?label=edaa-org.github.io&longCache=true&style=flat-square&url=http%3A%2F%2Fedaa-org.github.io%2Findex.html&logo=Github&logoColor=fff"></a><!--
   -->
-  <a title="'Doc' workflow status" href="https://github.com/edaa-org/edaa-org.github.io/actions?query=workflow%3Adoc"><img alt="'Doc' workflow status" src="https://img.shields.io/github/workflow/status/edaa-org/edaa-org.github.io/Doc?longCache=true&style=flat-square&label=Doc&logo=Github%20Actions&logoColor=fff"></a><!--
+  <a title="'Doc' workflow status" href="https://github.com/edaa-org/edaa-org.github.io/actions?query=workflow%3ADoc"><img alt="'Doc' workflow status" src="https://img.shields.io/github/workflow/status/edaa-org/edaa-org.github.io/Doc/main?longCache=true&style=flat-square&label=Doc&logo=Github%20Actions&logoColor=fff"></a><!--
+  -->
+  <a title="'Containers' workflow status" href="https://github.com/edaa-org/edaa-org.github.io/actions?query=workflow%3AContainers"><img alt="'Doc' workflow status" src="https://img.shields.io/github/workflow/status/edaa-org/edaa-org.github.io/Containers/main?longCache=true&style=flat-square&label=Containers&logo=Github%20Actions&logoColor=fff"></a><!--
   -->
   <a title="hdl/community on gitter.im" href="https://gitter.im/hdl/community"><img src="https://img.shields.io/gitter/room/hdl/community.svg?longCache=true&style=flat-square&logo=gitter&logoColor=fff&color=4db797"></a><!--
   -->
