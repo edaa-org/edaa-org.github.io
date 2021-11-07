@@ -1,7 +1,7 @@
-.. _EDAA:Integration:
+.. _EDAA:Workflows:
 
 Integration with existing projects
-==================================
+##################################
 
 The following projects are all written in Python and were all created and developed during the last decade:
 
