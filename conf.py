@@ -3,6 +3,9 @@ from os.path import abspath
 from pathlib import Path
 from json    import dump, loads
 
+
+ROOT = Path(__file__).resolve().parent
+
 sys.path.insert(0, abspath('.'))
 
 
@@ -81,20 +84,22 @@ except Exception as ex:
 # ==============================================================================
 # Options for HTML output
 # ==============================================================================
-html_theme_options = {
-    'logo_only': True,
-    'home_breadcrumbs': False,
-    'vcs_pageview_mode': 'blob',
-}
 
 html_context = {}
-ctx = Path(__file__).resolve().parent / 'context.json'
+ctx = ROOT / 'context.json'
 if ctx.is_file():
 	html_context.update(loads(ctx.open('r').read()))
 
-html_theme_path = ["."]
-html_theme = "_theme"
-
+if (ROOT / "_theme").is_dir():
+	html_theme_path = ["."]
+	html_theme = "_theme"
+	html_theme_options = {
+		'logo_only': True,
+		'home_breadcrumbs': False,
+		'vcs_pageview_mode': 'blob',
+	}
+else:
+	html_theme = "alabaster"
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
