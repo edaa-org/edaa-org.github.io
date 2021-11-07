@@ -1,7 +1,7 @@
 .. _EDAA:Workflows:
 
-Integration with existing projects
-##################################
+Workflows and integration
+#########################
 
 The following projects are all written in Python and were all created and developed during the last decade:
 
@@ -50,3 +50,13 @@ The following is our wishlist:
   * Abstraction of a Project.
 
 * Xeda (to be analysed yet)
+
+
+.. toctree::
+   :hidden:
+
+   FuseSoCEdalize
+   pyIPCMI
+   tsfpga
+   VUnit
+   Xeda

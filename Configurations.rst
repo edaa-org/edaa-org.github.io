@@ -1,7 +1,7 @@
 .. _EDAA:Configurations:
 
-Declarative vs imperative
-#########################
+Projects and Configuration
+##########################
 
 .. image:: _static/logo/pyEDAA.ProjectModel_light.svg
    :height: 80 px
@@ -11,3 +11,12 @@ Declarative vs imperative
 .. raw:: html
 
     <br>
+
+
+.. toctree::
+   :hidden:
+
+   pyEDAA.ProjectModel ➚ <https://edaa-org.github.io/pyEDAA.ProjectModel>
+
+
+.. TODO Declarative vs imperative

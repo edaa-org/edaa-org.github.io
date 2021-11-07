@@ -29,3 +29,11 @@ Interacting with CLIs
 .. raw:: html
 
     <br>
+
+
+.. toctree::
+   :hidden:
+
+   pyTooling.CLIAbstraction ✗ <https://pyTooling.github.io/pyTooling.CLIAbstraction>
+   pyEDAA.CLITool ✗ <https://edaa-org.github.io/pyEDAA.CLITool>
+   pyEDAA.OutputFilter ✗ <https://edaa-org.github.io/pyEDAA.OutputFilter>

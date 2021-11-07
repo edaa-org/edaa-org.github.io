@@ -28,39 +28,16 @@ Welcome to the Electronic Design Automation Abstraction (EDA²) Documentation!
 
 .. toctree::
    :caption: Introduction
+   :maxdepth: 1
 
    ConceptualModel
    Context
 
 .. toctree::
-   :caption: CLI and EDA
+   :caption: Layers
+   :maxdepth: 1
 
    CLI
-   pyTooling.CLIAbstraction ✗ <https://pyTooling.github.io/pyTooling.CLIAbstraction>
-   pyEDAA.CLITool ✗ <https://edaa-org.github.io/pyEDAA.CLITool>
-   pyEDAA.OutputFilter ✗ <https://edaa-org.github.io/pyEDAA.OutputFilter>
-
-.. toctree::
-   :caption: Languages and Syntax
-
    SyntaxModels
-   pyVHDLModel ➚ <https://vhdl.github.io/pyVHDLModel>
-   pySVModel ➚ <https://edaa-org.github.io/pySVModel>
-   pyEDAA.Reports ✗ <https://edaa-org.github.io/pyEDAA.Reports>
-   pyEDAA.UCIS ✗ <https://edaa-org.github.io/pyEDAA.UCIS>
-
-.. toctree::
-   :caption: Projects and Configuration
-
    Configurations
-   pyEDAA.ProjectModel ➚ <https://edaa-org.github.io/pyEDAA.ProjectModel>
-
-.. toctree::
-   :caption: Workflows
-
    workflows/index
-   workflows/FuseSoCEdalize
-   workflows/pyIPCMI
-   workflows/tsfpga
-   workflows/VUnit
-   workflows/Xeda

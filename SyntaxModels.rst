@@ -1,7 +1,7 @@
 .. _EDAA:SyntaxModels:
 
-Document Object Models
-######################
+Languages and Syntax
+####################
 
 .. image:: _static/logo/pyVHDLModel.svg
    :height: 80 px
@@ -38,3 +38,12 @@ Document Object Models
 .. raw:: html
 
     <br>
+
+
+.. toctree::
+   :hidden:
+
+   pyVHDLModel ➚ <https://vhdl.github.io/pyVHDLModel>
+   pySVModel ➚ <https://edaa-org.github.io/pySVModel>
+   pyEDAA.Reports ✗ <https://edaa-org.github.io/pyEDAA.Reports>
+   pyEDAA.UCIS ✗ <https://edaa-org.github.io/pyEDAA.UCIS>
