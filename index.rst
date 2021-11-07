@@ -38,9 +38,9 @@ Welcome to the Electronic Design Automation Abstraction (EDA²) Documentation!
    :caption: Modules
    :hidden:
 
-   pyCLIAbstraction <https://github.com/Paebbels/pyCLIAbstraction>
-   pyEDAA.CLITool <https://github.com/edaa-org/pyEDAA.CLITool>
-   pyEDAA.OutputFilter <https://github.com/edaa-org/pyEDAA.OutputFilter>
-   pyVHDLModel <https://github.com/vhdl/pyVHDLModel>
-   pySVModel <https://github.com/edaa-org/pySVModel>
-   pyEDAA.ProjectModel <https://github.com/edaa-org/pyEDAA.ProjectModel>
+   pyTooling.CLIAbstraction ✗ <https://pyTooling.github.io/pyTooling.CLIAbstraction>
+   pyEDAA.CLITool ✗ <https://edaa-org.github.io/pyEDAA.CLITool>
+   pyEDAA.OutputFilter ✗ <https://edaa-org.github.io/pyEDAA.OutputFilter>
+   pyVHDLModel ➚ <https://vhdl.github.io/pyVHDLModel>
+   pySVModel ➚ <https://edaa-org.github.io/pySVModel>
+   pyEDAA.ProjectModel ➚ <https://edaa-org.github.io/pyEDAA.ProjectModel>
