@@ -41,29 +41,29 @@ Overall, EDA² provides building blocks to develop GUI solutions such as:
 or CLI workflows and tooling:
 
 <p align="center">
-  <a title="VUnit/vunit GitHub repository" href="https://github.com/VUnit/vunit"><img src="https://img.shields.io/badge/VUnit-vunit-9ccc65.svg?longCache=true&style=flat-square&logo=GitHub&labelColor=558b2f"></a><!--
+  <a title="cocotb/cocotb GitHub repository" href="https://github.com/cocotb/cocotb"><img src="https://img.shields.io/badge/cocotb-cocotb-9ccc65.svg?longCache=true&style=flat-square&logo=GitHub&labelColor=558b2f"></a><!--
   -->
-  <a title="Paebbels/pyIPCMI GitHub repository" href="https://github.com/Paebbels/pyIPCMI"><img src="https://img.shields.io/badge/Paebbels-pyIPCMI-9ccc65.svg?longCache=true&style=flat-square&logo=GitHub&labelColor=558b2f"></a><!--
+  <a title="HDL/Symbolator GitHub repository" href="https://github.com/HDL/Symbolator"><img src="https://img.shields.io/badge/HDL-Symbolator-9ccc65.svg?longCache=true&style=flat-square&logo=GitHub&labelColor=558b2f"></a><!--
   -->
   <a title="olofk/FuseSoC GitHub repository" href="https://github.com/olofk/FuseSoC"><img src="https://img.shields.io/badge/olofk-FuseSoC-9ccc65.svg?longCache=true&style=flat-square&logo=GitHub&labelColor=558b2f"></a><!--
   -->
   <a title="olofk/Edalize GitHub repository" href="https://github.com/olofk/Edalize"><img src="https://img.shields.io/badge/olofk-Edalize-9ccc65.svg?longCache=true&style=flat-square&logo=GitHub&labelColor=558b2f"></a><!--
   -->
-  <a title="tsfpga/tsfpga GitHub repository" href="https://gitlab.com/tsfpga/tsfpga"><img src="https://img.shields.io/badge/tsfpga-tsfpga-9ccc65.svg?longCache=true&style=flat-square&logo=GitHub&labelColor=558b2f"></a><!--
+  <a title="OSVVM/OSVVM-Scripts GitHub repository" href="https://github.com/OSVVM/OSVVM-Scripts"><img src="https://img.shields.io/badge/OSVVM-OSVVM--Scripts-9ccc65.svg?longCache=true&style=flat-square&logo=GitHub&labelColor=558b2f"></a><!--
+  -->
+  <a title="Paebbels/pyIPCMI GitHub repository" href="https://github.com/Paebbels/pyIPCMI"><img src="https://img.shields.io/badge/Paebbels-pyIPCMI-9ccc65.svg?longCache=true&style=flat-square&logo=GitHub&labelColor=558b2f"></a><!--
   -->
   <a title="PyFPGA/PyFPGA GitHub repository" href="https://github.com/PyFPGA/PyFPGA"><img src="https://img.shields.io/badge/PyFPGA-PyFPGA-9ccc65.svg?longCache=true&style=flat-square&logo=GitHub&labelColor=558b2f"></a><!--
   -->
-  <a title="XedaHQ/Xeda GitHub repository" href="https://github.com/XedaHQ/xeda"><img src="https://img.shields.io/badge/XedaHQ-Xeda-9ccc65.svg?longCache=true&style=flat-square&logo=GitHub&labelColor=558b2f"></a><!--
-  -->
   <a title="SymbiFlow/symbiflow-examples GitHub repository" href="https://github.com/SymbiFlow/symbiflow-examples"><img src="https://img.shields.io/badge/SymbiFlow-SymbiFlow--Examples-9ccc65.svg?longCache=true&style=flat-square&logo=GitHub&labelColor=558b2f"></a><!--
   -->
-  <a title="cocotb/cocotb GitHub repository" href="https://github.com/cocotb/cocotb"><img src="https://img.shields.io/badge/cocotb-cocotb-9ccc65.svg?longCache=true&style=flat-square&logo=GitHub&labelColor=558b2f"></a><!--
-  -->
-  <a title="OSVVM/OSVVMLibraries GitHub repository" href="https://github.com/OSVVM/OSVVMLibraries"><img src="https://img.shields.io/badge/OSVVM-OSVVMLibraries-9ccc65.svg?longCache=true&style=flat-square&logo=GitHub&labelColor=558b2f"></a><!--
+  <a title="tsfpga/tsfpga GitHub repository" href="https://gitlab.com/tsfpga/tsfpga"><img src="https://img.shields.io/badge/tsfpga-tsfpga-9ccc65.svg?longCache=true&style=flat-square&logo=GitHub&labelColor=558b2f"></a><!--
   -->
   <a title="UVVM/UVVM GitHub repository" href="https://github.com/UVVM/UVVM"><img src="https://img.shields.io/badge/UVVM-UVVM-9ccc65.svg?longCache=true&style=flat-square&logo=GitHub&labelColor=558b2f"></a><!--
   -->
-  <a title="HDL/Symbolator GitHub repository" href="https://github.com/HDL/Symbolator"><img src="https://img.shields.io/badge/HDL-Symbolator-9ccc65.svg?longCache=true&style=flat-square&logo=GitHub&labelColor=558b2f"></a><!--
+  <a title="VUnit/vunit GitHub repository" href="https://github.com/VUnit/vunit"><img src="https://img.shields.io/badge/VUnit-vunit-9ccc65.svg?longCache=true&style=flat-square&logo=GitHub&labelColor=558b2f"></a><!--
+  -->
+  <a title="XedaHQ/Xeda GitHub repository" href="https://github.com/XedaHQ/xeda"><img src="https://img.shields.io/badge/XedaHQ-Xeda-9ccc65.svg?longCache=true&style=flat-square&logo=GitHub&labelColor=558b2f"></a><!--
   -->
 </p>
 
@@ -89,6 +89,8 @@ along with syntax/document object models for language and specifications:
   -->
   <a title="edaa-org/pyEDAA.Reports GitHub repository" href="https://github.com/edaa-org/pyEDAA.Reports"><img src="https://img.shields.io/badge/pyEDAA-Reports-29b6f6.svg?longCache=true&style=flat-square&logo=GitHub&labelColor=0277bd"></a><!--
   -->
+  <a title="edaa-org/pyEDAA.IPXACT GitHub repository" href="https://github.com/edaa-org/pyEDAA.IPXACT"><img src="https://img.shields.io/badge/pyEDAA-IPXACT-29b6f6.svg?longCache=true&style=flat-square&logo=GitHub&labelColor=0277bd"></a><!--
+  -->
 </p>
 
 and project abstractions with matching configuration file formats:
@@ -102,43 +104,51 @@ The end goal is to close the gaps between existing tool, project and HDL source 
 to ease the usage of common and not-so-popular tools in the EDA industry:
 
 <p align="center">
-  <a title="gtkwave/gtkwave GitHub repository" href="https://github.com/gtkwave/gtkwave"><img src="https://img.shields.io/badge/gtkwave-gtkwave-78909c.svg?longCache=true&style=flat-square&logo=GitHub&labelColor=37474f"></a><!--
-  -->
   <a title="ghdl/ghdl GitHub repository" href="https://github.com/ghdl/ghdl"><img src="https://img.shields.io/badge/ghdl-ghdl-78909c.svg?longCache=true&style=flat-square&logo=GitHub&labelColor=37474f"></a><!--
   -->
-  <a title="verilator/verilator GitHub repository" href="https://github.com/verilator/verilator"><img src="https://img.shields.io/badge/verilator-verilator-78909c.svg?longCache=true&style=flat-square&logo=GitHub&labelColor=37474f"></a><!--
+  <a title="gtkwave/gtkwave GitHub repository" href="https://github.com/gtkwave/gtkwave"><img src="https://img.shields.io/badge/gtkwave-gtkwave-78909c.svg?longCache=true&style=flat-square&logo=GitHub&labelColor=37474f"></a><!--
   -->
   <a title="steveicarus/iverilog GitHub repository" href="https://github.com/steveicarus/iverilog"><img src="https://img.shields.io/badge/steveicarus-iverilog-78909c.svg?longCache=true&style=flat-square&logo=GitHub&labelColor=37474f"></a><!--
   -->
-  <a title="YosysHQ/yosys GitHub repository" href="https://github.com/YosysHQ/yosys"><img src="https://img.shields.io/badge/YosysHQ-yosys-78909c.svg?longCache=true&style=flat-square&logo=GitHub&labelColor=37474f"></a><!--
+  <a title="verilator/verilator GitHub repository" href="https://github.com/verilator/verilator"><img src="https://img.shields.io/badge/verilator-verilator-78909c.svg?longCache=true&style=flat-square&logo=GitHub&labelColor=37474f"></a><!--
+  -->
+  <a title="verilog-to-routing/vtr-verilog-to-routing GitHub repository" href="https://github.com/verilog-to-routing/vtr-verilog-to-routing"><img src="https://img.shields.io/badge/verilog--to--routing-vtr--verilog--to--routing-78909c.svg?longCache=true&style=flat-square&logo=GitHub&labelColor=37474f"></a><!--
   -->
   <a title="YosysHQ/nextpnr GitHub repository" href="https://github.com/YosysHQ/nextpnr"><img src="https://img.shields.io/badge/YosysHQ-nextpnr-78909c.svg?longCache=true&style=flat-square&logo=GitHub&labelColor=37474f"></a><!--
   -->
   <a title="YosysHQ/SymbiYosys GitHub repository" href="https://github.com/YosysHQ/SymbiYosys"><img src="https://img.shields.io/badge/YosysHQ-SymbiYosys-78909c.svg?longCache=true&style=flat-square&logo=GitHub&labelColor=37474f"></a><!--
   -->
-  <a title="verilog-to-routing/vtr-verilog-to-routing GitHub repository" href="https://github.com/verilog-to-routing/vtr-verilog-to-routing"><img src="https://img.shields.io/badge/verilog--to--routing-vtr--verilog--to--routing-78909c.svg?longCache=true&style=flat-square&logo=GitHub&labelColor=37474f"></a><!--
+  <a title="YosysHQ/yosys GitHub repository" href="https://github.com/YosysHQ/yosys"><img src="https://img.shields.io/badge/YosysHQ-yosys-78909c.svg?longCache=true&style=flat-square&logo=GitHub&labelColor=37474f"></a><!--
   -->
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Xilinx-ISE-78909c.svg?longCache=true&style=flat-square&logo=GitHub&labelColor=37474f"><!--
-  -->
-  <img src="https://img.shields.io/badge/Xilinx-Vivado-78909c.svg?longCache=true&style=flat-square&logo=GitHub&labelColor=37474f"><!--
-  -->
-  <img src="https://img.shields.io/badge/Inteal%2FAltera-Quartus-78909c.svg?longCache=true&style=flat-square&logo=GitHub&labelColor=37474f"><!--
-  -->
   <img src="https://img.shields.io/badge/Aldec-ActiveHDL-78909c.svg?longCache=true&style=flat-square&logo=GitHub&labelColor=37474f"><!--
   -->
   <img src="https://img.shields.io/badge/Aldec-RivieraPRO-78909c.svg?longCache=true&style=flat-square&logo=GitHub&labelColor=37474f"><!--
   -->
-  <img src="https://img.shields.io/badge/Siemens%2FMentor%20Graphics-ModelSim-78909c.svg?longCache=true&style=flat-square&logo=GitHub&labelColor=37474f"><!--
+  <img src="https://img.shields.io/badge/Cadence-Incisive-78909c.svg?longCache=true&style=flat-square&logo=GitHub&labelColor=37474f"><!--
   -->
-  <img src="https://img.shields.io/badge/Siemens%2FMentor%20Graphics-QuestaSim-78909c.svg?longCache=true&style=flat-square&logo=GitHub&labelColor=37474f"><!--
+  <img src="https://img.shields.io/badge/Cadence-Xcelium-78909c.svg?longCache=true&style=flat-square&logo=GitHub&labelColor=37474f"><!--
+  -->
+  <img src="https://img.shields.io/badge/Intel%2FAltera-Quartus-78909c.svg?longCache=true&style=flat-square&logo=GitHub&labelColor=37474f"><!--
   -->
   <img src="https://img.shields.io/badge/Lattice-Diamond-78909c.svg?longCache=true&style=flat-square&logo=GitHub&labelColor=37474f"><!--
   -->
   <img src="https://img.shields.io/badge/Lattice-Radiant-78909c.svg?longCache=true&style=flat-square&logo=GitHub&labelColor=37474f"><!--
   -->
+  <img src="https://img.shields.io/badge/Siemens%2FMentor%20Graphics-ModelSim-78909c.svg?longCache=true&style=flat-square&logo=GitHub&labelColor=37474f"><!--
+  -->
+  <img src="https://img.shields.io/badge/Siemens%2FMentor%20Graphics-QuestaSim-78909c.svg?longCache=true&style=flat-square&logo=GitHub&labelColor=37474f"><!--
+  -->
+  <img src="https://img.shields.io/badge/Siemens%2FMentor%20Graphics-PrecisioRTL-78909c.svg?longCache=true&style=flat-square&logo=GitHub&labelColor=37474f"><!--
+  -->
   <img src="https://img.shields.io/badge/Synopsys-Synplify-78909c.svg?longCache=true&style=flat-square&logo=GitHub&labelColor=37474f"><!--
+  -->
+  <img src="https://img.shields.io/badge/Synopsys-VCS-78909c.svg?longCache=true&style=flat-square&logo=GitHub&labelColor=37474f"><!--
+  -->
+  <img src="https://img.shields.io/badge/Xilinx-ISE-78909c.svg?longCache=true&style=flat-square&logo=GitHub&labelColor=37474f"><!--
+  -->
+  <img src="https://img.shields.io/badge/Xilinx-Vivado-78909c.svg?longCache=true&style=flat-square&logo=GitHub&labelColor=37474f"><!--
   -->
 </p>
