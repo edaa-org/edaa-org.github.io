@@ -24,7 +24,7 @@ Languages and Syntax
 .. image:: _static/logo/pyEDAA.Reports.svg
    :height: 80 px
    :align: center
-   :target: https://github.com/edaa-org/pyEDAA.Report
+   :target: https://github.com/edaa-org/pyEDAA.Reports
 
 .. raw:: html
 
@@ -39,6 +39,15 @@ Languages and Syntax
 
     <br>
 
+.. image:: _static/logo/pyEDAA.IPXACT.svg
+   :height: 80 px
+   :align: center
+   :target: https://github.com/edaa-org/pyEDAA.IPXACT
+
+.. raw:: html
+
+    <br>
+
 
 .. toctree::
    :hidden:
@@ -47,3 +56,4 @@ Languages and Syntax
    pySVModel ➚ <https://edaa-org.github.io/pySVModel>
    pyEDAA.Reports ✗ <https://edaa-org.github.io/pyEDAA.Reports>
    pyEDAA.UCIS ✗ <https://edaa-org.github.io/pyEDAA.UCIS>
+   pyEDAA.IPXACT ✗ <https://edaa-org.github.io/pyEDAA.IPXACT>
