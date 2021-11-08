@@ -23,6 +23,7 @@ projects = [
     ("py", "VHDLModel", 2),
     ("py", "SVModel", 2),
     ("pyEDAA.", "UCIS", 2),
+    ("pyEDAA.", "IPXACT", 2),
     ("pyEDAA.", "Reports", 2),
     ("pyEDAA.", "VUnit", 3),
     ("py", "FPGA", 3),
