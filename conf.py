@@ -178,10 +178,13 @@ extensions = [
 	'sphinx.ext.extlinks',
 	'sphinx.ext.intersphinx',
 	'sphinx.ext.todo',
+	'sphinxcontrib.bibtex',
 # Local extensions
 	'exec',
 ]
 
+bibtex_default_style = 'plain'
+bibtex_bibfiles = ['refs.bib']
 
 # ==============================================================================
 # Sphinx.Ext.InterSphinx
