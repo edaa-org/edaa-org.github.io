@@ -56,10 +56,13 @@ The following is our wishlist:
    :hidden:
 
    FuseSoCEdalize
+   PyFPGA
    pyIPCMI
+   SymbiFlow
    tsfpga
    VUnit
    Xeda
+
 
 * *cocotb*
 * *OSVVM*
