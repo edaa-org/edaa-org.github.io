@@ -60,3 +60,8 @@ The following is our wishlist:
    tsfpga
    VUnit
    Xeda
+
+* *cocotb*
+* *OSVVM*
+* *VUnit*
+* *FuseSoC/Edalize/fsva*

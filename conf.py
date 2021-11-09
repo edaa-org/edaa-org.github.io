@@ -191,6 +191,7 @@ bibtex_bibfiles = ['refs.bib']
 # ==============================================================================
 intersphinx_mapping = {
 	'python':       ('https://docs.python.org/3', None),
+	'pytooling':    ('https://pytooling.github.io/pyTooling', None),
 	'osvb':         ('https://umarcor.github.io/osvb', None),
 	'vhdlmodel':    ('https://vhdl.github.io/pyVHDLModel', None),
 	'svmodel':      ('https://edaa-org.github.io/pySVModel', None),
