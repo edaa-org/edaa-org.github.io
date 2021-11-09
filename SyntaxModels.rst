@@ -1,7 +1,9 @@
 .. _EDAA:SyntaxModels:
 
-Languages and Syntax
-####################
+Languages and Data
+##################
+
+Language Models:
 
 .. image:: _static/logo/pyVHDLModel.svg
    :height: 80 px
@@ -20,6 +22,8 @@ Languages and Syntax
 .. raw:: html
 
     <br>
+
+Data Models:
 
 .. image:: _static/logo/pyEDAA.Reports.svg
    :height: 80 px

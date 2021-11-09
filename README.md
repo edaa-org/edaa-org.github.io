@@ -78,7 +78,7 @@ That is achieved through a series of tool interfaces:
   -->
 </p>
 
-along with syntax/document object models for language and specifications:
+along with syntax/document object models for language and data format specifications:
 
 <p align="center">
   <a title="VHDL/pyVHDLModel GitHub repository" href="https://github.com/VHDL/pyVHDLModel"><img src="https://img.shields.io/badge/VHDL-pyVHDLModel-29b6f6.svg?longCache=true&style=flat-square&logo=GitHub&labelColor=0277bd"></a><!--
