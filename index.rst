@@ -15,20 +15,27 @@
 Electronic Design Automation Abstraction (EDA²) Documentation
 #############################################################
 
-Welcome to the Electronic Design Automation Abstraction (EDA²) Documentation!
+.. image:: _static/logo/edaa_banner.svg
+   :width: 500 px
+   :align: center
+   :target: https://github.com/edaa-org
 
-EDA² is a conceptual model for characterising the abstraction layers in Electronic Design Automation (EDA) projects
-based on Hardware Description Languages (HDLs).
+.. raw:: html
+
+    <br>
+
+Electronic Design Automation Abstraction (EDA²) is a conceptual model for characterising the abstraction layers in
+Electronic Design Automation (EDA) projects based on Hardware Description Languages (HDLs).
 Its goal is the interoperability of diverse tools and languages, through documented interfaces.
 
 EDA² aims to provide reference Python implementations and schemas of commonly needed software layers for (open source)
 EDA tooling/frameworks to reduce code duplication and reinventions of existing algorithms and data structures.
 Each layer solves the problems at a different abstraction level, hence, they are organised as an stack (see :ref:`EDAA:Concept`).
 
-.. image:: _static/logo/edaa_banner.svg
+.. image:: _static/model.png
    :width: 500 px
    :align: center
-   :target: https://github.com/edaa-org
+   :target: https://edaa-org.github.io/ConceptualModel.html
 
 .. raw:: html
 
