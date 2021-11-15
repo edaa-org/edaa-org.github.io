@@ -57,10 +57,10 @@ of common and not-so-popular tools in the EDA industry.
    :caption: Layers
    :maxdepth: 1
 
-   CLI
-   SyntaxModels
    Configurations
+   SyntaxModels
    workflows/index
+   CLI
 
 .. toctree::
    :caption: Development
