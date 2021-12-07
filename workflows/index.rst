@@ -59,6 +59,7 @@ The following is our wishlist:
    FuseSoCEdalize
    PyFPGA
    pyIPCMI
+   SiliconCompiler
    SymbiFlow
    tsfpga
    VUnit

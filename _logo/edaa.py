@@ -34,6 +34,7 @@ projects = [
     ("pyEDAA.", "pyFPGA", 3),
     ("py", "IPCMI", 3),
     ("pyEDAA.", "Xeda", 3),
+    ("pyEDAA.", "SiliconCompiler", 3),
     ("pyTooling.", "CLIAbstraction", 4),
     ("pyEDAA.", "CLITool", 4),
     ("pyEDAA.", "OutputFilter", 4),
