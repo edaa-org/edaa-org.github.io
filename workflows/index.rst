@@ -5,17 +5,29 @@ Workflows and integration
 
 The following projects are all written in Python and were all created and developed during the last decade:
 
+* CoCoTb (2013)
 * PoC (2014)
 * VUnit (2014)
+* SymbiFlow (2017)
 * Edalize (2018), split from FuseSoC (2011)
+* tsfpga (2018)
 * pyFPGA (2019), based on fpga_helpers (2015)
 * Xeda (2020)
+* SiliconCompiler (2021)
 
 All of them implement multiple of the layers in the EDAA Model, however, most of them were not written with reusabillity
 in mind.
 Hopefully, maintainers of those projects will be willing to isolate the reusable pieces of their codebases, so they can
 focus their effort on the features unique to their solution.
 The following is our wishlist:
+
+* CoCoTb (to be analysed yet)
+
+* PoC/pyIPCMI
+
+  * Abstraction for EDA tool tasks.
+  * Abstraction for post-processing the logs.
+  * Abstraction of a Project.
 
 * VUnit
 
@@ -38,18 +50,18 @@ The following is our wishlist:
   * Specific know-how about the less mainstream toolchains.
   * Support for fine-grained containers.
 
+* SymbiFlow (to be analysed yet)
+
+* tsfpga (to be analysed yet)
+
 * pyFPGA
 
   * Similarly to fusesoc/edalize, specific know-how about some toolchains/flows and support for fine-grained containers.
   * Easy Python API for defining the sources, libs, targets, etc. for synthesis.
 
-* PoC/pyIPCMI
-
-  * Abstraction for EDA tool tasks.
-  * Abstraction for post-processing the logs.
-  * Abstraction of a Project.
-
 * Xeda (to be analysed yet)
+
+* SiliconCompiler (to be analysed yet)
 
 
 .. toctree::
@@ -64,9 +76,3 @@ The following is our wishlist:
    tsfpga
    VUnit
    Xeda
-
-
-* *cocotb*
-* *OSVVM*
-* *VUnit*
-* *FuseSoC/Edalize/fsva*
