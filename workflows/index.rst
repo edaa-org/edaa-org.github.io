@@ -55,6 +55,7 @@ The following is our wishlist:
 .. toctree::
    :hidden:
 
+   CoCoTb
    FuseSoCEdalize
    PyFPGA
    pyIPCMI

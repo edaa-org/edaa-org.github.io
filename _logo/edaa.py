@@ -25,6 +25,7 @@ projects = [
     ("pyEDAA.", "UCIS", 2),
     ("pyEDAA.", "IPXACT", 2),
     ("pyEDAA.", "Reports", 2),
+    ("pyEDAA.", "CoCoTb", 3),
     ("pyEDAA.", "VUnit", 3),
     ("py", "FPGA", 3),
     ("pyEDAA.", "SymbiFlow", 3),
