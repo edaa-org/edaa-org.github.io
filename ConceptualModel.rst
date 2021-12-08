@@ -43,7 +43,7 @@ Its goal is the interoperability of diverse tools and languages with documented 
 
 3 | Workflows
     Middle layer to translate projects into execution steps (EDA and/or CLI).
-    See :ref:`OSVB: Tool <OSVB:API:Tool>` and :ref:`OSVB: Runner <OSVB:API:Runner>`.
+    See :ref:`EDAA:Workflows`, :ref:`OSVB: Tool <OSVB:API:Tool>` and :ref:`OSVB: Runner <OSVB:API:Runner>`.
 
 4 | Language Model
     Syntax and Document Object Model (DOM) of the imperative and parallel language(s) such as VHDL and System Verilog.
@@ -55,15 +55,12 @@ Its goal is the interoperability of diverse tools and languages with documented 
 
 5 | Data Model
     IP-XACT, UCIS, XUnit, Cobertura,... imported from or exported into structured files such as JSON, XML, TOML/INI, YAML,...
-    See:
-
-    * `pyEDAA.Reports <https://github.com/edaa-org/pyEDAA.Reports>`__
-    * `pyEDAA.IPXACT <https://github.com/edaa-org/pyEDAA.IPXACT>`__
-    * :ref:`OSVB: Logging <OSVB:API:Logging:OSVR>`
+    See :ref:`EDAA:SyntaxModels` and :ref:`OSVB: Logging <OSVB:API:Logging:OSVR>`.
 
 6 | Project Model
     Tool independent information (files/filesets, primary design units, testbenches, `hdl/constraints <https://github.com/hdl/constraints>`__,
-    etc.) and tool specific parameters. See :doc:`projectmodel:index`.
+    etc.) and tool specific parameters.
+    See :ref:`EDAA:Configurations` and :doc:`projectmodel:index`.
 
 7 | Configuration
     INI/JSON/YAML format for providing the sources and constraints data used in Workflow and/or Project through files,
