@@ -5,15 +5,15 @@ Workflows and integration
 
 The following projects are all written in Python and were all created and developed during the last decade:
 
-* CoCoTb (2013)
-* PoC (2014)
-* VUnit (2014)
-* SymbiFlow (2017)
-* Edalize (2018), split from FuseSoC (2011)
-* tsfpga (2018)
-* pyFPGA (2019), based on fpga_helpers (2015)
-* Xeda (2020)
-* SiliconCompiler (2021)
+* :awesome:`CoCoTb <cocotb>` (2013)
+* :awesome:`Pile of Cores Library (PoC) <poc>` (2014)
+* :awesome:`VUnit <vunit>` (2014)
+* :awesome:`SymbiFlow <symbiflow>` (2017)
+* :awesome:`Edalize <edalize>` (2018), split from :awesome:`FuseSoC <fusesoc>` (2011)
+* :awesome:`tsfpga <tsfpga>` (2018)
+* :awesome:`pyFPGA <pyfpga>` (2019), based on fpga_helpers (2015)
+* :awesome:`Xeda <xeda>` (2020)
+* :awesome:`SiliconCompiler <siliconcompiler>` (2021)
 
 All of them implement multiple of the layers in the EDAA Model, however, most of them were not written with reusabillity
 in mind.

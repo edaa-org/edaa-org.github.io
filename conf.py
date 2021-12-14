@@ -206,7 +206,8 @@ extlinks = {
 	'ghrepo':  ('https://github.com/%s', ''),
 	'ghissue': ('https://github.com/edaa-org/edaa-org.github.io/issues/%s', 'issue #'),
 	'ghpull':  ('https://github.com/edaa-org/edaa-org.github.io/pull/%s', 'pull request #'),
-	'ghsrc':   ('https://github.com/edaa-org/edaa-org.github.io/blob/main/%s', '')
+	'ghsrc':   ('https://github.com/edaa-org/edaa-org.github.io/blob/main/%s', ''),
+	'awesome': ('https://hdl.github.io/awesome/items/%s', ''),
 }
 
 
