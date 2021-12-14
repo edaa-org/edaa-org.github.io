@@ -203,9 +203,10 @@ intersphinx_mapping = {
 # Sphinx.Ext.ExtLinks
 # ==============================================================================
 extlinks = {
-	'issue': ('https://github.com/edaa-org/edaa-org.github.io/issues/%s', 'issue #'),
-	'pull':  ('https://github.com/edaa-org/edaa-org.github.io/pull/%s', 'pull request #'),
-	'src':   ('https://github.com/edaa-org/edaa-org.github.io/blob/main/%s', None)
+	'ghrepo':  ('https://github.com/%s', ''),
+	'ghissue': ('https://github.com/edaa-org/edaa-org.github.io/issues/%s', 'issue #'),
+	'ghpull':  ('https://github.com/edaa-org/edaa-org.github.io/pull/%s', 'pull request #'),
+	'ghsrc':   ('https://github.com/edaa-org/edaa-org.github.io/blob/main/%s', '')
 }
 
 
