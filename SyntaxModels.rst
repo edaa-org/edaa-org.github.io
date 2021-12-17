@@ -58,6 +58,6 @@ Data Models:
 
    pyVHDLModel ➚ <https://vhdl.github.io/pyVHDLModel>
    pySVModel ➚ <https://edaa-org.github.io/pySVModel>
-   pyEDAA.Reports ✗ <https://edaa-org.github.io/pyEDAA.Reports>
-   pyEDAA.UCIS ✗ <https://edaa-org.github.io/pyEDAA.UCIS>
-   pyEDAA.IPXACT ✗ <https://edaa-org.github.io/pyEDAA.IPXACT>
+   pyEDAA.Reports ➚ <https://edaa-org.github.io/pyEDAA.Reports>
+   pyEDAA.UCIS ➚ <https://edaa-org.github.io/pyEDAA.UCIS>
+   pyEDAA.IPXACT ➚ <https://edaa-org.github.io/pyEDAA.IPXACT>

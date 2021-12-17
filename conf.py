@@ -186,6 +186,7 @@ extensions = [
 bibtex_default_style = 'plain'
 bibtex_bibfiles = ['refs.bib']
 
+
 # ==============================================================================
 # Sphinx.Ext.InterSphinx
 # ==============================================================================
@@ -196,6 +197,11 @@ intersphinx_mapping = {
 	'vhdlmodel':    ('https://vhdl.github.io/pyVHDLModel', None),
 	'svmodel':      ('https://edaa-org.github.io/pySVModel', None),
 	'projectmodel': ('https://edaa-org.github.io/pyEDAA.ProjectModel', None),
+	'ipxact':       ('https://edaa-org.github.io/pyEDAA.IPXACT', None),
+	'ucis':         ('https://edaa-org.github.io/pyEDAA.UCIS', None),
+	'reports':      ('https://edaa-org.github.io/pyEDAA.Reports', None),
+	'outputfilter': ('https://edaa-org.github.io/pyEDAA.OutputFilter', None),
+	'clitool':      ('https://edaa-org.github.io/pyEDAA.CLITool', None),
 }
 
 
