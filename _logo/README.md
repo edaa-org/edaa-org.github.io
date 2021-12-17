@@ -7,6 +7,8 @@ The EDA² logo was inspired by [flaticon.com/free-icon/blocks_5375762](https://w
 and the colours from [materialpalette.com](https://www.materialpalette.com/colors).
 However, the logo is generated from scratch using a Python script (see [edaa.py](edaa.py)).
 
+"Work in progress" sign images are based on [flaticon.com/free-icon/work-in-progress_5578703](https://www.flaticon.com/free-icon/work-in-progress_5578703).
+
 ## Development
 
 Python script [edaa.py](edaa.py) uses [mozman/svgwrite](https://github.com/mozman/svgwrite/) for generating the logo and
