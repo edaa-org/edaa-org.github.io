@@ -41,29 +41,33 @@ Overall, EDA² provides building blocks to develop GUI solutions such as:
 or CLI workflows and tooling:
 
 <p align="center">
-  <a title="cocotb/cocotb GitHub repository" href="https://github.com/cocotb/cocotb"><img src="https://img.shields.io/badge/cocotb-cocotb-9ccc65.svg?longCache=true&style=flat-square&logo=GitHub&labelColor=558b2f"></a><!--
+  <a title="c-rus/legoHDL GitHub repository" href="https://hdl.github.io/awesome/items/legohdl/"><img src="https://img.shields.io/badge/c--rus-legoHDL-9ccc65.svg?longCache=true&style=flat-square&logo=GitHub&labelColor=558b2f"></a><!--
   -->
-  <a title="HDL/Symbolator GitHub repository" href="https://github.com/HDL/Symbolator"><img src="https://img.shields.io/badge/HDL-Symbolator-9ccc65.svg?longCache=true&style=flat-square&logo=GitHub&labelColor=558b2f"></a><!--
+  <a title="cocotb/cocotb GitHub repository" href="https://hdl.github.io/awesome/items/cocotb"><img src="https://img.shields.io/badge/cocotb-cocotb-9ccc65.svg?longCache=true&style=flat-square&logo=GitHub&labelColor=558b2f"></a><!--
   -->
-  <a title="olofk/FuseSoC GitHub repository" href="https://github.com/olofk/FuseSoC"><img src="https://img.shields.io/badge/olofk-FuseSoC-9ccc65.svg?longCache=true&style=flat-square&logo=GitHub&labelColor=558b2f"></a><!--
+  <a title="HDL/Symbolator GitHub repository" href="https://github.com/hdl/symbolator"><img src="https://img.shields.io/badge/HDL-Symbolator-9ccc65.svg?longCache=true&style=flat-square&logo=GitHub&labelColor=558b2f"></a><!--
   -->
-  <a title="olofk/Edalize GitHub repository" href="https://github.com/olofk/Edalize"><img src="https://img.shields.io/badge/olofk-Edalize-9ccc65.svg?longCache=true&style=flat-square&logo=GitHub&labelColor=558b2f"></a><!--
+  <a title="olofk/FuseSoC GitHub repository" href="https://hdl.github.io/awesome/items/fusesoc"><img src="https://img.shields.io/badge/olofk-FuseSoC-9ccc65.svg?longCache=true&style=flat-square&logo=GitHub&labelColor=558b2f"></a><!--
   -->
-  <a title="OSVVM/OSVVM-Scripts GitHub repository" href="https://github.com/OSVVM/OSVVM-Scripts"><img src="https://img.shields.io/badge/OSVVM-OSVVM--Scripts-9ccc65.svg?longCache=true&style=flat-square&logo=GitHub&labelColor=558b2f"></a><!--
+  <a title="olofk/Edalize GitHub repository" href="https://hdl.github.io/awesome/items/edalize"><img src="https://img.shields.io/badge/olofk-Edalize-9ccc65.svg?longCache=true&style=flat-square&logo=GitHub&labelColor=558b2f"></a><!--
   -->
-  <a title="Paebbels/pyIPCMI GitHub repository" href="https://github.com/Paebbels/pyIPCMI"><img src="https://img.shields.io/badge/Paebbels-pyIPCMI-9ccc65.svg?longCache=true&style=flat-square&logo=GitHub&labelColor=558b2f"></a><!--
+  <a title="OSVVM/OSVVM-Scripts GitHub repository" href="https://hdl.github.io/awesome/items/osvvm"><img src="https://img.shields.io/badge/OSVVM-OSVVM--Scripts-9ccc65.svg?longCache=true&style=flat-square&logo=GitHub&labelColor=558b2f"></a><!--
   -->
-  <a title="PyFPGA/PyFPGA GitHub repository" href="https://github.com/PyFPGA/PyFPGA"><img src="https://img.shields.io/badge/PyFPGA-PyFPGA-9ccc65.svg?longCache=true&style=flat-square&logo=GitHub&labelColor=558b2f"></a><!--
+  <a title="Paebbels/pyIPCMI GitHub repository" href="https://hdl.github.io/awesome/items/pyipcmi"><img src="https://img.shields.io/badge/Paebbels-pyIPCMI-9ccc65.svg?longCache=true&style=flat-square&logo=GitHub&labelColor=558b2f"></a><!--
   -->
-  <a title="SymbiFlow/symbiflow-examples GitHub repository" href="https://github.com/SymbiFlow/symbiflow-examples"><img src="https://img.shields.io/badge/SymbiFlow-SymbiFlow--Examples-9ccc65.svg?longCache=true&style=flat-square&logo=GitHub&labelColor=558b2f"></a><!--
+  <a title="PyFPGA/PyFPGA GitHub repository" href="https://hdl.github.io/awesome/items/pyfpga"><img src="https://img.shields.io/badge/PyFPGA-PyFPGA-9ccc65.svg?longCache=true&style=flat-square&logo=GitHub&labelColor=558b2f"></a><!--
   -->
-  <a title="tsfpga/tsfpga GitHub repository" href="https://gitlab.com/tsfpga/tsfpga"><img src="https://img.shields.io/badge/tsfpga-tsfpga-9ccc65.svg?longCache=true&style=flat-square&logo=GitHub&labelColor=558b2f"></a><!--
+  <a title="siliconcompiler/siliconcompiler GitHub repository" href="https://hdl.github.io/awesome/items/siliconcompiler"><img src="https://img.shields.io/badge/siliconcompiler-siliconcompiler-9ccc65.svg?longCache=true&style=flat-square&logo=GitHub&labelColor=558b2f"></a><!--
   -->
-  <a title="UVVM/UVVM GitHub repository" href="https://github.com/UVVM/UVVM"><img src="https://img.shields.io/badge/UVVM-UVVM-9ccc65.svg?longCache=true&style=flat-square&logo=GitHub&labelColor=558b2f"></a><!--
+  <a title="SymbiFlow/symbiflow-examples GitHub repository" href="https://hdl.github.io/awesome/items/symbiflow"><img src="https://img.shields.io/badge/SymbiFlow-SymbiFlow--Examples-9ccc65.svg?longCache=true&style=flat-square&logo=GitHub&labelColor=558b2f"></a><!--
   -->
-  <a title="VUnit/vunit GitHub repository" href="https://github.com/VUnit/vunit"><img src="https://img.shields.io/badge/VUnit-vunit-9ccc65.svg?longCache=true&style=flat-square&logo=GitHub&labelColor=558b2f"></a><!--
+  <a title="tsfpga/tsfpga GitHub repository" href="https://hdl.github.io/awesome/items/tsfpga"><img src="https://img.shields.io/badge/tsfpga-tsfpga-9ccc65.svg?longCache=true&style=flat-square&logo=GitHub&labelColor=558b2f"></a><!--
   -->
-  <a title="XedaHQ/Xeda GitHub repository" href="https://github.com/XedaHQ/xeda"><img src="https://img.shields.io/badge/XedaHQ-Xeda-9ccc65.svg?longCache=true&style=flat-square&logo=GitHub&labelColor=558b2f"></a><!--
+  <a title="UVVM/UVVM GitHub repository" href="https://hdl.github.io/awesome/items/uvvm"><img src="https://img.shields.io/badge/UVVM-UVVM-9ccc65.svg?longCache=true&style=flat-square&logo=GitHub&labelColor=558b2f"></a><!--
+  -->
+  <a title="VUnit/vunit GitHub repository" href="https://hdl.github.io/awesome/items/vunit"><img src="https://img.shields.io/badge/VUnit-vunit-9ccc65.svg?longCache=true&style=flat-square&logo=GitHub&labelColor=558b2f"></a><!--
+  -->
+  <a title="XedaHQ/Xeda GitHub repository" href="https://hdl.github.io/awesome/items/xeda"><img src="https://img.shields.io/badge/XedaHQ-Xeda-9ccc65.svg?longCache=true&style=flat-square&logo=GitHub&labelColor=558b2f"></a><!--
   -->
 </p>
 
