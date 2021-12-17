@@ -14,6 +14,7 @@ The following projects are all written in Python and were all created and develo
 * :awesome:`pyFPGA <pyfpga>` (2019), based on fpga_helpers (2015)
 * :awesome:`Xeda <xeda>` (2020)
 * :awesome:`SiliconCompiler <siliconcompiler>` (2021)
+* :awesome:`legoHDL <legohdl>` (2021)
 
 All of them implement multiple of the layers in the EDAA Model, however, most of them were not written with reusabillity
 in mind.
@@ -63,12 +64,15 @@ The following is our wishlist:
 
 * SiliconCompiler (to be analysed yet)
 
+* legoHDL (to be analysed yet)
+
 
 .. toctree::
    :hidden:
 
    CoCoTb
    FuseSoCEdalize
+   legoHDL
    PyFPGA
    pyIPCMI
    SiliconCompiler
