@@ -30,6 +30,14 @@ Interacting with CLIs
 
     <br>
 
+.. image:: _static/logo/pyEDAA.Launcher.svg
+   :height: 80 px
+   :align: center
+   :target: https://github.com/edaa-org/pyEDAA.Launcher
+
+.. raw:: html
+
+    <br>
 
 .. toctree::
    :hidden:
@@ -37,3 +45,4 @@ Interacting with CLIs
    pyTooling.CLIAbstraction ✗ <https://pyTooling.github.io/pyTooling.CLIAbstraction>
    pyEDAA.CLITool ➚ <https://edaa-org.github.io/pyEDAA.CLITool>
    pyEDAA.OutputFilter ➚ <https://edaa-org.github.io/pyEDAA.OutputFilter>
+   pyEDAA.Launcher ➚ <https://edaa-org.github.io/pyEDAA.Launcher>

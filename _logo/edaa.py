@@ -39,6 +39,7 @@ projects = [
     ("pyTooling.", "CLIAbstraction", 4),
     ("pyEDAA.", "CLITool", 4),
     ("pyEDAA.", "OutputFilter", 4),
+    ("pyEDAA.", "Launcher", 4),
     ("pyEDAA.", "Containers", 5),
     ("pyEDAA.", "LocalInstallations", 5),
 ]

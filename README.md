@@ -80,6 +80,8 @@ That is achieved through a series of tool interfaces:
   -->
   <a title="edaa-org/pyEDAA.OutputFilter GitHub repository" href="https://github.com/edaa-org/pyEDAA.OutputFilter"><img src="https://img.shields.io/badge/pyEDAA-OutputFilter-ffca28.svg?longCache=true&style=flat-square&logo=GitHub&labelColor=ff8f00"></a><!--
   -->
+  <a title="edaa-org/pyEDAA.Launcher GitHub repository" href="https://github.com/edaa-org/pyEDAA.Launcher"><img src="https://img.shields.io/badge/pyEDAA-Launcher-ffca28.svg?longCache=true&style=flat-square&logo=GitHub&labelColor=ff8f00"></a><!--
+  -->
 </p>
 
 along with syntax/document object models for language and data format specifications:
