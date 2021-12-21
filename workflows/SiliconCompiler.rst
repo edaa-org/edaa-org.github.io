@@ -14,3 +14,8 @@ SiliconCompiler
 
 
 *TBC*
+
+References
+==========
+
+* :ref:`siliconcompiler:Flows directory`
