@@ -59,6 +59,7 @@ of common and not-so-popular tools in the EDA industry.
 
    ConceptualModel
    Context
+   FAQ
 
 .. toctree::
    :caption: Layers
