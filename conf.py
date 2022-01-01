@@ -193,7 +193,9 @@ bibtex_bibfiles = ['refs.bib']
 intersphinx_mapping = {
 	'python':          ('https://docs.python.org/3', None),
 	'pytooling':       ('https://pytooling.github.io/pyTooling', None),
+	'cliabstraction':  ('https://pytooling.github.io/pyTooling.CLIAbstraction', None),
 	'osvb':            ('https://umarcor.github.io/osvb', None),
+	'ghdl':            ('https://ghdl.github.io/ghdl', None),
 	'vhdlmodel':       ('https://vhdl.github.io/pyVHDLModel', None),
 	'svmodel':         ('https://edaa-org.github.io/pySVModel', None),
 	'projectmodel':    ('https://edaa-org.github.io/pyEDAA.ProjectModel', None),
@@ -202,6 +204,7 @@ intersphinx_mapping = {
 	'reports':         ('https://edaa-org.github.io/pyEDAA.Reports', None),
 	'outputfilter':    ('https://edaa-org.github.io/pyEDAA.OutputFilter', None),
 	'clitool':         ('https://edaa-org.github.io/pyEDAA.CLITool', None),
+	'launcher':        ('https://edaa-org.github.io/pyEDAA.Launcher', None),
 	'siliconcompiler': ('https://docs.siliconcompiler.com/en/latest', None),
 }
 
