@@ -204,6 +204,7 @@ intersphinx_mapping = {
 	'reports':         ('https://edaa-org.github.io/pyEDAA.Reports', None),
 	'outputfilter':    ('https://edaa-org.github.io/pyEDAA.OutputFilter', None),
 	'clitool':         ('https://edaa-org.github.io/pyEDAA.CLITool', None),
+	'toolsetup':       ('https://edaa-org.github.io/pyEDAA.ToolSetup', None),
 	'launcher':        ('https://edaa-org.github.io/pyEDAA.Launcher', None),
 	'siliconcompiler': ('https://docs.siliconcompiler.com/en/latest', None),
 }

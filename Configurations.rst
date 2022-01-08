@@ -8,9 +8,7 @@ Projects and Configuration
    :align: center
    :target: https://github.com/edaa-org/pyEDAA.ProjectModel
 
-.. raw:: html
-
-    <br>
+|br|
 
 
 .. toctree::
