@@ -39,7 +39,7 @@ Its goal is the interoperability of diverse tools and languages with documented 
 2 | EDA
     Interaction with EDA tools (both open source and vendors), including multiple version support, output
     filtering, etc.
-    See :ref:`OSVB: Logging <OSVB:API:Logging>`.
+    See :doc:`reports:index`, :doc:`outputfilter:index` and :ref:`OSVB: Logging <OSVB:API:Logging>`.
 
 3 | Workflows
     Middle layer to translate projects into execution steps (EDA and/or CLI).
