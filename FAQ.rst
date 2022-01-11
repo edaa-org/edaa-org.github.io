@@ -11,9 +11,9 @@ What problem(s) is EDA² going to solve?
 
 Reduce code duplication in open source EDA tooling frameworks, which takes significant effort as a community (both users
 and maintainers) and does not add value *per se*, since most of them support the same tools.
-A dozen frameworks were prototyped in Python and matured during the last decade (see :ref:`EDAA:Workflows`).
-EDA² is a proposal to bring the reusable pieces together, while preserving the unique workflows and user experience
-provided by each of them.
+In the last decade more than a dozen frameworks were prototyped in Python, EDA² is a proposal to gather the common and
+reusable components of the frameworks preserving the unique workflows and user experience of each of them.
+See a list of some of these frameworks in :ref:`EDAA:Workflows`.
 
 Context
 -------
@@ -21,12 +21,12 @@ Context
 Most of the Python frameworks to ease the usage of EDA tools were written with a desired user experience (UX) in mind.
 The typical supported workflows (use cases) are running simulations with traditional vendor tools and with open source
 tools, or running both simulation and synthesis with the same sets of HDL sources.
-That is, the design of the frameworks started from an homogeneous API (either a Python class, a CLI, and/or a configuration
+That is, the design of the frameworks started from a homogeneous API (either a Python class, a CLI, and/or a configuration
 file format and syntax) to reduce the complexity of dealing with multiple EDA tools.
 Moreover, most of them were born as in-house scripts and utilities before evolving into open source packages.
 As a result, the organisation and structure of the internals were not explicitly defined in many of those projects.
-There is significant almost exact code duplication in the community, because all of them need to deal with the
-definition of filesets, interacting with tool CLIs, processing logs/results, etc. of the same EDA tools.
+There is a non-negligible amount of almost exact code duplication in the community, because all of them need to deal
+with the definition of filesets, interacting with tool CLIs, processing logs/results, etc. of the same EDA tools.
 However, we find they all have incompatible codebases because they are based on the configuration object retrieved from
 user input; and each framework uses a diferent object format.
 
@@ -53,8 +53,9 @@ Hence, writing at most one conversion utility for each framework will allow user
 .. NOTE::
   An obvious question in this context is: `xkcd.com/927: How standards proliferate <https://xkcd.com/927/>`__.
 
-  * Providing a documented and entrypoint-agnostic Python API which supports both simulation and synthesis with either
-    traditional vendor or open source tools was discussed with the maintainers of several of the existing frameworks.
+  * It was discussed with the maintainers of several of the existing frameworks how to provide a documented and
+    entrypoint-agnostic Python API; one that supports both simulation and synthesis with either traditional vendor or
+    open source tools.
     However, for sensible reasons, some of the desired features did not fall into their immediate scope.
   * EDA²'s ProjectModel is actually based on `Paebbels/pyIPCMI: pyIPCMI/Base/Project.py <https://github.com/Paebbels/pyIPCMI/blob/master/pyIPCMI/Base/Project.py>`__.
     It was split and enhanced to make it agnostic to the internals of pyIPCMI.
@@ -68,7 +69,7 @@ Most of the projects had some declarative syntax, but were then extended to effe
 Language (DSL) allowing imperative definition of sources and targets.
 In order to avoid the maintenance burden of dealing with multiple DSLs at first, :doc:`pyEDAA.ProjectModel ➚ <projectmodel:index>`
 is defined as a Python API.
-Since the frameworks in the scope do use Python already, having it be a Python API allows either:
+Since the frameworks use Python, a Python API allows either:
 
 * A purely declarative style, as in pyFPGA.
 * An imperative style (optionally using any Python module), as in VUnit.
@@ -131,9 +132,10 @@ Some layers of EDA² are ready to be used, reviewed and improved, while others a
 
 * End-users which need integral ready-to-use solutions at the moment are encouraged to evaluate existing projects
   listed in :ref:`EDAA:Workflows`.
-* Developers who are maintaining existing workflows, in-house Python plumbing and/or evaluating the development of
-  complex workflows (probably out of reach of existing solutions), are invited to review EDA² and to engage in the
-  enhancements to make layers suit their needs.
+* Developers who are maintaining existing workflows are invited to review EDA² and to engage in the enhancements to make
+  layers suit their needs.
+  Existing workflows can be in-house plumbing and/or custom complex workflows (probably out of reach of existing
+  solutions).
 
 The following layers are usable already, and open to improvements/contributions:
 
