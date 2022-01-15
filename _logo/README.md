@@ -12,7 +12,7 @@ However, the logo is generated from scratch using a Python script (see [edaa.py]
 ## Development
 
 Python script [edaa.py](edaa.py) uses [mozman/svgwrite](https://github.com/mozman/svgwrite/) for generating the logo and
-banners in SVG format with embedded fonts (see [svgwrite.rtfd.io](https://svgwrite.rtfd.io) and [https://github.com/mozman/svgwrite/blob/master/examples/using_fonts.py](mozman/svgwrite: examples/using_fonts.py)).
+banners in SVG format with embedded fonts (see [svgwrite.rtfd.io](https://svgwrite.rtfd.io) and [mozman/svgwrite: examples/using_fonts.py](https://github.com/mozman/svgwrite/blob/master/examples/using_fonts.py)).
 Per project banners are saved to [banners/raw](banners/raw).
 
 Unfortunately, when using fonts in SVGs, it is not possible to programmatically compute the size that text needs.
