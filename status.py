@@ -1,20 +1,49 @@
-import re
 from tabulate import tabulate
 
 
 def statusTable():
-    labels = ["github", "src-license", "ghp-doc", "doc-license", "tag", "release", "date"]
+    columns = [
+        "CI:Pipeline",
+        "Code",
+        "Code:License",
+        "Documentation",
+        "Documentation:License",
+        "PyPI:Tag",
+        "PyPI:Status",
+        "PyPI:PythonVersions",
+        "Codecov:Coverage",
+        "Codacy:Coverage",
+        "Codacy:Quality",
+        "Tag",
+        "Release",
+        "Date",
+        "LibrariesIO:Status",
+        "LibrariesIO:Rank",
+        "LibrariesIO:DependentRepos",
+        "RequiresIO:Status"
+    ]
     return tabulate(
         [
-            ([prj] + [f"|SHIELD:svg:{prj}-{label}|" for label in labels])
-            for prj in ["pyVHDLModel", "pySVModel", "Reports", "IPXACT", "ProjectModel"]
+            ([prj] + [f"|SHIELD:svg:{prj}:{label}|" for label in columns])
+            for prj in [
+                "ProjectModel",
+                "pyVHDLModel",
+                "pySVModel",
+                "Reports",
+                "UCIS",
+                "IPXACT",
+                "OutputFilter",
+                "CLITool",
+                "ToolSetup",
+                "Launcher"
+            ]
         ],
         tablefmt="rst",
-        headers=["Project"] + labels
+        headers=["Project"] + [label.replace(':', ' ') for label in columns]
     )
 
 
-def createShield(identifier, alt, target, shield, attrs=None, isRaster=False):
+def createShield(alt, identifier, target, shield, attrs=None, isRaster=False):
     return f"""\
 .. |SHIELD:{'png' if isRaster else 'svg'}:{identifier}| image:: https://{'raster' if isRaster else 'img'}.shields.io/{shield}?longCache=true&style=flat-square{"" if attrs is None else f"&{attrs}"}
    :alt: {alt}
@@ -24,127 +53,172 @@ def createShield(identifier, alt, target, shield, attrs=None, isRaster=False):
 """
 
 
-def createDualShields(comment, identifier, alt, target, shield, attrs):
-    content = f".. # {comment}\n"
+def createDualShields(alt, identifier, target, shield, attrs):
+    content = f".. # {alt}\n"
     print(target)
     for isRaster in [False, True]:
-        content += createShield(identifier, alt, target, shield, attrs, isRaster)
+        content += createShield(alt, identifier, target, shield, attrs, isRaster)
     return f"{content}\n"
 
 
 def createProjectShields(
-    identifier,
     label,
-    content,
-    repoSpace,
-    repoName,
-    darkColor,
-    lightColor,
-    mainBranch,
-    pypi=None
+    identifier,
+    color,
+    repo=None,
+    mainBranch="main",
+    codacy=None
 ):
-    fullRepoName=f"{repoSpace}/{repoName}"
+    colors = [
+        ["c62828", "8e24aa", "0277bd", "558b2f", "ff8f00", "37474f"],
+        ["ef5350", "ba68c8", "29b6f6", "9ccc65", "ffca28", "78909c"],
+    ]
+    darkColor = colors[0][color]
+    lightColor = colors[1][color]
+    repoSpace = "edaa-org" if label == "pyEDAA" else label
+    repo = f"{label}.{identifier}" if repo is None else repo
+    pypi = repo
+    fullRepoName=f"{repoSpace}/{repo}"
     return createDualShields(
-        comment="Sourcecode link to GitHub",
-        identifier=f"{identifier}-github",
-        alt="Sourcecode on GitHub",
+        alt="Code on GitHub",
+        identifier=f"{identifier}:Code",
+        shield=f"badge/{label}-{identifier}-{lightColor}",
+        attrs=f"logo=github&labelColor={darkColor}",
         target=f"https://github.com/{fullRepoName}",
-        shield=f"badge/{label}-{content}-{lightColor}",
-        attrs=f"logo=github&labelColor={darkColor}"
     ) + createDualShields(
-        comment="Sourcecode license",
-        identifier=f"{identifier}-src-license",
         alt="Code license",
-        target=f"https://github.com/{fullRepoName}/blob/{mainBranch}/LICENSE.md",
+        identifier=f"{identifier}:Code:License",
         shield=f"pypi/l/{pypi}" if pypi is not None else "",
-        attrs="logo=Apache&label=code%20license",
+        attrs="logo=Apache&label=Code",
+        target=f"https://github.com/{fullRepoName}/blob/{mainBranch}/LICENSE.md",
     ) + createDualShields(
-        comment="GitHub tag",
-        identifier=f"{identifier}-tag",
-        alt="GitHub tag - latest SemVer incl. pre-release",
-        target=f"https://github.com/{fullRepoName}/tags",
-        shield=f"github/v/tag/{fullRepoName}",
-        attrs="logo=GitHub&include_prereleases"
-    ) + createDualShields(
-        comment="GitHub release",
-        identifier=f"{identifier}-release",
-        alt="GitHub release - latest SemVer incl. including pre-releases",
-        target=f"https://github.com/{fullRepoName}/releases/latest",
-        shield=f"github/v/release/{fullRepoName}",
-        attrs="logo=GitHub&include_prereleases"
-    ) + createDualShields(
-        comment="GitHub release date",
-        identifier=f"{identifier}-date",
-        alt="GitHub release date",
-        target=f"https://github.com/{fullRepoName}/releases",
-        shield=f"github/release-date/{fullRepoName}",
-        attrs="logo=GitHub"
-    ) + createDualShields(
-        comment="GHPages - read now",
-        identifier=f"{identifier}-ghp-doc",
-        alt="Documentation - Read Now!",
-        target=f"https://{repoSpace}.github.io/{repoName}",
+        alt="Documentation (GitHub Pages) - Read Now!",
+        identifier=f"{identifier}:Documentation",
         shield="website",
-        attrs=f"label={repoSpace}.github.io%2F{repoName}&logo=GitHub&logoColor=fff&up_color=blueviolet&up_message=Read%20now%20%E2%9E%9A&url=https%3A%2F%2F{repoSpace}.github.io%2F{repoName}%2Findex.html"
+        attrs=f"label={repoSpace}.github.io%2F{repo}&logo=GitHub&logoColor=fff&up_color=blueviolet&up_message=Read%20now%20%E2%9E%9A&url=https%3A%2F%2F{repoSpace}.github.io%2F{repo}%2Findex.html",
+        target=f"https://{repoSpace}.github.io/{repo}",
     ) + createDualShields(
-        comment="Documentation license",
-        identifier=f"{identifier}-doc-license",
         alt="Documentation License",
+        identifier=f"{identifier}:Documentation:License",
+        shield=f"badge/Doc-CC--BY%204.0-green",
+        attrs=f"logo=CreativeCommons&logoColor=fff",
         target=f"https://github.com/{fullRepoName}/blob/{mainBranch}/doc/Doc-License.rst",
-        shield=f"badge/doc%20license-CC--BY%204.0-green",
-        attrs=f"logo=CreativeCommons&logoColor=fff"
+    ) + createDualShields(
+        alt="GitHub Actions Pipeline",
+        identifier=f"{identifier}:CI:Pipeline",
+        shield=f"github/workflow/status/{fullRepoName}/Pipeline/{mainBranch}",
+        attrs=f"label=Pipeline&logo=GitHub%20Actions&logoColor=FFFFFF",
+        target=f"https://github.com/{fullRepoName}/actions/workflows/Pipeline.yml",
+    ) + createDualShields(
+        alt="GitHub Tag - latest SemVer incl. pre-release",
+        identifier=f"{identifier}:Tag",
+        shield=f"github/v/tag/{fullRepoName}",
+        attrs="logo=GitHub&include_prereleases",
+        target=f"https://github.com/{fullRepoName}/tags",
+    ) + createDualShields(
+        alt="GitHub Release - latest SemVer incl. including pre-releases",
+        identifier=f"{identifier}:Release",
+        shield=f"github/v/release/{fullRepoName}",
+        attrs="logo=GitHub&include_prereleases",
+        target=f"https://github.com/{fullRepoName}/releases/latest",
+    ) + createDualShields(
+        alt="GitHub Release Date",
+        identifier=f"{identifier}:Date",
+        shield=f"github/release-date/{fullRepoName}",
+        attrs="logo=GitHub",
+        target=f"https://github.com/{fullRepoName}/releases",
+    ) + createDualShields(
+        alt="PyPI - Tag",
+        identifier=f"{identifier}:PyPI:Tag",
+        shield=f"pypi/v/{pypi}",
+        attrs="logo=PyPI&logoColor=FBE072",
+        target=f"https://pypi.org/project/{pypi}",
+    ) + createDualShields(
+        alt="PyPI - Project Status",
+        identifier=f"{identifier}:PyPI:Status",
+        shield=f"pypi/status/{pypi}",
+        attrs="logo=PyPI&logoColor=FBE072",
+        target=f"https://pypi.org/project/{pypi}",
+    ) + createDualShields(
+        alt="PyPI - Python Versions",
+        identifier=f"{identifier}:PyPI:PythonVersions",
+        shield=f"pypi/pyversions/{pypi}",
+        attrs="logo=PyPI&logoColor=FBE072",
+        target=f"https://pypi.org/project/{pypi}",
+    ) + createDualShields(
+        alt="Codecov - Coverage",
+        identifier=f"{identifier}:Codecov:Coverage",
+        shield=f"codecov/c/github/{fullRepoName}",
+        attrs="logo=Codecov",
+        target=f"https://codecov.io/gh/{fullRepoName}",
+    ) + createDualShields(
+        alt="Codacy - Coverage",
+        identifier=f"{identifier}:Codacy:Coverage",
+        shield=f"codacy/coverage/{codacy}",
+        attrs="logo=codacy",
+        target=f"https://www.codacy.com/gh/{fullRepoName}",
+    ) + createDualShields(
+        alt="Codacy - Quality",
+        identifier=f"{identifier}:Codacy:Quality",
+        shield=f"codacy/grade/{codacy}",
+        attrs="logo=codacy",
+        target=f"https://www.codacy.com/gh/{fullRepoName}",
+    ) + createDualShields(
+        alt="Libraries.io - Dependencies Status",
+        identifier=f"{identifier}:LibrariesIO:Status",
+        shield=f"librariesio/release/pypi/{pypi}",
+        attrs="logo=Libraries.io&logoColor=fff",
+        target=f"https://libraries.io/github/{fullRepoName}",
+    ) + createDualShields(
+        alt="Libraries.io - Rank",
+        identifier=f"{identifier}:LibrariesIO:Rank",
+        shield=f"librariesio/sourcerank/pypi/{pypi}",
+        attrs="logo=Libraries.io&logoColor=fff",
+        target=f"https://libraries.io/github/{fullRepoName}/sourcerank",
+    ) + createDualShields(
+        alt="Libraries.io - Dependent Repos",
+        identifier=f"{identifier}:LibrariesIO:DependentRepos",
+        shield=f"librariesio/dependent-repos/pypi/{pypi}",
+        attrs="logo=Libraries.io&logoColor=fff",
+        target=f"https://github.com/{fullRepoName}/network/dependents",
+    ) + createDualShields(
+        alt="Requires.io - Status",
+        identifier=f"{identifier}:RequiresIO:Status",
+        shield=f"requires/github/{fullRepoName}",
+        attrs="",
+        target=f"https://requires.io/github/{fullRepoName}/requirements/?branch={mainBranch}",
     )
 
 
 def createAllShields():
     return createProjectShields(
-        identifier="pyVHDLModel",
-        label="VHDL",
-        content="pyVHDLModel",
-        repoSpace="VHDL",
-        repoName="pyVHDLModel",
-        darkColor="0277bd",
-        lightColor="29b6f6",
-        mainBranch="master",
-        pypi="pyVHDLModel",
+        label="pyEDAA", identifier="ProjectModel", color=1,
+        codacy="c2635df20fa840bc85639ca2fa1d9cb4"
     ) + createProjectShields(
-        identifier="pySVModel",
-        label="pyEDAA",
-        content="pySVModel",
-        repoSpace="edaa-org",
-        repoName="pySVModel",
-        darkColor="0277bd",
-        lightColor="29b6f6",
-        mainBranch="main",
-        pypi="pySVModel",
+        label="VHDL", identifier="pyVHDLModel", color=2,
+        repo="pyVHDLModel",
+        codacy="2286426d2b11417e90010427b7fed8e7"
     ) + createProjectShields(
-        identifier="Reports",
-        label="pyEDAA",
-        content="Reports",
-        repoSpace="edaa-org",
-        repoName="pyEDAA.Reports",
-        darkColor="0277bd",
-        lightColor="29b6f6",
-        mainBranch="master",
+        label="pyEDAA", identifier="pySVModel", color=2,
+        repo="pySVModel",
+        codacy="39d312bf98244961975559f141c3e000"
     ) + createProjectShields(
-        identifier="IPXACT",
-        label="pyEDAA",
-        content="IPXACT",
-        repoSpace="edaa-org",
-        repoName="pyEDAA.IPXACT",
-        darkColor="0277bd",
-        lightColor="29b6f6",
-        mainBranch="master",
+        label="pyEDAA", identifier="Reports", color=2,
     ) + createProjectShields(
-        identifier="ProjectModel",
-        label="pyEDAA",
-        content="ProjectModel",
-        repoSpace="edaa-org",
-        repoName="pyEDAA.ProjectModel",
-        darkColor="6a1b9a",
-        lightColor="ab47bc",
-        mainBranch="master",
-        pypi="pyEDAA.ProjectModel",
+        label="pyEDAA", identifier="UCIS", color=2,
+    ) + createProjectShields(
+        label="pyEDAA", identifier="IPXACT", color=2,
+        codacy="3deb3840b05b40bf935380b41074bea9"
+    ) + createProjectShields(
+        label="pyEDAA", identifier="CLITool", color=4,
+        codacy="7cc5334a04924f77ae75bbffbf48ff98"
+    ) + createProjectShields(
+        label="pyEDAA", identifier="OutputFilter", color=4,
+    ) + createProjectShields(
+        label="pyEDAA", identifier="ToolSetup", color=4,
+        codacy="2245747238a94667b25f75970b86a333"
+    ) + createProjectShields(
+        label="pyEDAA", identifier="Launcher", color=4,
     )
 
 
