@@ -9,10 +9,7 @@ Status
   similarly to `paebbels.github.io: Python Projects - Summary <https://paebbels.github.io/Content/PythonDashboard.html>`__.
   However, instead of creating the shields and tables manually, here a Python script is used (see :ghsrc:`status.py`).
 
-.. exec::
-  from status import createAllShields, statusTable
-  createAllShields()
-  statusTable()
+.. include:: Status.inc
 
 .. # pyVHDLModel
 

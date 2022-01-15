@@ -8,18 +8,24 @@ ROOT = Path(__file__).resolve().parent
 
 sys_path.insert(0, abspath('.'))
 
+from status import createShieldsAndStatusTable
 
-# ==============================================================================
-# Project information
-# ==============================================================================
+
+# -- Generate Status.inc -----------------------------------------------------------------------------------------------
+
+with (ROOT/'Status.inc').open('w') as wfptr:
+	wfptr.write(createShieldsAndStatusTable())
+
+
+# -- Project information -----------------------------------------------------------------------------------------------
+
 project =   "Electronic Design Automation Abstraction"
 copyright = "2016-2021 Patrick Lehmann, Unai Martinez-Corral and contributors"
 author =    "Patrick Lehmann"
 
 
-# ==============================================================================
-# Versioning
-# ==============================================================================
+# -- Versioning --------------------------------------------------------------------------------------------------------
+
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
 # built documents.
@@ -45,9 +51,8 @@ except:
 	pass
 
 
-# ==============================================================================
-# Miscellaneous settings
-# ==============================================================================
+# -- Miscellaneous settings --------------------------------------------------------------------------------------------
+
 # The master toctree document.
 master_doc = 'index'
 
@@ -70,9 +75,8 @@ exclude_patterns = [
 pygments_style = 'stata-dark'
 
 
-# ==============================================================================
-# Restructured Text settings
-# ==============================================================================
+# -- Restructured Text settings ----------------------------------------------------------------------------------------
+
 prologPath = "prolog.inc"
 try:
 	with open(prologPath, "r") as prologFile:
@@ -83,9 +87,7 @@ except Exception as ex:
 	rst_prolog = ""
 
 
-# ==============================================================================
-# Options for HTML output
-# ==============================================================================
+# -- Options for HTML output -------------------------------------------------------------------------------------------
 
 html_context = {}
 ctx = ROOT / 'context.json'
@@ -123,9 +125,8 @@ htmlhelp_basename = 'EDAADoc'
 html_last_updated_fmt = "%d.%m.%Y"
 
 
-# ==============================================================================
-# Options for LaTeX / PDF output
-# ==============================================================================
+# -- Options for LaTeX / PDF output ------------------------------------------------------------------------------------
+
 from textwrap import dedent
 
 latex_elements = {
@@ -170,26 +171,21 @@ latex_documents = [
 ]
 
 
-# ==============================================================================
-# Extensions
-# ==============================================================================
+# -- Extensions --------------------------------------------------------------------------------------------------------
+
 extensions = [
-# Standard Sphinx extensions
 	'sphinx.ext.extlinks',
 	'sphinx.ext.intersphinx',
 	'sphinx.ext.todo',
 	'sphinxcontrib.bibtex',
-# Local extensions
-	'exec',
 ]
 
 bibtex_default_style = 'plain'
 bibtex_bibfiles = ['refs.bib']
 
 
-# ==============================================================================
-# Sphinx.Ext.InterSphinx
-# ==============================================================================
+# -- Sphinx.Ext.InterSphinx --------------------------------------------------------------------------------------------
+
 intersphinx_mapping = {
 	'python':          ('https://docs.python.org/3', None),
 	'pytooling':       ('https://pytooling.github.io/pyTooling', None),
@@ -210,9 +206,8 @@ intersphinx_mapping = {
 }
 
 
-# ==============================================================================
-# Sphinx.Ext.ExtLinks
-# ==============================================================================
+# -- Sphinx.Ext.ExtLinks -----------------------------------------------------------------------------------------------
+
 extlinks = {
 	'ghrepo':  ('https://github.com/%s', ''),
 	'ghissue': ('https://github.com/edaa-org/edaa-org.github.io/issues/%s', 'issue #'),
@@ -222,9 +217,8 @@ extlinks = {
 }
 
 
-# ==============================================================================
-# Sphinx.Ext.ToDo
-# ==============================================================================
+# -- Sphinx.Ext.ToDo ---------------------------------------------------------------------------------------------------
+
 # If true, `todo` and `todoList` produce output, else they produce nothing.
 todo_include_todos = True
 todo_link_only = True
