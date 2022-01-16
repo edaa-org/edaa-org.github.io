@@ -204,21 +204,25 @@ def createAllShields():
         codacy="39d312bf98244961975559f141c3e000"
     ) + createProjectShields(
         label="pyEDAA", identifier="Reports", color=2,
+        codacy="f8142b422c1742bdba38e8ac1893870c"
     ) + createProjectShields(
         label="pyEDAA", identifier="UCIS", color=2,
+        codacy="63bd2bd65585447a9f6d7ad4e7d82a35"
     ) + createProjectShields(
         label="pyEDAA", identifier="IPXACT", color=2,
-        codacy="3deb3840b05b40bf935380b41074bea9"
+        codacy="c924eeffd4cc49ed9ebbbe3a89b6fa76"
     ) + createProjectShields(
         label="pyEDAA", identifier="CLITool", color=4,
         codacy="7cc5334a04924f77ae75bbffbf48ff98"
     ) + createProjectShields(
         label="pyEDAA", identifier="OutputFilter", color=4,
+        codacy="4918480c41594ffbb62f8ff98433b800"
     ) + createProjectShields(
         label="pyEDAA", identifier="ToolSetup", color=4,
         codacy="2245747238a94667b25f75970b86a333"
     ) + createProjectShields(
         label="pyEDAA", identifier="Launcher", color=4,
+        codacy="83936550d5094383bb89bb117c0abbfe"
     )
 
 
