@@ -20,7 +20,7 @@ with (ROOT/'Status.inc').open('w') as wfptr:
 # -- Project information -----------------------------------------------------------------------------------------------
 
 project =   "Electronic Design Automation Abstraction"
-copyright = "2016-2021 Patrick Lehmann, Unai Martinez-Corral and contributors"
+copyright = "2016-2022 Patrick Lehmann, Unai Martinez-Corral and contributors"
 author =    "Patrick Lehmann"
 
 
