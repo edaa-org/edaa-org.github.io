@@ -72,7 +72,6 @@ of common and not-so-popular tools in the EDA industry.
 
 .. toctree::
    :caption: Development
-   :hidden:
 
    Status
 
