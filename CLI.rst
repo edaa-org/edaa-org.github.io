@@ -41,7 +41,7 @@ Interacting with CLIs
 .. toctree::
    :hidden:
 
-   pyTooling.CLIAbstraction ✗ <https://pyTooling.github.io/pyTooling.CLIAbstraction>
+   pyTooling.CLIAbstraction ➚ <https://pyTooling.github.io/pyTooling.CLIAbstraction>
    pyEDAA.CLITool ➚ <https://edaa-org.github.io/pyEDAA.CLITool>
    pyEDAA.ToolSetup ➚ <https://edaa-org.github.io/pyEDAA.ToolSetup>
    pyEDAA.OutputFilter ➚ <https://edaa-org.github.io/pyEDAA.OutputFilter>
