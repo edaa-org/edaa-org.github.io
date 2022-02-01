@@ -49,7 +49,10 @@ can then be post-processed with filters, transformations, statistics, etc.
    :height: 80 px
    :target: https://github.com/edaa-org/pyEDAA.Launcher
 
-*TBD*
+.. TODO::
+
+   Needs a short description paragraph.
+
 
 .. toctree::
    :hidden:
