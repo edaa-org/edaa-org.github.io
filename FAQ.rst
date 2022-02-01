@@ -225,3 +225,81 @@ What do users of existing frameworks gain using EDA²?
 Existing frameworks such as FuseSoC/Edalize, VUnit or CoCoTb transitioning to using EDA² should be transparent for
 end-users, except with regard to the required python dependencies (modules).
 See :ref:`FAQ:Audience`.
+
+
+.. _FAQ:PEPs:
+
+Does EDA² comply with Python Enhancement Proposals (PEPs)?
+==========================================================
+
+Project configuration
+---------------------
+
+To avoid having multiple (maybe redundant) configuration files, using ``pyproject.toml`` as the single source of
+configuration data is preferred in EDA² modules.
+
+* `PEP 621 -- Storing project metadata in pyproject.toml <https://www.python.org/dev/peps/pep-0621/>`__
+
+Building and distribution
+-------------------------
+
+The Python build/setup infrastructure ecosystem is known to be fragmented and somehow chaotic.
+In EDA², we try to follow best practices with regard to metadata amd distribution formats.
+`pyTooling.Packaging <https://github.com/pyTooling/pyTooling/blob/main/pyTooling/Packaging/__init__.py>`__ provides
+consistency in the usage of keywords, classifiers, etc.
+Packaging is based on ``build``, `a PEP 517 compatible Python package builder <https://packaging.python.org/en/latest/key_projects/#build>`__,
+rather than ``setuptools``.
+Moreover, EDA² modules are written in Python only, so that *wheels* are usable on any platform.
+
+* `PEP 517 -- A build-system independent format for source trees <https://www.python.org/dev/peps/pep-0517>`__
+* `PEP 518 -- Specifying Minimum Build System Requirements for Python Projects <https://www.python.org/dev/peps/pep-0518>`__
+* `PEP 639 -- Improving License Clarity with Better Package Metadata <https://www.python.org/dev/peps/pep-0639>`__
+
+  * `PEP 639: Advanced example <https://www.python.org/dev/peps/pep-0639/#advanced-example>`__
+
+* `drewdevault.com: Python: Please stop screwing over Linux distros <https://drewdevault.com/2021/11/16/Python-stop-screwing-distros-over.html>`__
+
+Documentation
+-------------
+
+All public resources do have *docstrings*, which are used to generate documentation automatically through `Sphinx <https://www.sphinx-doc.org/en/master/>`__.
+Furthermore, *type hints* and inheritance diagrams are used to enhance the documentation, apart from testing the
+robustness of the codebase.
+Automatic documentation of CLI tools is handled through `pyTooling/pyAttributes <https://github.com/pyTooling/pyAttributes>`__
+(a decorator based wrapper around :mod:`python:argparse`) and :pypi:`sphinxcontrib-autoprogram` (an Sphinx extension
+which extracts documentation from `argsparse`).
+
+* `PEP 257 -- Docstring Conventions <https://www.python.org/dev/peps/pep-0257/>`__
+
+* `PEP 483 -- The Theory of Type Hints <https://www.python.org/dev/peps/pep-0483/>`__
+
+* `PEP 484 -- Type Hints <https://www.python.org/dev/peps/pep-0484/>`__
+
+Style/formatting
+----------------
+
+`Codacy <https://www.codacy.com/>`__ is used to run the following linters on the codebases:
+
+* Python
+
+  * `Bandit <https://pypi.org/project/bandit/>`__
+  * `Prospector <https://pypi.org/project/prospector/>`__
+  * `Pylint <https://pypi.org/project/pylint/>`__
+
+* Markdown
+
+  * `markdownlint <https://github.com/markdownlint/markdownlint>`__
+  * `remark-lint <https://github.com/remarkjs/remark-lint>`__
+
+Although using an uncompromising formatter is desirable, we did not find a tool which provides consistent/deterministic
+output on Python.
+When `black <https://github.com/psf/black>`__ is used as a formatter, the line-length is set to ``120`` characters
+(instead of the default ``88``) in order to reduce the impact.
+
+Style conventions with regard to identifier casing are followed loosely, since *PascalCase* is preferred over
+*snake_case*.
+That allows using underscores in order to compose identifiers, thus providing an additional visual level of abstraction.
+
+* `PEP 8 -- Style Guide for Python Code <https://www.python.org/dev/peps/pep-0008/>`__
+
+  * `lwn.net/Articles/877115: Python identifiers, PEP 8, and consistency <https://lwn.net/Articles/877115/>`__

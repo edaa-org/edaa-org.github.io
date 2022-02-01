@@ -209,11 +209,12 @@ intersphinx_mapping = {
 # -- Sphinx.Ext.ExtLinks -----------------------------------------------------------------------------------------------
 
 extlinks = {
-	'ghrepo':  ('https://github.com/%s', ''),
+	'gh':      ('https://github.com/%s', 'gh:'),
 	'ghissue': ('https://github.com/edaa-org/edaa-org.github.io/issues/%s', 'issue #'),
 	'ghpull':  ('https://github.com/edaa-org/edaa-org.github.io/pull/%s', 'pull request #'),
 	'ghsrc':   ('https://github.com/edaa-org/edaa-org.github.io/blob/main/%s', ''),
 	'awesome': ('https://hdl.github.io/awesome/items/%s', ''),
+	'pypi':    ('https://pypi.org/project/%s', 'pypi:')
 }
 
 

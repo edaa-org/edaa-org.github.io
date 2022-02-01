@@ -21,24 +21,24 @@ Its goal is the interoperability of diverse tools and languages with documented 
 
 -1 | Tools
     Development of (open source) EDA tools.
-    Organisation :ghrepo:`github.com/hdl <hdl>` contains an *awesome* list of tools: `hdl.github.io/awesome <https://hdl.github.io/awesome>`__.
+    Organisation :gh:`hdl` contains an *awesome* list of tools: `hdl.github.io/awesome <https://hdl.github.io/awesome>`__.
     Most EDA tools are developed and managed independently of EDA².
     However, since the main purpose of EDA² is easing the usage of tools, this layer represents them.
 
 0 | Installation
     Packaging and distribution of EDA tools.
-    Organisation :ghrepo:`github.com/hdl <hdl>` contains an index of packaging solutions (:ghrepo:`hdl/packages`),
-    along with :ghrepo:`hdl/smoke-tests` for packagers to test the artifacts.
+    Organisation :gh:`hdl` contains an index of packaging solutions (:gh:`hdl/packages`), along with
+    :gh:`hdl/smoke-tests` for packagers to test the artifacts.
     This layer includes the abstraction(s) for dealing with multiple versions of the tools installed in different
     locations.
 
 1 | CLI
     Abstraction of Command-Line Interface programs (independent of EDA tools).
-    May include the abstraction for running isolated tools on containers (e.g. from :ghrepo:`hdl/containers`).
+    May include the abstraction for running isolated tools on containers (e.g. from :gh:`hdl/containers`).
 
 2 | EDA
-    Interaction with EDA tools (both open source and vendors), including multiple version support, output
-    filtering, etc.
+    Interaction with EDA tools (both open source and vendors), including multiple version support, output filtering,
+    etc.
     See :doc:`reports:index`, :doc:`outputfilter:index` and :ref:`OSVB: Logging <OSVB:API:Logging>`.
 
 3 | Workflows
@@ -58,8 +58,8 @@ Its goal is the interoperability of diverse tools and languages with documented 
     See :ref:`EDAA:SyntaxModels` and :ref:`OSVB: Logging <OSVB:API:Logging:OSVR>`.
 
 6 | Project Model
-    Tool independent information (files/filesets, primary design units, testbenches, :ghrepo:`hdl/constraints`, etc.)
-    and tool specific parameters.
+    Tool independent information (files/filesets, primary design units, testbenches, :gh:`hdl/constraints`, etc.) and
+    tool specific parameters.
     See :ref:`EDAA:Configurations` and :doc:`projectmodel:index`.
 
 7 | Configuration
