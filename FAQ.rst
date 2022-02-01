@@ -247,8 +247,8 @@ The Python build/setup infrastructure ecosystem is known to be fragmented and so
 In EDA², we try to follow best practices with regard to metadata amd distribution formats.
 `pyTooling.Packaging <https://github.com/pyTooling/pyTooling/blob/main/pyTooling/Packaging/__init__.py>`__ provides
 consistency in the usage of keywords, classifiers, etc.
-Packaging is based on `build`, `a PEP 517 compatible Python package builder <https://packaging.python.org/en/latest/key_projects/#build>`__,
-rather than `setuptools`.
+Packaging is based on ``build``, `a PEP 517 compatible Python package builder <https://packaging.python.org/en/latest/key_projects/#build>`__,
+rather than ``setuptools``.
 Moreover, EDA² modules are written in Python only, so that *wheels* are usable on any platform.
 
 * `PEP 517 -- A build-system independent format for source trees <https://www.python.org/dev/peps/pep-0517>`__
