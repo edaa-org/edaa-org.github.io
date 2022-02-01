@@ -9,7 +9,7 @@ Languages and Data
    :height: 80 px
    :target: https://github.com/vhdl/pyVHDLModel
 
-``pyVHDLModel`` implement an abstract syntax model of the VHDL language. It implements a *Code Document Object Model*
+**pyVHDLModel** implement an abstract syntax model of the VHDL language. It implements a *Code Document Object Model*
 (Code DOM). Every syntax element of the VHDL language is represented by an object instance. Thus, an instance of a
 syntax model is a network of manifoldly linked objects.
 
@@ -18,7 +18,7 @@ syntax model is a network of manifoldly linked objects.
    :height: 80 px
    :target: https://github.com/edaa-org/pySVModel
 
-``pySVModel`` implement an abstract syntax model of the SystemVerilog language.
+**pySVModel** implement an abstract syntax model of the SystemVerilog language.
 
 .. note::
 
