@@ -265,8 +265,9 @@ Documentation
 All public resources do have *docstrings*, which are used to generate documentation automatically through `Sphinx <https://www.sphinx-doc.org/en/master/>`__.
 Furthermore, *type hints* and inheritance diagrams are used to enhance the documentation, apart from testing the
 robustness of the codebase.
-Automatic documentation of CLI tools is handled through `pyTooling/pyAttributes <https://github.com/pyTooling/pyAttributes>`__,
-a decorator based wrapper around :mod:`python:argparse`.
+Automatic documentation of CLI tools is handled through `pyTooling/pyAttributes <https://github.com/pyTooling/pyAttributes>`__
+(a decorator based wrapper around :mod:`python:argparse`) and :pypi:`sphinxcontrib-autoprogram` (an Sphinx extension
+which extracts documentation from `argsparse`).
 
 * `PEP 257 -- Docstring Conventions <https://www.python.org/dev/peps/pep-0257/>`__
 
