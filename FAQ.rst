@@ -238,7 +238,7 @@ Project configuration
 To avoid having multiple (maybe redundant) configuration files, using ``pyproject.toml`` as the single source of
 configuration data is preferred in EDA² modules.
 
-* `PEP 621 -- Storing project metadata in pyproject.toml <https://www.python.org/dev/peps/pep-0621/>`__
+* :PEP:`PEP 621 -- Storing project metadata in pyproject.toml <621>`
 
 Building and distribution
 -------------------------
@@ -251,11 +251,11 @@ Packaging is based on ``build``, `a PEP 517 compatible Python package builder <h
 rather than ``setuptools``.
 Moreover, EDA² modules are written in Python only, so that *wheels* are usable on any platform.
 
-* `PEP 517 -- A build-system independent format for source trees <https://www.python.org/dev/peps/pep-0517>`__
-* `PEP 518 -- Specifying Minimum Build System Requirements for Python Projects <https://www.python.org/dev/peps/pep-0518>`__
-* `PEP 639 -- Improving License Clarity with Better Package Metadata <https://www.python.org/dev/peps/pep-0639>`__
+* :PEP:`PEP 517 -- A build-system independent format for source trees <517>`
+* :PEP:`PEP 518 -- Specifying Minimum Build System Requirements for Python Projects <518>`
+* :PEP:`PEP 639 -- Improving License Clarity with Better Package Metadata <639>`
 
-  * `PEP 639: Advanced example <https://www.python.org/dev/peps/pep-0639/#advanced-example>`__
+  * :PEP:`PEP 639: Advanced example <639>`
 
 * `drewdevault.com: Python: Please stop screwing over Linux distros <https://drewdevault.com/2021/11/16/Python-stop-screwing-distros-over.html>`__
 
@@ -269,11 +269,11 @@ Automatic documentation of CLI tools is handled through `pyTooling/pyAttributes 
 (a decorator based wrapper around :mod:`python:argparse`) and :pypi:`sphinxcontrib-autoprogram` (an Sphinx extension
 which extracts documentation from `argsparse`).
 
-* `PEP 257 -- Docstring Conventions <https://www.python.org/dev/peps/pep-0257/>`__
+* :PEP:`PEP 257 -- Docstring Conventions <257>`
 
-* `PEP 483 -- The Theory of Type Hints <https://www.python.org/dev/peps/pep-0483/>`__
+* :PEP:`PEP 483 -- The Theory of Type Hints <483>`
 
-* `PEP 484 -- Type Hints <https://www.python.org/dev/peps/pep-0484/>`__
+* :PEP:`PEP 484 -- Type Hints <484>`
 
 Style/formatting
 ----------------
@@ -300,6 +300,6 @@ Style conventions with regard to identifier casing are followed loosely, since *
 *snake_case*.
 That allows using underscores in order to compose identifiers, thus providing an additional visual level of abstraction.
 
-* `PEP 8 -- Style Guide for Python Code <https://www.python.org/dev/peps/pep-0008/>`__
+* :PEP:`PEP 8 -- Style Guide for Python Code <8>`
 
-  * `lwn.net/Articles/877115: Python identifiers, PEP 8, and consistency <https://lwn.net/Articles/877115/>`__
+* `lwn.net/Articles/877115: Python identifiers, PEP 8, and consistency <https://lwn.net/Articles/877115/>`__
