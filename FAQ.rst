@@ -286,7 +286,7 @@ Style/formatting
   * `Prospector <https://pypi.org/project/prospector/>`__
   * `Pylint <https://pypi.org/project/pylint/>`__
 
-* Markdwn
+* Markdown
 
   * `markdownlint <https://github.com/markdownlint/markdownlint>`__
   * `remark-lint <https://github.com/remarkjs/remark-lint>`__
