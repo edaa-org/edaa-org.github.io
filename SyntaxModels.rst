@@ -3,31 +3,34 @@
 Languages and Data
 ##################
 
-Language Models:
+:xlarge:`Language Models`
 
 .. image:: _static/logo/pyVHDLModel.svg
    :height: 80 px
-   :align: center
    :target: https://github.com/vhdl/pyVHDLModel
 
-.. raw:: html
+``pyVHDLModel`` implement an abstract syntax model of the VHDL language. It implements a *Code Document Object Model*
+(Code DOM). Every syntax element of the VHDL language is represented by an object instance. Thus, an instance of a
+syntax model is a network of manifoldly linked objects.
 
-    <br>
 
 .. image:: _static/logo/pySVModel.svg
    :height: 80 px
-   :align: center
    :target: https://github.com/edaa-org/pySVModel
 
-.. raw:: html
+``pySVModel`` implement an abstract syntax model of the SystemVerilog language.
 
-    <br>
+.. note::
 
-Data Models:
+   This language model is a placeholder and looks for skilled contributors to implement a
+   *Code Document Object Model (Code DOM)* similar to the **pyVHDLModel**, so (System)Verilog source files can be
+   accessed as a network of Python class instances.
+
+
+:xlarge:`Data Models`
 
 .. image:: _static/logo/pyEDAA.Reports.svg
    :height: 80 px
-   :align: center
    :target: https://github.com/edaa-org/pyEDAA.Reports
 
 .. raw:: html
@@ -36,7 +39,6 @@ Data Models:
 
 .. image:: _static/logo/pyEDAA.UCIS.svg
    :height: 80 px
-   :align: center
    :target: https://github.com/edaa-org/pyEDAA.UCIS
 
 .. raw:: html
@@ -45,7 +47,6 @@ Data Models:
 
 .. image:: _static/logo/pyEDAA.IPXACT.svg
    :height: 80 px
-   :align: center
    :target: https://github.com/edaa-org/pyEDAA.IPXACT
 
 .. raw:: html
