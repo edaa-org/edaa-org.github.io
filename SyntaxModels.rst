@@ -3,61 +3,93 @@
 Languages and Data
 ##################
 
-Language Models:
+Language Models
+===============
 
-.. image:: _static/logo/pyVHDLModel.svg
-   :height: 80 px
-   :align: center
+VHDLModel
+---------
+
+.. |SHIELD:svg:VHDLModel| image:: _static/logo/pyVHDLModel.svg
+   :alt: pyVHDLModel
+   :height: 60
    :target: https://github.com/vhdl/pyVHDLModel
 
-.. raw:: html
+.. centered:: |SHIELD:svg:VHDLModel|
 
-    <br>
+`pyVHDLModel ➚ <https://vhdl.github.io/pyVHDLModel>`_ is an abstract syntax and semantic model of the Verification and
+Hardware Description Language (VHDL).
+Such a *Code Document Object Model* (Code DOM) is an strongly typed hierarchy of classes with lots of types
+cross-references.
+Every language element or feature is represented by an object instance.
+Thus, an instance of a syntax model is a in-memory representation of a VHDL code snippet or source file, as a network of
+manifoldly linked objects.
 
-.. image:: _static/logo/pySVModel.svg
-   :height: 80 px
-   :align: center
+SVModel
+-------
+
+.. |SHIELD:svg:SVModel| image:: _static/logo/pySVModel.svg
+   :alt: pySVModel
+   :height: 60
    :target: https://github.com/edaa-org/pySVModel
 
-.. raw:: html
+.. centered:: |SHIELD:svg:SVModel|
 
-    <br>
+`pySVModel ➚ <https://edaa-org.github.io/pySVModel>`_ is an abstract syntax model of the SystemVerilog language.
 
-Data Models:
+.. hint::
 
-.. image:: _static/logo/pyEDAA.Reports.svg
-   :height: 80 px
-   :align: center
+   This language model is currently a placeholder.
+   Skilled contributors are welcome to implement a *Code Document Object Model (Code DOM)* similar to the
+   :ref:`pyVHDLModel <VHDLModel>`, so (System)Verilog source files can be accessed as a network of Python class
+   instances (see `edaa-org/pySVModel#11 <https://github.com/edaa-org/pySVModel/issues/11>`_).
+
+Data Models
+===========
+
+Reports
+-------
+
+.. |SHIELD:svg:Reports| image:: _static/logo/pyEDAA.Reports.svg
+   :alt: pyEDAA.Reports
+   :height: 60
    :target: https://github.com/edaa-org/pyEDAA.Reports
 
-.. raw:: html
+.. centered:: |SHIELD:svg:Reports|
 
-    <br>
+`pyEDAA.Reports ➚ <https://edaa-org.github.io/pyEDAA.Reports>`_
 
-.. image:: _static/logo/pyEDAA.UCIS.svg
-   :height: 80 px
-   :align: center
+.. TODO::
+
+   Needs a short description paragraph.
+
+UCIS
+----
+
+.. |SHIELD:svg:UCIS| image:: _static/logo/pyEDAA.UCIS.svg
+   :alt: pyEDAA.UCIS
+   :height: 60
    :target: https://github.com/edaa-org/pyEDAA.UCIS
 
-.. raw:: html
+.. centered:: |SHIELD:svg:UCIS|
 
-    <br>
+`pyEDAA.UCIS ➚ <https://edaa-org.github.io/pyEDAA.UCIS>`_
 
-.. image:: _static/logo/pyEDAA.IPXACT.svg
-   :height: 80 px
-   :align: center
+.. TODO::
+
+   Needs a short description paragraph.
+
+IPXACT
+------
+
+.. |SHIELD:svg:IPXACT| image:: _static/logo/pyEDAA.IPXACT.svg
+   :alt: pyEDAA.IPXACT
+   :height: 60
    :target: https://github.com/edaa-org/pyEDAA.IPXACT
 
-.. raw:: html
+.. centered:: |SHIELD:svg:IPXACT|
 
-    <br>
+`pyEDAA.IPXACT ➚ <https://edaa-org.github.io/pyEDAA.IPXACT>`_
 
+.. TODO::
 
-.. toctree::
-   :hidden:
-
-   pyVHDLModel ➚ <https://vhdl.github.io/pyVHDLModel>
-   pySVModel ➚ <https://edaa-org.github.io/pySVModel>
-   pyEDAA.Reports ➚ <https://edaa-org.github.io/pyEDAA.Reports>
-   pyEDAA.UCIS ➚ <https://edaa-org.github.io/pyEDAA.UCIS>
-   pyEDAA.IPXACT ➚ <https://edaa-org.github.io/pyEDAA.IPXACT>
+   Needs a short description paragraph.
