@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Conceptual Model &mdash; Electronic Design Automation Abstraction latest documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="_static/theme_overrides.css" type="text/css" />
+    <link rel="shortcut icon" href="_static/edaa.svg"/>
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Context" href="Context.html" />
+    <link rel="prev" title="Electronic Design Automation Abstraction (EDA²) Documentation" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html">
+            <img src="_static/edaa_banner_white.svg" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                latest
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Introduction</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Conceptual Model</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Context.html">Context</a></li>
+<li class="toctree-l1"><a class="reference internal" href="FAQ.html">Frequently Asked Questions (FAQ)</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Layers</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Configurations.html">Projects and Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SyntaxModels.html">Languages and Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="workflows/index.html">Workflows and integration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="CLI.html">Interacting with CLIs</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Development</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Status.html">Status</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Appendix</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="References.html">References</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Electronic Design Automation Abstraction</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+        
+          
+            <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Conceptual Model</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/edaa-org/edaa-org.github.io/blob/main//ConceptualModel.rst" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <style type="text/css">
+  span.bolditalic {font-weight: bold; font-style: italic; }
+  span.underline {text-decoration: underline; }
+  span.xlarge {font-size: x-large; }
+</style><section id="conceptual-model">
+<span id="edaa-concept"></span><h1>Conceptual Model<a class="headerlink" href="#conceptual-model" title="Permalink to this headline">¶</a></h1>
+<p>EDA² is a conceptual model for characterising the abstraction layers in Electronic Design Automation projects based on
+Hardware Description Languages (HDLs).
+Its goal is the interoperability of diverse tools and languages with documented APIs.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>This conceptual model is not meant to be an isolated full-stack, but each of the layers is to be useful and (re)usable.
+In fact, it is still being enhanced and reworked, so the naming and specific scope of the layers should be taken with
+a grain of salt.</p>
+</div>
+<figure class="align-center" id="id1">
+<a class="reference internal image-reference" href="_images/model.png"><img alt="Abstraction layers." src="_images/model.png" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-text">Layers of the EDA² conceptual model.</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+<dl class="simple">
+<dt>-1 | Tools</dt><dd><p>Development of (open source) EDA tools.
+Organisation <a class="reference external" href="https://github.com/hdl">gh:hdl</a> contains an <em>awesome</em> list of tools: <a class="reference external" href="https://hdl.github.io/awesome">hdl.github.io/awesome</a>.
+Most EDA tools are developed and managed independently of EDA².
+However, since the main purpose of EDA² is easing the usage of tools, this layer represents them.</p>
+</dd>
+<dt>0 | Installation</dt><dd><p>Packaging and distribution of EDA tools.
+Organisation <a class="reference external" href="https://github.com/hdl">gh:hdl</a> contains an index of packaging solutions (<a class="reference external" href="https://github.com/hdl/packages">gh:hdl/packages</a>), along with
+<a class="reference external" href="https://github.com/hdl/smoke-tests">gh:hdl/smoke-tests</a> for packagers to test the artifacts.
+This layer includes the abstraction(s) for dealing with multiple versions of the tools installed in different
+locations.</p>
+</dd>
+<dt>1 | CLI</dt><dd><p>Abstraction of Command-Line Interface programs (independent of EDA tools).
+May include the abstraction for running isolated tools on containers (e.g. from <a class="reference external" href="https://github.com/hdl/containers">gh:hdl/containers</a>).</p>
+</dd>
+<dt>2 | EDA</dt><dd><p>Interaction with EDA tools (both open source and vendors), including multiple version support, output filtering,
+etc.
+See <a class="reference external" href="https://edaa-org.github.io/pyEDAA.Reports/index.html" title="(in pyEDAA.Reports v0.1)"><span>The pyEDAA.Reports Documentation</span></a>, <a class="reference external" href="https://edaa-org.github.io/pyEDAA.OutputFilter/index.html" title="(in pyEDAA.OutputFilter vlatest)"><span>The pyEDAA.OutputFilter Documentation</span></a> and <a class="reference external" href="https://umarcor.github.io/osvb/apis/logging.html#api-logging" title="(in Open Source Verification Bundle vlatest)"><span class="xref std std-ref">OSVB: Logging</span></a>.</p>
+</dd>
+<dt>3 | Workflows</dt><dd><p>Middle layer to translate projects into execution steps (EDA and/or CLI).
+See <a class="reference internal" href="workflows/index.html#edaa-workflows"><span class="std std-ref">Workflows and integration</span></a>, <a class="reference external" href="https://umarcor.github.io/osvb/apis/tool.html#api-tool" title="(in Open Source Verification Bundle vlatest)"><span class="xref std std-ref">OSVB: Tool</span></a> and <a class="reference external" href="https://umarcor.github.io/osvb/apis/runner.html#api-runner" title="(in Open Source Verification Bundle vlatest)"><span class="xref std std-ref">OSVB: Runner</span></a>.</p>
+</dd>
+<dt>4 | Language Model</dt><dd><p>Syntax and Document Object Model (DOM) of the imperative and parallel language(s) such as VHDL and System Verilog.
+See:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://vhdl.github.io/pyVHDLModel/index.html" title="(in pyVHDLModel v0.14)"><span>The pyVHDLModel Documentation</span></a></p></li>
+<li><p><a class="reference external" href="https://edaa-org.github.io/pySVModel/index.html" title="(in pySVModel v0.3)"><span>The pySVModel Documentation</span></a></p></li>
+<li><p><a class="reference external" href="https://umarcor.github.io/osvb/apis/project/pyVHDLModelUtils.html#api-project-pyvhdlmodelutils" title="(in Open Source Verification Bundle vlatest)"><span class="xref std std-ref">OSVB: pyVHDLModelUtils</span></a>.</p></li>
+</ul>
+</dd>
+<dt>5 | Data Model</dt><dd><p>IP-XACT, UCIS, XUnit, Cobertura,… imported from or exported into structured files such as JSON, XML, TOML/INI, YAML,…
+See <a class="reference internal" href="SyntaxModels.html#edaa-syntaxmodels"><span class="std std-ref">Languages and Data</span></a> and <a class="reference external" href="https://umarcor.github.io/osvb/apis/logging.html#api-logging-osvr" title="(in Open Source Verification Bundle vlatest)"><span class="xref std std-ref">OSVB: Logging</span></a>.</p>
+</dd>
+<dt>6 | Project Model</dt><dd><p>Tool independent information (files/filesets, primary design units, testbenches, <a class="reference external" href="https://github.com/hdl/constraints">gh:hdl/constraints</a>, etc.) and
+tool specific parameters.
+See <a class="reference internal" href="Configurations.html#edaa-configurations"><span class="std std-ref">Projects and Configuration</span></a> and <a class="reference external" href="https://edaa-org.github.io/pyEDAA.ProjectModel/index.html" title="(in pyEDAA.ProjectModel v0.4)"><span>The pyEDAA.ProjectModel Documentation</span></a>.</p>
+</dd>
+<dt>7 | Configuration</dt><dd><p>INI/JSON/YAML format for providing the sources and constraints data used in Workflow and/or Project through files,
+instead of using the APIs.
+See <a class="reference external" href="https://umarcor.github.io/osvb/apis/core.html#api-core" title="(in Open Source Verification Bundle vlatest)"><span class="xref std std-ref">OSVB: Core</span></a>.</p>
+</dd>
+<dt>8 | Web</dt><dd><p>Web API wrapping the previous layers.</p>
+</dd>
+<dt>9 | GUI</dt><dd><p>Visual frontend to the web API or to the previous layers.
+See <a class="reference external" href="https://umarcor.github.io/osvb/apis/project/OSVDE.html#api-project-osvde" title="(in Open Source Verification Bundle vlatest)"><span class="xref std std-ref">OSVB: Open Source VHDL Design Explorer (OSVDE)</span></a>.</p>
+</dd>
+</dl>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="index.html" class="btn btn-neutral float-left" title="Electronic Design Automation Abstraction (EDA²) Documentation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="Context.html" class="btn btn-neutral float-right" title="Context" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2016-2022 Patrick Lehmann, Unai Martinez-Corral and contributors.
+      <span class="lastupdated">Last updated on 03.03.2022.
+      </span></p>
+  </div>Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/buildthedocs/sphinx.theme">theme</a>
+    provided by <a href="https://buildthedocs.github.io">Build the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

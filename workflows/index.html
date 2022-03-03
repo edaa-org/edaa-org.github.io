@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Workflows and integration &mdash; Electronic Design Automation Abstraction latest documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/theme_overrides.css" type="text/css" />
+    <link rel="shortcut icon" href="../_static/edaa.svg"/>
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="CoCoTb" href="CoCoTb.html" />
+    <link rel="prev" title="Languages and Data" href="../SyntaxModels.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html">
+            <img src="../_static/edaa_banner_white.svg" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                latest
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Introduction</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../ConceptualModel.html">Conceptual Model</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Context.html">Context</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../FAQ.html">Frequently Asked Questions (FAQ)</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Layers</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../Configurations.html">Projects and Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../SyntaxModels.html">Languages and Data</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Workflows and integration</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="CoCoTb.html">CoCoTb</a></li>
+<li class="toctree-l2"><a class="reference internal" href="FuseSoCEdalize.html">FuseSoC and Edalize</a></li>
+<li class="toctree-l2"><a class="reference internal" href="legoHDL.html">legoHDL</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PyFPGA.html">PyFPGA</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pyIPCMI.html">pyIPCMI</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SiliconCompiler.html">SiliconCompiler</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SymbiFlow.html">SymbiFlow</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tsfpga.html">tsfpga</a></li>
+<li class="toctree-l2"><a class="reference internal" href="VUnit.html">VUnit</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Xeda.html">Xeda</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../CLI.html">Interacting with CLIs</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Development</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Status.html">Status</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Appendix</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../References.html">References</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Electronic Design Automation Abstraction</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+        
+          
+            <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Workflows and integration</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/edaa-org/edaa-org.github.io/blob/main//workflows/index.rst" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <style type="text/css">
+  span.bolditalic {font-weight: bold; font-style: italic; }
+  span.underline {text-decoration: underline; }
+  span.xlarge {font-size: x-large; }
+</style><section id="workflows-and-integration">
+<span id="edaa-workflows"></span><h1>Workflows and integration<a class="headerlink" href="#workflows-and-integration" title="Permalink to this headline">¶</a></h1>
+<p>The following projects are all written in Python and were all created and developed during the last decade:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://hdl.github.io/awesome/items/cocotb">CoCoTb</a> (2013)</p></li>
+<li><p><a class="reference external" href="https://hdl.github.io/awesome/items/poc">Pile of Cores Library (PoC)</a> (2014)</p></li>
+<li><p><a class="reference external" href="https://hdl.github.io/awesome/items/vunit">VUnit</a> (2014)</p></li>
+<li><p><a class="reference external" href="https://hdl.github.io/awesome/items/symbiflow">SymbiFlow</a> (2017)</p></li>
+<li><p><a class="reference external" href="https://hdl.github.io/awesome/items/edalize">Edalize</a> (2018), split from <a class="reference external" href="https://hdl.github.io/awesome/items/fusesoc">FuseSoC</a> (2011)</p></li>
+<li><p><a class="reference external" href="https://hdl.github.io/awesome/items/tsfpga">tsfpga</a> (2018)</p></li>
+<li><p><a class="reference external" href="https://hdl.github.io/awesome/items/pyfpga">pyFPGA</a> (2019), based on fpga_helpers (2015)</p></li>
+<li><p><a class="reference external" href="https://hdl.github.io/awesome/items/xeda">Xeda</a> (2020)</p></li>
+<li><p><a class="reference external" href="https://hdl.github.io/awesome/items/siliconcompiler">SiliconCompiler</a> (2021)</p></li>
+<li><p><a class="reference external" href="https://hdl.github.io/awesome/items/legohdl">legoHDL</a> (2021)</p></li>
+</ul>
+<p>All of them implement multiple of the layers in the EDAA Model, however, most of them were not written with reusabillity
+in mind.
+Hopefully, maintainers of those projects will be willing to isolate the reusable pieces of their codebases, so they can
+focus their effort on the features unique to their solution.
+The following is our wishlist:</p>
+<ul class="simple">
+<li><p>CoCoTb (to be analysed yet)</p></li>
+<li><p>PoC/pyIPCMI</p>
+<ul>
+<li><p>Abstraction for EDA tool tasks.</p></li>
+<li><p>Abstraction for post-processing the logs.</p></li>
+<li><p>Abstraction of a Project.</p></li>
+</ul>
+</li>
+<li><p>VUnit</p>
+<ul>
+<li><p>Switching simulator with an environment variable.</p></li>
+<li><p>Wildcards support and as-easy-as-possible API for defining filesets (sources, libs, etc.).</p></li>
+<li><p>Dependency scanning and incremental compilation.</p>
+<ul>
+<li><p>Dependency scanning features might be provided by pyVHDLModelUtils, instead of having it implemented in VUnit’s
+codebase.</p></li>
+</ul>
+</li>
+<li><p>Integration between Python and the HDL runner.</p>
+<ul>
+<li><p>Interpretation of what a success/failure is (specific for each VHDL revision).</p></li>
+<li><p>Definition of multiple tests in VHDL and management of which to execute.</p></li>
+<li><p>Complex generics, JSON-for-VHDL, configurations, etc.</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>FuseSoC/Edalize</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">.core</span></code> file format and all the projects which use it already.</p></li>
+<li><p>Specific know-how about the less mainstream toolchains.</p></li>
+<li><p>Support for fine-grained containers.</p></li>
+</ul>
+</li>
+<li><p>SymbiFlow (to be analysed yet)</p></li>
+<li><p>tsfpga (to be analysed yet)</p></li>
+<li><p>pyFPGA</p>
+<ul>
+<li><p>Similarly to fusesoc/edalize, specific know-how about some toolchains/flows and support for fine-grained containers.</p></li>
+<li><p>Easy Python API for defining the sources, libs, targets, etc. for synthesis.</p></li>
+</ul>
+</li>
+<li><p>Xeda (to be analysed yet)</p></li>
+<li><p>SiliconCompiler (to be analysed yet)</p></li>
+<li><p>legoHDL (to be analysed yet)</p></li>
+</ul>
+<div class="toctree-wrapper compound">
+</div>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../SyntaxModels.html" class="btn btn-neutral float-left" title="Languages and Data" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="CoCoTb.html" class="btn btn-neutral float-right" title="CoCoTb" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2016-2022 Patrick Lehmann, Unai Martinez-Corral and contributors.
+      <span class="lastupdated">Last updated on 03.03.2022.
+      </span></p>
+  </div>Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/buildthedocs/sphinx.theme">theme</a>
+    provided by <a href="https://buildthedocs.github.io">Build the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

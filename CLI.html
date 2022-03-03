@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Interacting with CLIs &mdash; Electronic Design Automation Abstraction latest documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="_static/theme_overrides.css" type="text/css" />
+    <link rel="shortcut icon" href="_static/edaa.svg"/>
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Status" href="Status.html" />
+    <link rel="prev" title="Xeda" href="workflows/Xeda.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html">
+            <img src="_static/edaa_banner_white.svg" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                latest
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Introduction</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="ConceptualModel.html">Conceptual Model</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Context.html">Context</a></li>
+<li class="toctree-l1"><a class="reference internal" href="FAQ.html">Frequently Asked Questions (FAQ)</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Layers</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="Configurations.html">Projects and Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SyntaxModels.html">Languages and Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="workflows/index.html">Workflows and integration</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Interacting with CLIs</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#cliabstraction">CLIAbstraction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#clitool">CLITool</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#toolsetup">ToolSetup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#outputfilter">OutputFilter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#launcher">Launcher</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Development</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Status.html">Status</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Appendix</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="References.html">References</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Electronic Design Automation Abstraction</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+        
+          
+            <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Interacting with CLIs</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/edaa-org/edaa-org.github.io/blob/main//CLI.rst" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <style type="text/css">
+  span.bolditalic {font-weight: bold; font-style: italic; }
+  span.underline {text-decoration: underline; }
+  span.xlarge {font-size: x-large; }
+</style><section id="interacting-with-clis">
+<span id="edaa-cli"></span><h1>Interacting with CLIs<a class="headerlink" href="#interacting-with-clis" title="Permalink to this headline">¶</a></h1>
+<section id="cliabstraction">
+<h2>CLIAbstraction<a class="headerlink" href="#cliabstraction" title="Permalink to this headline">¶</a></h2>
+<p class="centered">
+<strong><a class="reference external" href="https://github.com/pyTooling/pyTooling.CLIAbstraction"><img alt="pyTooling.CLIAbstraction" height="60" src="_images/pyTooling.CLIAbstraction.svg" /></a></strong></p><p><a class="reference external" href="https://pyTooling.github.io/pyTooling.CLIAbstraction">pyTooling.CLIAbstraction ➚</a> is an abstraction of command line programs written in Python, so <em>command line interfaces</em>
+(CLIs) are accessible as Python classes. The abstraction offers an easy to use API to define possible program options as
+typed fields on a class. When such an abstracted program is executed, it takes care of assembling CLI options in the
+right order, with correct parameter value formatting and escaping if needed. It also takes care of calling
+<code class="docutils literal notranslate"><span class="pre">subprocess.run(...)</span></code> appropriately as well as handling outputs as realtime streamed data for post-processing.</p>
+</section>
+<section id="clitool">
+<h2>CLITool<a class="headerlink" href="#clitool" title="Permalink to this headline">¶</a></h2>
+<p class="centered">
+<strong><a class="reference external" href="https://github.com/edaa-org/pyEDAA.CLITool"><img alt="pyEDAA.CLITool" height="60" src="_images/pyEDAA.CLITool.svg" /></a></strong></p><p><a class="reference external" href="https://edaa-org.github.io/pyEDAA.CLITool">pyEDAA.CLITool ➚</a> is collection of EDA tool’s CLI program abstractions using <strong>pyTooling.CLIAbstraction</strong>. Open source
+tools as well as commercial tools are supported. When the abstracted executable is launched, it’s either searched in
+<code class="docutils literal notranslate"><span class="pre">PATH</span></code> or a path to the binary directory of the tools needs to be specified. The latter can be provided by
+<strong>pyEDAA.ToolSetup</strong>.</p>
+</section>
+<section id="toolsetup">
+<h2>ToolSetup<a class="headerlink" href="#toolsetup" title="Permalink to this headline">¶</a></h2>
+<p class="centered">
+<strong><a class="reference external" href="https://github.com/edaa-org/pyEDAA.ToolSetup"><img alt="pyEDAA.ToolSetup" height="60" src="_images/pyEDAA.ToolSetup.svg" /></a></strong></p><p><a class="reference external" href="https://edaa-org.github.io/pyEDAA.ToolSetup">pyEDAA.ToolSetup ➚</a> offers a generalized data structure where to find a specific EDA tool on a local machine and how
+that tool installation is configured. In addition, it can find various tool installation on a machine and manage an
+inventory of all EDA tools, their versions and variants, even when an EDA tool was installed multiple times in parallel.
+The inventory is offering an API to be accessible by any 3<sup>rd</sup>-party Python code for reading and/or modifying
+that inventory. The inventory storage format can be any dictionary-like data structure. Inventories can be created,
+managed and stored per machine, user account or EDA project (directory).</p>
+</section>
+<section id="outputfilter">
+<h2>OutputFilter<a class="headerlink" href="#outputfilter" title="Permalink to this headline">¶</a></h2>
+<p class="centered">
+<strong><a class="reference external" href="https://github.com/edaa-org/pyEDAA.OutputFilter"><img alt="pyEDAA.OutputFilter" height="60" src="_images/pyEDAA.OutputFilter.svg" /></a></strong></p><p><a class="reference external" href="https://edaa-org.github.io/pyEDAA.OutputFilter">pyEDAA.OutputFilter ➚</a> takes a stream of text lines (command line log) from EDA tool’s CLI programs and translates them
+into a stream of structured data. Each text line is classified and decomposed into individual data fields. This stream
+can then be post-processed with filters, transformations, statistics, etc.</p>
+</section>
+<section id="launcher">
+<h2>Launcher<a class="headerlink" href="#launcher" title="Permalink to this headline">¶</a></h2>
+<p class="centered">
+<strong><a class="reference external" href="https://github.com/edaa-org/pyEDAA.Launcher"><img alt="pyEDAA.Launcher" height="60" src="_images/pyEDAA.Launcher.svg" /></a></strong></p><p><a class="reference external" href="https://edaa-org.github.io/pyEDAA.Launcher">pyEDAA.Launcher ➚</a></p>
+<div class="admonition-todo admonition" id="id1">
+<p class="admonition-title">Todo</p>
+<p>Needs a short description paragraph.</p>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="workflows/Xeda.html" class="btn btn-neutral float-left" title="Xeda" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="Status.html" class="btn btn-neutral float-right" title="Status" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2016-2022 Patrick Lehmann, Unai Martinez-Corral and contributors.
+      <span class="lastupdated">Last updated on 03.03.2022.
+      </span></p>
+  </div>Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/buildthedocs/sphinx.theme">theme</a>
+    provided by <a href="https://buildthedocs.github.io">Build the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

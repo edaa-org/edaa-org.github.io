@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Status &mdash; Electronic Design Automation Abstraction latest documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="_static/theme_overrides.css" type="text/css" />
+    <link rel="shortcut icon" href="_static/edaa.svg"/>
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="References" href="References.html" />
+    <link rel="prev" title="Interacting with CLIs" href="CLI.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html">
+            <img src="_static/edaa_banner_white.svg" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                latest
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Introduction</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="ConceptualModel.html">Conceptual Model</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Context.html">Context</a></li>
+<li class="toctree-l1"><a class="reference internal" href="FAQ.html">Frequently Asked Questions (FAQ)</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Layers</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Configurations.html">Projects and Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SyntaxModels.html">Languages and Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="workflows/index.html">Workflows and integration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="CLI.html">Interacting with CLIs</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Development</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Status</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Appendix</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="References.html">References</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Electronic Design Automation Abstraction</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+        
+          
+            <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Status</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/edaa-org/edaa-org.github.io/blob/main//Status.rst" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <style type="text/css">
+  span.bolditalic {font-weight: bold; font-style: italic; }
+  span.underline {text-decoration: underline; }
+  span.xlarge {font-size: x-large; }
+</style><section id="status">
+<span id="edaa-dev-status"></span><h1>Status<a class="headerlink" href="#status" title="Permalink to this headline">¶</a></h1>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This section is work in progress!
+The purpose is to create a summary of the metadata and status of each of the modules in the ecosystem,
+similarly to <a class="reference external" href="https://paebbels.github.io/Content/PythonDashboard.html">paebbels.github.io: Python Projects - Summary</a>.
+However, instead of creating the shields and tables manually, here a Python script is used (see <a class="reference external" href="https://github.com/edaa-org/edaa-org.github.io/blob/main/status.py">status.py</a>).</p>
+</div>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 1%" />
+<col style="width: 4%" />
+<col style="width: 3%" />
+<col style="width: 4%" />
+<col style="width: 4%" />
+<col style="width: 5%" />
+<col style="width: 4%" />
+<col style="width: 4%" />
+<col style="width: 5%" />
+<col style="width: 5%" />
+<col style="width: 4%" />
+<col style="width: 4%" />
+<col style="width: 3%" />
+<col style="width: 4%" />
+<col style="width: 3%" />
+<col style="width: 5%" />
+<col style="width: 4%" />
+<col style="width: 5%" />
+<col style="width: 4%" />
+<col style="width: 4%" />
+<col style="width: 5%" />
+<col style="width: 5%" />
+<col style="width: 6%" />
+<col style="width: 5%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Project</p></th>
+<th class="head"><p>CI Pipeline</p></th>
+<th class="head"><p>Code</p></th>
+<th class="head"><p>Code License</p></th>
+<th class="head"><p>Documentation</p></th>
+<th class="head"><p>Documentation License</p></th>
+<th class="head"><p>PyPI Tag</p></th>
+<th class="head"><p>PyPI Status</p></th>
+<th class="head"><p>PyPI PythonVersions</p></th>
+<th class="head"><p>Codecov Coverage</p></th>
+<th class="head"><p>Codacy Coverage</p></th>
+<th class="head"><p>Codacy Quality</p></th>
+<th class="head"><p>Tag</p></th>
+<th class="head"><p>Release</p></th>
+<th class="head"><p>Date</p></th>
+<th class="head"><p>GitHub CommitsSinceLatest</p></th>
+<th class="head"><p>GitHub Stars</p></th>
+<th class="head"><p>GitHub Contributors</p></th>
+<th class="head"><p>GitHub Watchers</p></th>
+<th class="head"><p>GitHub Forks</p></th>
+<th class="head"><p>LibrariesIO Status</p></th>
+<th class="head"><p>LibrariesIO Rank</p></th>
+<th class="head"><p>LibrariesIO DependentRepos</p></th>
+<th class="head"><p>RequiresIO Status</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>ProjectModel</p></td>
+<td><p><a class="reference external" href="https://github.com/edaa-org/pyEDAA.ProjectModel/actions/workflows/Pipeline.yml"><img alt="GitHub Actions Pipeline" class="shield" src="https://img.shields.io/github/workflow/status/edaa-org/pyEDAA.ProjectModel/Pipeline/main?longCache=true&amp;style=flat-square&amp;label=Pipeline&amp;logo=GitHub%20Actions&amp;logoColor=FFFFFF" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/edaa-org/pyEDAA.ProjectModel"><img alt="Code on GitHub" class="shield" src="https://img.shields.io/badge/pyEDAA-ProjectModel-ba68c8?longCache=true&amp;style=flat-square&amp;logo=github&amp;labelColor=8e24aa" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/edaa-org/pyEDAA.ProjectModel/blob/main/LICENSE.md"><img alt="Code license" class="shield" src="https://img.shields.io/pypi/l/pyEDAA.ProjectModel?longCache=true&amp;style=flat-square&amp;logo=Apache&amp;label=Code" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://edaa-org.github.io/pyEDAA.ProjectModel"><img alt="Documentation (GitHub Pages) - Read Now!" class="shield" src="https://img.shields.io/website?longCache=true&amp;style=flat-square&amp;label=edaa-org.github.io%2FpyEDAA.ProjectModel&amp;logo=GitHub&amp;logoColor=fff&amp;up_color=blueviolet&amp;up_message=Read%20now%20%E2%9E%9A&amp;url=https%3A%2F%2Fedaa-org.github.io%2FpyEDAA.ProjectModel%2Findex.html" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/edaa-org/pyEDAA.ProjectModel/blob/main/doc/Doc-License.rst"><img alt="Documentation License" class="shield" src="https://img.shields.io/badge/Doc-CC--BY%204.0-green?longCache=true&amp;style=flat-square&amp;logo=CreativeCommons&amp;logoColor=fff" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://pypi.org/project/pyEDAA.ProjectModel"><img alt="PyPI - Tag" class="shield" src="https://img.shields.io/pypi/v/pyEDAA.ProjectModel?longCache=true&amp;style=flat-square&amp;logo=PyPI&amp;logoColor=FBE072" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://pypi.org/project/pyEDAA.ProjectModel"><img alt="PyPI - Project Status" class="shield" src="https://img.shields.io/pypi/status/pyEDAA.ProjectModel?longCache=true&amp;style=flat-square&amp;logo=PyPI&amp;logoColor=FBE072" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://pypi.org/project/pyEDAA.ProjectModel"><img alt="PyPI - Python Versions" class="shield" src="https://img.shields.io/pypi/pyversions/pyEDAA.ProjectModel?longCache=true&amp;style=flat-square&amp;logo=PyPI&amp;logoColor=FBE072" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://codecov.io/gh/edaa-org/pyEDAA.ProjectModel"><img alt="Codecov - Coverage" class="shield" src="https://img.shields.io/codecov/c/github/edaa-org/pyEDAA.ProjectModel?longCache=true&amp;style=flat-square&amp;logo=Codecov" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://www.codacy.com/gh/edaa-org/pyEDAA.ProjectModel"><img alt="Codacy - Coverage" class="shield" src="https://img.shields.io/codacy/coverage/c2635df20fa840bc85639ca2fa1d9cb4?longCache=true&amp;style=flat-square&amp;logo=codacy" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://www.codacy.com/gh/edaa-org/pyEDAA.ProjectModel"><img alt="Codacy - Quality" class="shield" src="https://img.shields.io/codacy/grade/c2635df20fa840bc85639ca2fa1d9cb4?longCache=true&amp;style=flat-square&amp;logo=codacy" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/edaa-org/pyEDAA.ProjectModel/tags"><img alt="GitHub Tag - latest SemVer incl. pre-release" class="shield" src="https://img.shields.io/github/v/tag/edaa-org/pyEDAA.ProjectModel?longCache=true&amp;style=flat-square&amp;logo=GitHub&amp;include_prereleases" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/edaa-org/pyEDAA.ProjectModel/releases/latest"><img alt="GitHub Release - latest SemVer incl. including pre-releases" class="shield" src="https://img.shields.io/github/v/release/edaa-org/pyEDAA.ProjectModel?longCache=true&amp;style=flat-square&amp;logo=GitHub&amp;include_prereleases" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/edaa-org/pyEDAA.ProjectModel/releases"><img alt="GitHub Release Date" class="shield" src="https://img.shields.io/github/release-date/edaa-org/pyEDAA.ProjectModel?longCache=true&amp;style=flat-square&amp;logo=GitHub" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/edaa-org/pyEDAA.ProjectModel/commits"><img alt="GitHub - Commits to branch 'dev' since latest" class="shield" src="https://img.shields.io/github/commits-since/edaa-org/pyEDAA.ProjectModel/latest/dev?longCache=true&amp;style=flat-square&amp;logo=GitHub" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/edaa-org/pyEDAA.ProjectModel/stargazers"><img alt="GitHub - Stars" class="shield" src="https://img.shields.io/github/stars/edaa-org/pyEDAA.ProjectModel?longCache=true&amp;style=flat-square&amp;logo=GitHub" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/edaa-org/pyEDAA.ProjectModel/graphs/contributors"><img alt="GitHub - Contributors" class="shield" src="https://img.shields.io/github/contributors/edaa-org/pyEDAA.ProjectModel?longCache=true&amp;style=flat-square&amp;logo=GitHub" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/edaa-org/pyEDAA.ProjectModel/watchers"><img alt="GitHub - Watchers" class="shield" src="https://img.shields.io/github/watchers/edaa-org/pyEDAA.ProjectModel?longCache=true&amp;style=flat-square&amp;logo=GitHub" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/edaa-org/pyEDAA.ProjectModel/network/members"><img alt="GitHub - Forks" class="shield" src="https://img.shields.io/github/forks/edaa-org/pyEDAA.ProjectModel?longCache=true&amp;style=flat-square&amp;logo=GitHub" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://libraries.io/github/edaa-org/pyEDAA.ProjectModel"><img alt="Libraries.io - Dependencies Status" class="shield" src="https://img.shields.io/librariesio/release/pypi/pyEDAA.ProjectModel?longCache=true&amp;style=flat-square&amp;logo=Libraries.io&amp;logoColor=fff" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://libraries.io/github/edaa-org/pyEDAA.ProjectModel/sourcerank"><img alt="Libraries.io - Rank" class="shield" src="https://img.shields.io/librariesio/sourcerank/pypi/pyEDAA.ProjectModel?longCache=true&amp;style=flat-square&amp;logo=Libraries.io&amp;logoColor=fff" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/edaa-org/pyEDAA.ProjectModel/network/dependents"><img alt="Libraries.io - Dependent Repos" class="shield" src="https://img.shields.io/librariesio/dependent-repos/pypi/pyEDAA.ProjectModel?longCache=true&amp;style=flat-square&amp;logo=Libraries.io&amp;logoColor=fff" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://requires.io/github/edaa-org/pyEDAA.ProjectModel/requirements/?branch=main"><img alt="Requires.io - Status" class="shield" src="https://img.shields.io/requires/github/edaa-org/pyEDAA.ProjectModel?longCache=true&amp;style=flat-square&amp;" style="height: 22px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>pyVHDLModel</p></td>
+<td><p><a class="reference external" href="https://github.com/VHDL/pyVHDLModel/actions/workflows/Pipeline.yml"><img alt="GitHub Actions Pipeline" class="shield" src="https://img.shields.io/github/workflow/status/VHDL/pyVHDLModel/Pipeline/main?longCache=true&amp;style=flat-square&amp;label=Pipeline&amp;logo=GitHub%20Actions&amp;logoColor=FFFFFF" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/VHDL/pyVHDLModel"><img alt="Code on GitHub" class="shield" src="https://img.shields.io/badge/VHDL-pyVHDLModel-29b6f6?longCache=true&amp;style=flat-square&amp;logo=github&amp;labelColor=0277bd" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/VHDL/pyVHDLModel/blob/main/LICENSE.md"><img alt="Code license" class="shield" src="https://img.shields.io/pypi/l/pyVHDLModel?longCache=true&amp;style=flat-square&amp;logo=Apache&amp;label=Code" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://VHDL.github.io/pyVHDLModel"><img alt="Documentation (GitHub Pages) - Read Now!" class="shield" src="https://img.shields.io/website?longCache=true&amp;style=flat-square&amp;label=VHDL.github.io%2FpyVHDLModel&amp;logo=GitHub&amp;logoColor=fff&amp;up_color=blueviolet&amp;up_message=Read%20now%20%E2%9E%9A&amp;url=https%3A%2F%2FVHDL.github.io%2FpyVHDLModel%2Findex.html" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/VHDL/pyVHDLModel/blob/main/doc/Doc-License.rst"><img alt="Documentation License" class="shield" src="https://img.shields.io/badge/Doc-CC--BY%204.0-green?longCache=true&amp;style=flat-square&amp;logo=CreativeCommons&amp;logoColor=fff" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://pypi.org/project/pyVHDLModel"><img alt="PyPI - Tag" class="shield" src="https://img.shields.io/pypi/v/pyVHDLModel?longCache=true&amp;style=flat-square&amp;logo=PyPI&amp;logoColor=FBE072" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://pypi.org/project/pyVHDLModel"><img alt="PyPI - Project Status" class="shield" src="https://img.shields.io/pypi/status/pyVHDLModel?longCache=true&amp;style=flat-square&amp;logo=PyPI&amp;logoColor=FBE072" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://pypi.org/project/pyVHDLModel"><img alt="PyPI - Python Versions" class="shield" src="https://img.shields.io/pypi/pyversions/pyVHDLModel?longCache=true&amp;style=flat-square&amp;logo=PyPI&amp;logoColor=FBE072" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://codecov.io/gh/VHDL/pyVHDLModel"><img alt="Codecov - Coverage" class="shield" src="https://img.shields.io/codecov/c/github/VHDL/pyVHDLModel?longCache=true&amp;style=flat-square&amp;logo=Codecov" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://www.codacy.com/gh/VHDL/pyVHDLModel"><img alt="Codacy - Coverage" class="shield" src="https://img.shields.io/codacy/coverage/2286426d2b11417e90010427b7fed8e7?longCache=true&amp;style=flat-square&amp;logo=codacy" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://www.codacy.com/gh/VHDL/pyVHDLModel"><img alt="Codacy - Quality" class="shield" src="https://img.shields.io/codacy/grade/2286426d2b11417e90010427b7fed8e7?longCache=true&amp;style=flat-square&amp;logo=codacy" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/VHDL/pyVHDLModel/tags"><img alt="GitHub Tag - latest SemVer incl. pre-release" class="shield" src="https://img.shields.io/github/v/tag/VHDL/pyVHDLModel?longCache=true&amp;style=flat-square&amp;logo=GitHub&amp;include_prereleases" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/VHDL/pyVHDLModel/releases/latest"><img alt="GitHub Release - latest SemVer incl. including pre-releases" class="shield" src="https://img.shields.io/github/v/release/VHDL/pyVHDLModel?longCache=true&amp;style=flat-square&amp;logo=GitHub&amp;include_prereleases" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/VHDL/pyVHDLModel/releases"><img alt="GitHub Release Date" class="shield" src="https://img.shields.io/github/release-date/VHDL/pyVHDLModel?longCache=true&amp;style=flat-square&amp;logo=GitHub" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/VHDL/pyVHDLModel/commits"><img alt="GitHub - Commits to branch 'dev' since latest" class="shield" src="https://img.shields.io/github/commits-since/VHDL/pyVHDLModel/latest/dev?longCache=true&amp;style=flat-square&amp;logo=GitHub" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/VHDL/pyVHDLModel/stargazers"><img alt="GitHub - Stars" class="shield" src="https://img.shields.io/github/stars/VHDL/pyVHDLModel?longCache=true&amp;style=flat-square&amp;logo=GitHub" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/VHDL/pyVHDLModel/graphs/contributors"><img alt="GitHub - Contributors" class="shield" src="https://img.shields.io/github/contributors/VHDL/pyVHDLModel?longCache=true&amp;style=flat-square&amp;logo=GitHub" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/VHDL/pyVHDLModel/watchers"><img alt="GitHub - Watchers" class="shield" src="https://img.shields.io/github/watchers/VHDL/pyVHDLModel?longCache=true&amp;style=flat-square&amp;logo=GitHub" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/VHDL/pyVHDLModel/network/members"><img alt="GitHub - Forks" class="shield" src="https://img.shields.io/github/forks/VHDL/pyVHDLModel?longCache=true&amp;style=flat-square&amp;logo=GitHub" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://libraries.io/github/VHDL/pyVHDLModel"><img alt="Libraries.io - Dependencies Status" class="shield" src="https://img.shields.io/librariesio/release/pypi/pyVHDLModel?longCache=true&amp;style=flat-square&amp;logo=Libraries.io&amp;logoColor=fff" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://libraries.io/github/VHDL/pyVHDLModel/sourcerank"><img alt="Libraries.io - Rank" class="shield" src="https://img.shields.io/librariesio/sourcerank/pypi/pyVHDLModel?longCache=true&amp;style=flat-square&amp;logo=Libraries.io&amp;logoColor=fff" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/VHDL/pyVHDLModel/network/dependents"><img alt="Libraries.io - Dependent Repos" class="shield" src="https://img.shields.io/librariesio/dependent-repos/pypi/pyVHDLModel?longCache=true&amp;style=flat-square&amp;logo=Libraries.io&amp;logoColor=fff" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://requires.io/github/VHDL/pyVHDLModel/requirements/?branch=main"><img alt="Requires.io - Status" class="shield" src="https://img.shields.io/requires/github/VHDL/pyVHDLModel?longCache=true&amp;style=flat-square&amp;" style="height: 22px;" /></a></p></td>
+</tr>
+<tr class="row-even"><td><p>pySVModel</p></td>
+<td><p><a class="reference external" href="https://github.com/edaa-org/pySVModel/actions/workflows/Pipeline.yml"><img alt="GitHub Actions Pipeline" class="shield" src="https://img.shields.io/github/workflow/status/edaa-org/pySVModel/Pipeline/main?longCache=true&amp;style=flat-square&amp;label=Pipeline&amp;logo=GitHub%20Actions&amp;logoColor=FFFFFF" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/edaa-org/pySVModel"><img alt="Code on GitHub" class="shield" src="https://img.shields.io/badge/pyEDAA-pySVModel-29b6f6?longCache=true&amp;style=flat-square&amp;logo=github&amp;labelColor=0277bd" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/edaa-org/pySVModel/blob/main/LICENSE.md"><img alt="Code license" class="shield" src="https://img.shields.io/pypi/l/pySVModel?longCache=true&amp;style=flat-square&amp;logo=Apache&amp;label=Code" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://edaa-org.github.io/pySVModel"><img alt="Documentation (GitHub Pages) - Read Now!" class="shield" src="https://img.shields.io/website?longCache=true&amp;style=flat-square&amp;label=edaa-org.github.io%2FpySVModel&amp;logo=GitHub&amp;logoColor=fff&amp;up_color=blueviolet&amp;up_message=Read%20now%20%E2%9E%9A&amp;url=https%3A%2F%2Fedaa-org.github.io%2FpySVModel%2Findex.html" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/edaa-org/pySVModel/blob/main/doc/Doc-License.rst"><img alt="Documentation License" class="shield" src="https://img.shields.io/badge/Doc-CC--BY%204.0-green?longCache=true&amp;style=flat-square&amp;logo=CreativeCommons&amp;logoColor=fff" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://pypi.org/project/pySVModel"><img alt="PyPI - Tag" class="shield" src="https://img.shields.io/pypi/v/pySVModel?longCache=true&amp;style=flat-square&amp;logo=PyPI&amp;logoColor=FBE072" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://pypi.org/project/pySVModel"><img alt="PyPI - Project Status" class="shield" src="https://img.shields.io/pypi/status/pySVModel?longCache=true&amp;style=flat-square&amp;logo=PyPI&amp;logoColor=FBE072" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://pypi.org/project/pySVModel"><img alt="PyPI - Python Versions" class="shield" src="https://img.shields.io/pypi/pyversions/pySVModel?longCache=true&amp;style=flat-square&amp;logo=PyPI&amp;logoColor=FBE072" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://codecov.io/gh/edaa-org/pySVModel"><img alt="Codecov - Coverage" class="shield" src="https://img.shields.io/codecov/c/github/edaa-org/pySVModel?longCache=true&amp;style=flat-square&amp;logo=Codecov" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://www.codacy.com/gh/edaa-org/pySVModel"><img alt="Codacy - Coverage" class="shield" src="https://img.shields.io/codacy/coverage/39d312bf98244961975559f141c3e000?longCache=true&amp;style=flat-square&amp;logo=codacy" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://www.codacy.com/gh/edaa-org/pySVModel"><img alt="Codacy - Quality" class="shield" src="https://img.shields.io/codacy/grade/39d312bf98244961975559f141c3e000?longCache=true&amp;style=flat-square&amp;logo=codacy" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/edaa-org/pySVModel/tags"><img alt="GitHub Tag - latest SemVer incl. pre-release" class="shield" src="https://img.shields.io/github/v/tag/edaa-org/pySVModel?longCache=true&amp;style=flat-square&amp;logo=GitHub&amp;include_prereleases" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/edaa-org/pySVModel/releases/latest"><img alt="GitHub Release - latest SemVer incl. including pre-releases" class="shield" src="https://img.shields.io/github/v/release/edaa-org/pySVModel?longCache=true&amp;style=flat-square&amp;logo=GitHub&amp;include_prereleases" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/edaa-org/pySVModel/releases"><img alt="GitHub Release Date" class="shield" src="https://img.shields.io/github/release-date/edaa-org/pySVModel?longCache=true&amp;style=flat-square&amp;logo=GitHub" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/edaa-org/pySVModel/commits"><img alt="GitHub - Commits to branch 'dev' since latest" class="shield" src="https://img.shields.io/github/commits-since/edaa-org/pySVModel/latest/dev?longCache=true&amp;style=flat-square&amp;logo=GitHub" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/edaa-org/pySVModel/stargazers"><img alt="GitHub - Stars" class="shield" src="https://img.shields.io/github/stars/edaa-org/pySVModel?longCache=true&amp;style=flat-square&amp;logo=GitHub" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/edaa-org/pySVModel/graphs/contributors"><img alt="GitHub - Contributors" class="shield" src="https://img.shields.io/github/contributors/edaa-org/pySVModel?longCache=true&amp;style=flat-square&amp;logo=GitHub" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/edaa-org/pySVModel/watchers"><img alt="GitHub - Watchers" class="shield" src="https://img.shields.io/github/watchers/edaa-org/pySVModel?longCache=true&amp;style=flat-square&amp;logo=GitHub" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/edaa-org/pySVModel/network/members"><img alt="GitHub - Forks" class="shield" src="https://img.shields.io/github/forks/edaa-org/pySVModel?longCache=true&amp;style=flat-square&amp;logo=GitHub" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://libraries.io/github/edaa-org/pySVModel"><img alt="Libraries.io - Dependencies Status" class="shield" src="https://img.shields.io/librariesio/release/pypi/pySVModel?longCache=true&amp;style=flat-square&amp;logo=Libraries.io&amp;logoColor=fff" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://libraries.io/github/edaa-org/pySVModel/sourcerank"><img alt="Libraries.io - Rank" class="shield" src="https://img.shields.io/librariesio/sourcerank/pypi/pySVModel?longCache=true&amp;style=flat-square&amp;logo=Libraries.io&amp;logoColor=fff" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/edaa-org/pySVModel/network/dependents"><img alt="Libraries.io - Dependent Repos" class="shield" src="https://img.shields.io/librariesio/dependent-repos/pypi/pySVModel?longCache=true&amp;style=flat-square&amp;logo=Libraries.io&amp;logoColor=fff" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://requires.io/github/edaa-org/pySVModel/requirements/?branch=main"><img alt="Requires.io - Status" class="shield" src="https://img.shields.io/requires/github/edaa-org/pySVModel?longCache=true&amp;style=flat-square&amp;" style="height: 22px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Reports</p></td>
+<td><p><a class="reference external" href="https://github.com/edaa-org/pyEDAA.Reports/actions/workflows/Pipeline.yml"><img alt="GitHub Actions Pipeline" class="shield" src="https://img.shields.io/github/workflow/status/edaa-org/pyEDAA.Reports/Pipeline/main?longCache=true&amp;style=flat-square&amp;label=Pipeline&amp;logo=GitHub%20Actions&amp;logoColor=FFFFFF" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/edaa-org/pyEDAA.Reports"><img alt="Code on GitHub" class="shield" src="https://img.shields.io/badge/pyEDAA-Reports-29b6f6?longCache=true&amp;style=flat-square&amp;logo=github&amp;labelColor=0277bd" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/edaa-org/pyEDAA.Reports/blob/main/LICENSE.md"><img alt="Code license" class="shield" src="https://img.shields.io/pypi/l/pyEDAA.Reports?longCache=true&amp;style=flat-square&amp;logo=Apache&amp;label=Code" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://edaa-org.github.io/pyEDAA.Reports"><img alt="Documentation (GitHub Pages) - Read Now!" class="shield" src="https://img.shields.io/website?longCache=true&amp;style=flat-square&amp;label=edaa-org.github.io%2FpyEDAA.Reports&amp;logo=GitHub&amp;logoColor=fff&amp;up_color=blueviolet&amp;up_message=Read%20now%20%E2%9E%9A&amp;url=https%3A%2F%2Fedaa-org.github.io%2FpyEDAA.Reports%2Findex.html" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/edaa-org/pyEDAA.Reports/blob/main/doc/Doc-License.rst"><img alt="Documentation License" class="shield" src="https://img.shields.io/badge/Doc-CC--BY%204.0-green?longCache=true&amp;style=flat-square&amp;logo=CreativeCommons&amp;logoColor=fff" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://pypi.org/project/pyEDAA.Reports"><img alt="PyPI - Tag" class="shield" src="https://img.shields.io/pypi/v/pyEDAA.Reports?longCache=true&amp;style=flat-square&amp;logo=PyPI&amp;logoColor=FBE072" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://pypi.org/project/pyEDAA.Reports"><img alt="PyPI - Project Status" class="shield" src="https://img.shields.io/pypi/status/pyEDAA.Reports?longCache=true&amp;style=flat-square&amp;logo=PyPI&amp;logoColor=FBE072" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://pypi.org/project/pyEDAA.Reports"><img alt="PyPI - Python Versions" class="shield" src="https://img.shields.io/pypi/pyversions/pyEDAA.Reports?longCache=true&amp;style=flat-square&amp;logo=PyPI&amp;logoColor=FBE072" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://codecov.io/gh/edaa-org/pyEDAA.Reports"><img alt="Codecov - Coverage" class="shield" src="https://img.shields.io/codecov/c/github/edaa-org/pyEDAA.Reports?longCache=true&amp;style=flat-square&amp;logo=Codecov" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://www.codacy.com/gh/edaa-org/pyEDAA.Reports"><img alt="Codacy - Coverage" class="shield" src="https://img.shields.io/codacy/coverage/f8142b422c1742bdba38e8ac1893870c?longCache=true&amp;style=flat-square&amp;logo=codacy" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://www.codacy.com/gh/edaa-org/pyEDAA.Reports"><img alt="Codacy - Quality" class="shield" src="https://img.shields.io/codacy/grade/f8142b422c1742bdba38e8ac1893870c?longCache=true&amp;style=flat-square&amp;logo=codacy" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/edaa-org/pyEDAA.Reports/tags"><img alt="GitHub Tag - latest SemVer incl. pre-release" class="shield" src="https://img.shields.io/github/v/tag/edaa-org/pyEDAA.Reports?longCache=true&amp;style=flat-square&amp;logo=GitHub&amp;include_prereleases" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/edaa-org/pyEDAA.Reports/releases/latest"><img alt="GitHub Release - latest SemVer incl. including pre-releases" class="shield" src="https://img.shields.io/github/v/release/edaa-org/pyEDAA.Reports?longCache=true&amp;style=flat-square&amp;logo=GitHub&amp;include_prereleases" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/edaa-org/pyEDAA.Reports/releases"><img alt="GitHub Release Date" class="shield" src="https://img.shields.io/github/release-date/edaa-org/pyEDAA.Reports?longCache=true&amp;style=flat-square&amp;logo=GitHub" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/edaa-org/pyEDAA.Reports/commits"><img alt="GitHub - Commits to branch 'dev' since latest" class="shield" src="https://img.shields.io/github/commits-since/edaa-org/pyEDAA.Reports/latest/dev?longCache=true&amp;style=flat-square&amp;logo=GitHub" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/edaa-org/pyEDAA.Reports/stargazers"><img alt="GitHub - Stars" class="shield" src="https://img.shields.io/github/stars/edaa-org/pyEDAA.Reports?longCache=true&amp;style=flat-square&amp;logo=GitHub" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/edaa-org/pyEDAA.Reports/graphs/contributors"><img alt="GitHub - Contributors" class="shield" src="https://img.shields.io/github/contributors/edaa-org/pyEDAA.Reports?longCache=true&amp;style=flat-square&amp;logo=GitHub" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/edaa-org/pyEDAA.Reports/watchers"><img alt="GitHub - Watchers" class="shield" src="https://img.shields.io/github/watchers/edaa-org/pyEDAA.Reports?longCache=true&amp;style=flat-square&amp;logo=GitHub" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/edaa-org/pyEDAA.Reports/network/members"><img alt="GitHub - Forks" class="shield" src="https://img.shields.io/github/forks/edaa-org/pyEDAA.Reports?longCache=true&amp;style=flat-square&amp;logo=GitHub" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://libraries.io/github/edaa-org/pyEDAA.Reports"><img alt="Libraries.io - Dependencies Status" class="shield" src="https://img.shields.io/librariesio/release/pypi/pyEDAA.Reports?longCache=true&amp;style=flat-square&amp;logo=Libraries.io&amp;logoColor=fff" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://libraries.io/github/edaa-org/pyEDAA.Reports/sourcerank"><img alt="Libraries.io - Rank" class="shield" src="https://img.shields.io/librariesio/sourcerank/pypi/pyEDAA.Reports?longCache=true&amp;style=flat-square&amp;logo=Libraries.io&amp;logoColor=fff" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/edaa-org/pyEDAA.Reports/network/dependents"><img alt="Libraries.io - Dependent Repos" class="shield" src="https://img.shields.io/librariesio/dependent-repos/pypi/pyEDAA.Reports?longCache=true&amp;style=flat-square&amp;logo=Libraries.io&amp;logoColor=fff" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://requires.io/github/edaa-org/pyEDAA.Reports/requirements/?branch=main"><img alt="Requires.io - Status" class="shield" src="https://img.shields.io/requires/github/edaa-org/pyEDAA.Reports?longCache=true&amp;style=flat-square&amp;" style="height: 22px;" /></a></p></td>
+</tr>
+<tr class="row-even"><td><p>UCIS</p></td>
+<td><p><a class="reference external" href="https://github.com/edaa-org/pyEDAA.UCIS/actions/workflows/Pipeline.yml"><img alt="GitHub Actions Pipeline" class="shield" src="https://img.shields.io/github/workflow/status/edaa-org/pyEDAA.UCIS/Pipeline/main?longCache=true&amp;style=flat-square&amp;label=Pipeline&amp;logo=GitHub%20Actions&amp;logoColor=FFFFFF" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/edaa-org/pyEDAA.UCIS"><img alt="Code on GitHub" class="shield" src="https://img.shields.io/badge/pyEDAA-UCIS-29b6f6?longCache=true&amp;style=flat-square&amp;logo=github&amp;labelColor=0277bd" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/edaa-org/pyEDAA.UCIS/blob/main/LICENSE.md"><img alt="Code license" class="shield" src="https://img.shields.io/pypi/l/pyEDAA.UCIS?longCache=true&amp;style=flat-square&amp;logo=Apache&amp;label=Code" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://edaa-org.github.io/pyEDAA.UCIS"><img alt="Documentation (GitHub Pages) - Read Now!" class="shield" src="https://img.shields.io/website?longCache=true&amp;style=flat-square&amp;label=edaa-org.github.io%2FpyEDAA.UCIS&amp;logo=GitHub&amp;logoColor=fff&amp;up_color=blueviolet&amp;up_message=Read%20now%20%E2%9E%9A&amp;url=https%3A%2F%2Fedaa-org.github.io%2FpyEDAA.UCIS%2Findex.html" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/edaa-org/pyEDAA.UCIS/blob/main/doc/Doc-License.rst"><img alt="Documentation License" class="shield" src="https://img.shields.io/badge/Doc-CC--BY%204.0-green?longCache=true&amp;style=flat-square&amp;logo=CreativeCommons&amp;logoColor=fff" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://pypi.org/project/pyEDAA.UCIS"><img alt="PyPI - Tag" class="shield" src="https://img.shields.io/pypi/v/pyEDAA.UCIS?longCache=true&amp;style=flat-square&amp;logo=PyPI&amp;logoColor=FBE072" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://pypi.org/project/pyEDAA.UCIS"><img alt="PyPI - Project Status" class="shield" src="https://img.shields.io/pypi/status/pyEDAA.UCIS?longCache=true&amp;style=flat-square&amp;logo=PyPI&amp;logoColor=FBE072" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://pypi.org/project/pyEDAA.UCIS"><img alt="PyPI - Python Versions" class="shield" src="https://img.shields.io/pypi/pyversions/pyEDAA.UCIS?longCache=true&amp;style=flat-square&amp;logo=PyPI&amp;logoColor=FBE072" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://codecov.io/gh/edaa-org/pyEDAA.UCIS"><img alt="Codecov - Coverage" class="shield" src="https://img.shields.io/codecov/c/github/edaa-org/pyEDAA.UCIS?longCache=true&amp;style=flat-square&amp;logo=Codecov" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://www.codacy.com/gh/edaa-org/pyEDAA.UCIS"><img alt="Codacy - Coverage" class="shield" src="https://img.shields.io/codacy/coverage/63bd2bd65585447a9f6d7ad4e7d82a35?longCache=true&amp;style=flat-square&amp;logo=codacy" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://www.codacy.com/gh/edaa-org/pyEDAA.UCIS"><img alt="Codacy - Quality" class="shield" src="https://img.shields.io/codacy/grade/63bd2bd65585447a9f6d7ad4e7d82a35?longCache=true&amp;style=flat-square&amp;logo=codacy" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/edaa-org/pyEDAA.UCIS/tags"><img alt="GitHub Tag - latest SemVer incl. pre-release" class="shield" src="https://img.shields.io/github/v/tag/edaa-org/pyEDAA.UCIS?longCache=true&amp;style=flat-square&amp;logo=GitHub&amp;include_prereleases" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/edaa-org/pyEDAA.UCIS/releases/latest"><img alt="GitHub Release - latest SemVer incl. including pre-releases" class="shield" src="https://img.shields.io/github/v/release/edaa-org/pyEDAA.UCIS?longCache=true&amp;style=flat-square&amp;logo=GitHub&amp;include_prereleases" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/edaa-org/pyEDAA.UCIS/releases"><img alt="GitHub Release Date" class="shield" src="https://img.shields.io/github/release-date/edaa-org/pyEDAA.UCIS?longCache=true&amp;style=flat-square&amp;logo=GitHub" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/edaa-org/pyEDAA.UCIS/commits"><img alt="GitHub - Commits to branch 'dev' since latest" class="shield" src="https://img.shields.io/github/commits-since/edaa-org/pyEDAA.UCIS/latest/dev?longCache=true&amp;style=flat-square&amp;logo=GitHub" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/edaa-org/pyEDAA.UCIS/stargazers"><img alt="GitHub - Stars" class="shield" src="https://img.shields.io/github/stars/edaa-org/pyEDAA.UCIS?longCache=true&amp;style=flat-square&amp;logo=GitHub" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/edaa-org/pyEDAA.UCIS/graphs/contributors"><img alt="GitHub - Contributors" class="shield" src="https://img.shields.io/github/contributors/edaa-org/pyEDAA.UCIS?longCache=true&amp;style=flat-square&amp;logo=GitHub" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/edaa-org/pyEDAA.UCIS/watchers"><img alt="GitHub - Watchers" class="shield" src="https://img.shields.io/github/watchers/edaa-org/pyEDAA.UCIS?longCache=true&amp;style=flat-square&amp;logo=GitHub" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/edaa-org/pyEDAA.UCIS/network/members"><img alt="GitHub - Forks" class="shield" src="https://img.shields.io/github/forks/edaa-org/pyEDAA.UCIS?longCache=true&amp;style=flat-square&amp;logo=GitHub" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://libraries.io/github/edaa-org/pyEDAA.UCIS"><img alt="Libraries.io - Dependencies Status" class="shield" src="https://img.shields.io/librariesio/release/pypi/pyEDAA.UCIS?longCache=true&amp;style=flat-square&amp;logo=Libraries.io&amp;logoColor=fff" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://libraries.io/github/edaa-org/pyEDAA.UCIS/sourcerank"><img alt="Libraries.io - Rank" class="shield" src="https://img.shields.io/librariesio/sourcerank/pypi/pyEDAA.UCIS?longCache=true&amp;style=flat-square&amp;logo=Libraries.io&amp;logoColor=fff" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/edaa-org/pyEDAA.UCIS/network/dependents"><img alt="Libraries.io - Dependent Repos" class="shield" src="https://img.shields.io/librariesio/dependent-repos/pypi/pyEDAA.UCIS?longCache=true&amp;style=flat-square&amp;logo=Libraries.io&amp;logoColor=fff" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://requires.io/github/edaa-org/pyEDAA.UCIS/requirements/?branch=main"><img alt="Requires.io - Status" class="shield" src="https://img.shields.io/requires/github/edaa-org/pyEDAA.UCIS?longCache=true&amp;style=flat-square&amp;" style="height: 22px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>IPXACT</p></td>
+<td><p><a class="reference external" href="https://github.com/edaa-org/pyEDAA.IPXACT/actions/workflows/Pipeline.yml"><img alt="GitHub Actions Pipeline" class="shield" src="https://img.shields.io/github/workflow/status/edaa-org/pyEDAA.IPXACT/Pipeline/main?longCache=true&amp;style=flat-square&amp;label=Pipeline&amp;logo=GitHub%20Actions&amp;logoColor=FFFFFF" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/edaa-org/pyEDAA.IPXACT"><img alt="Code on GitHub" class="shield" src="https://img.shields.io/badge/pyEDAA-IPXACT-29b6f6?longCache=true&amp;style=flat-square&amp;logo=github&amp;labelColor=0277bd" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/edaa-org/pyEDAA.IPXACT/blob/main/LICENSE.md"><img alt="Code license" class="shield" src="https://img.shields.io/pypi/l/pyEDAA.IPXACT?longCache=true&amp;style=flat-square&amp;logo=Apache&amp;label=Code" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://edaa-org.github.io/pyEDAA.IPXACT"><img alt="Documentation (GitHub Pages) - Read Now!" class="shield" src="https://img.shields.io/website?longCache=true&amp;style=flat-square&amp;label=edaa-org.github.io%2FpyEDAA.IPXACT&amp;logo=GitHub&amp;logoColor=fff&amp;up_color=blueviolet&amp;up_message=Read%20now%20%E2%9E%9A&amp;url=https%3A%2F%2Fedaa-org.github.io%2FpyEDAA.IPXACT%2Findex.html" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/edaa-org/pyEDAA.IPXACT/blob/main/doc/Doc-License.rst"><img alt="Documentation License" class="shield" src="https://img.shields.io/badge/Doc-CC--BY%204.0-green?longCache=true&amp;style=flat-square&amp;logo=CreativeCommons&amp;logoColor=fff" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://pypi.org/project/pyEDAA.IPXACT"><img alt="PyPI - Tag" class="shield" src="https://img.shields.io/pypi/v/pyEDAA.IPXACT?longCache=true&amp;style=flat-square&amp;logo=PyPI&amp;logoColor=FBE072" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://pypi.org/project/pyEDAA.IPXACT"><img alt="PyPI - Project Status" class="shield" src="https://img.shields.io/pypi/status/pyEDAA.IPXACT?longCache=true&amp;style=flat-square&amp;logo=PyPI&amp;logoColor=FBE072" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://pypi.org/project/pyEDAA.IPXACT"><img alt="PyPI - Python Versions" class="shield" src="https://img.shields.io/pypi/pyversions/pyEDAA.IPXACT?longCache=true&amp;style=flat-square&amp;logo=PyPI&amp;logoColor=FBE072" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://codecov.io/gh/edaa-org/pyEDAA.IPXACT"><img alt="Codecov - Coverage" class="shield" src="https://img.shields.io/codecov/c/github/edaa-org/pyEDAA.IPXACT?longCache=true&amp;style=flat-square&amp;logo=Codecov" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://www.codacy.com/gh/edaa-org/pyEDAA.IPXACT"><img alt="Codacy - Coverage" class="shield" src="https://img.shields.io/codacy/coverage/c924eeffd4cc49ed9ebbbe3a89b6fa76?longCache=true&amp;style=flat-square&amp;logo=codacy" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://www.codacy.com/gh/edaa-org/pyEDAA.IPXACT"><img alt="Codacy - Quality" class="shield" src="https://img.shields.io/codacy/grade/c924eeffd4cc49ed9ebbbe3a89b6fa76?longCache=true&amp;style=flat-square&amp;logo=codacy" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/edaa-org/pyEDAA.IPXACT/tags"><img alt="GitHub Tag - latest SemVer incl. pre-release" class="shield" src="https://img.shields.io/github/v/tag/edaa-org/pyEDAA.IPXACT?longCache=true&amp;style=flat-square&amp;logo=GitHub&amp;include_prereleases" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/edaa-org/pyEDAA.IPXACT/releases/latest"><img alt="GitHub Release - latest SemVer incl. including pre-releases" class="shield" src="https://img.shields.io/github/v/release/edaa-org/pyEDAA.IPXACT?longCache=true&amp;style=flat-square&amp;logo=GitHub&amp;include_prereleases" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/edaa-org/pyEDAA.IPXACT/releases"><img alt="GitHub Release Date" class="shield" src="https://img.shields.io/github/release-date/edaa-org/pyEDAA.IPXACT?longCache=true&amp;style=flat-square&amp;logo=GitHub" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/edaa-org/pyEDAA.IPXACT/commits"><img alt="GitHub - Commits to branch 'dev' since latest" class="shield" src="https://img.shields.io/github/commits-since/edaa-org/pyEDAA.IPXACT/latest/dev?longCache=true&amp;style=flat-square&amp;logo=GitHub" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/edaa-org/pyEDAA.IPXACT/stargazers"><img alt="GitHub - Stars" class="shield" src="https://img.shields.io/github/stars/edaa-org/pyEDAA.IPXACT?longCache=true&amp;style=flat-square&amp;logo=GitHub" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/edaa-org/pyEDAA.IPXACT/graphs/contributors"><img alt="GitHub - Contributors" class="shield" src="https://img.shields.io/github/contributors/edaa-org/pyEDAA.IPXACT?longCache=true&amp;style=flat-square&amp;logo=GitHub" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/edaa-org/pyEDAA.IPXACT/watchers"><img alt="GitHub - Watchers" class="shield" src="https://img.shields.io/github/watchers/edaa-org/pyEDAA.IPXACT?longCache=true&amp;style=flat-square&amp;logo=GitHub" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/edaa-org/pyEDAA.IPXACT/network/members"><img alt="GitHub - Forks" class="shield" src="https://img.shields.io/github/forks/edaa-org/pyEDAA.IPXACT?longCache=true&amp;style=flat-square&amp;logo=GitHub" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://libraries.io/github/edaa-org/pyEDAA.IPXACT"><img alt="Libraries.io - Dependencies Status" class="shield" src="https://img.shields.io/librariesio/release/pypi/pyEDAA.IPXACT?longCache=true&amp;style=flat-square&amp;logo=Libraries.io&amp;logoColor=fff" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://libraries.io/github/edaa-org/pyEDAA.IPXACT/sourcerank"><img alt="Libraries.io - Rank" class="shield" src="https://img.shields.io/librariesio/sourcerank/pypi/pyEDAA.IPXACT?longCache=true&amp;style=flat-square&amp;logo=Libraries.io&amp;logoColor=fff" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/edaa-org/pyEDAA.IPXACT/network/dependents"><img alt="Libraries.io - Dependent Repos" class="shield" src="https://img.shields.io/librariesio/dependent-repos/pypi/pyEDAA.IPXACT?longCache=true&amp;style=flat-square&amp;logo=Libraries.io&amp;logoColor=fff" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://requires.io/github/edaa-org/pyEDAA.IPXACT/requirements/?branch=main"><img alt="Requires.io - Status" class="shield" src="https://img.shields.io/requires/github/edaa-org/pyEDAA.IPXACT?longCache=true&amp;style=flat-square&amp;" style="height: 22px;" /></a></p></td>
+</tr>
+<tr class="row-even"><td><p>OutputFilter</p></td>
+<td><p><a class="reference external" href="https://github.com/edaa-org/pyEDAA.OutputFilter/actions/workflows/Pipeline.yml"><img alt="GitHub Actions Pipeline" class="shield" src="https://img.shields.io/github/workflow/status/edaa-org/pyEDAA.OutputFilter/Pipeline/main?longCache=true&amp;style=flat-square&amp;label=Pipeline&amp;logo=GitHub%20Actions&amp;logoColor=FFFFFF" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/edaa-org/pyEDAA.OutputFilter"><img alt="Code on GitHub" class="shield" src="https://img.shields.io/badge/pyEDAA-OutputFilter-ffca28?longCache=true&amp;style=flat-square&amp;logo=github&amp;labelColor=ff8f00" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/edaa-org/pyEDAA.OutputFilter/blob/main/LICENSE.md"><img alt="Code license" class="shield" src="https://img.shields.io/pypi/l/pyEDAA.OutputFilter?longCache=true&amp;style=flat-square&amp;logo=Apache&amp;label=Code" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://edaa-org.github.io/pyEDAA.OutputFilter"><img alt="Documentation (GitHub Pages) - Read Now!" class="shield" src="https://img.shields.io/website?longCache=true&amp;style=flat-square&amp;label=edaa-org.github.io%2FpyEDAA.OutputFilter&amp;logo=GitHub&amp;logoColor=fff&amp;up_color=blueviolet&amp;up_message=Read%20now%20%E2%9E%9A&amp;url=https%3A%2F%2Fedaa-org.github.io%2FpyEDAA.OutputFilter%2Findex.html" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/edaa-org/pyEDAA.OutputFilter/blob/main/doc/Doc-License.rst"><img alt="Documentation License" class="shield" src="https://img.shields.io/badge/Doc-CC--BY%204.0-green?longCache=true&amp;style=flat-square&amp;logo=CreativeCommons&amp;logoColor=fff" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://pypi.org/project/pyEDAA.OutputFilter"><img alt="PyPI - Tag" class="shield" src="https://img.shields.io/pypi/v/pyEDAA.OutputFilter?longCache=true&amp;style=flat-square&amp;logo=PyPI&amp;logoColor=FBE072" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://pypi.org/project/pyEDAA.OutputFilter"><img alt="PyPI - Project Status" class="shield" src="https://img.shields.io/pypi/status/pyEDAA.OutputFilter?longCache=true&amp;style=flat-square&amp;logo=PyPI&amp;logoColor=FBE072" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://pypi.org/project/pyEDAA.OutputFilter"><img alt="PyPI - Python Versions" class="shield" src="https://img.shields.io/pypi/pyversions/pyEDAA.OutputFilter?longCache=true&amp;style=flat-square&amp;logo=PyPI&amp;logoColor=FBE072" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://codecov.io/gh/edaa-org/pyEDAA.OutputFilter"><img alt="Codecov - Coverage" class="shield" src="https://img.shields.io/codecov/c/github/edaa-org/pyEDAA.OutputFilter?longCache=true&amp;style=flat-square&amp;logo=Codecov" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://www.codacy.com/gh/edaa-org/pyEDAA.OutputFilter"><img alt="Codacy - Coverage" class="shield" src="https://img.shields.io/codacy/coverage/4918480c41594ffbb62f8ff98433b800?longCache=true&amp;style=flat-square&amp;logo=codacy" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://www.codacy.com/gh/edaa-org/pyEDAA.OutputFilter"><img alt="Codacy - Quality" class="shield" src="https://img.shields.io/codacy/grade/4918480c41594ffbb62f8ff98433b800?longCache=true&amp;style=flat-square&amp;logo=codacy" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/edaa-org/pyEDAA.OutputFilter/tags"><img alt="GitHub Tag - latest SemVer incl. pre-release" class="shield" src="https://img.shields.io/github/v/tag/edaa-org/pyEDAA.OutputFilter?longCache=true&amp;style=flat-square&amp;logo=GitHub&amp;include_prereleases" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/edaa-org/pyEDAA.OutputFilter/releases/latest"><img alt="GitHub Release - latest SemVer incl. including pre-releases" class="shield" src="https://img.shields.io/github/v/release/edaa-org/pyEDAA.OutputFilter?longCache=true&amp;style=flat-square&amp;logo=GitHub&amp;include_prereleases" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/edaa-org/pyEDAA.OutputFilter/releases"><img alt="GitHub Release Date" class="shield" src="https://img.shields.io/github/release-date/edaa-org/pyEDAA.OutputFilter?longCache=true&amp;style=flat-square&amp;logo=GitHub" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/edaa-org/pyEDAA.OutputFilter/commits"><img alt="GitHub - Commits to branch 'dev' since latest" class="shield" src="https://img.shields.io/github/commits-since/edaa-org/pyEDAA.OutputFilter/latest/dev?longCache=true&amp;style=flat-square&amp;logo=GitHub" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/edaa-org/pyEDAA.OutputFilter/stargazers"><img alt="GitHub - Stars" class="shield" src="https://img.shields.io/github/stars/edaa-org/pyEDAA.OutputFilter?longCache=true&amp;style=flat-square&amp;logo=GitHub" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/edaa-org/pyEDAA.OutputFilter/graphs/contributors"><img alt="GitHub - Contributors" class="shield" src="https://img.shields.io/github/contributors/edaa-org/pyEDAA.OutputFilter?longCache=true&amp;style=flat-square&amp;logo=GitHub" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/edaa-org/pyEDAA.OutputFilter/watchers"><img alt="GitHub - Watchers" class="shield" src="https://img.shields.io/github/watchers/edaa-org/pyEDAA.OutputFilter?longCache=true&amp;style=flat-square&amp;logo=GitHub" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/edaa-org/pyEDAA.OutputFilter/network/members"><img alt="GitHub - Forks" class="shield" src="https://img.shields.io/github/forks/edaa-org/pyEDAA.OutputFilter?longCache=true&amp;style=flat-square&amp;logo=GitHub" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://libraries.io/github/edaa-org/pyEDAA.OutputFilter"><img alt="Libraries.io - Dependencies Status" class="shield" src="https://img.shields.io/librariesio/release/pypi/pyEDAA.OutputFilter?longCache=true&amp;style=flat-square&amp;logo=Libraries.io&amp;logoColor=fff" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://libraries.io/github/edaa-org/pyEDAA.OutputFilter/sourcerank"><img alt="Libraries.io - Rank" class="shield" src="https://img.shields.io/librariesio/sourcerank/pypi/pyEDAA.OutputFilter?longCache=true&amp;style=flat-square&amp;logo=Libraries.io&amp;logoColor=fff" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/edaa-org/pyEDAA.OutputFilter/network/dependents"><img alt="Libraries.io - Dependent Repos" class="shield" src="https://img.shields.io/librariesio/dependent-repos/pypi/pyEDAA.OutputFilter?longCache=true&amp;style=flat-square&amp;logo=Libraries.io&amp;logoColor=fff" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://requires.io/github/edaa-org/pyEDAA.OutputFilter/requirements/?branch=main"><img alt="Requires.io - Status" class="shield" src="https://img.shields.io/requires/github/edaa-org/pyEDAA.OutputFilter?longCache=true&amp;style=flat-square&amp;" style="height: 22px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>CLITool</p></td>
+<td><p><a class="reference external" href="https://github.com/edaa-org/pyEDAA.CLITool/actions/workflows/Pipeline.yml"><img alt="GitHub Actions Pipeline" class="shield" src="https://img.shields.io/github/workflow/status/edaa-org/pyEDAA.CLITool/Pipeline/main?longCache=true&amp;style=flat-square&amp;label=Pipeline&amp;logo=GitHub%20Actions&amp;logoColor=FFFFFF" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/edaa-org/pyEDAA.CLITool"><img alt="Code on GitHub" class="shield" src="https://img.shields.io/badge/pyEDAA-CLITool-ffca28?longCache=true&amp;style=flat-square&amp;logo=github&amp;labelColor=ff8f00" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/edaa-org/pyEDAA.CLITool/blob/main/LICENSE.md"><img alt="Code license" class="shield" src="https://img.shields.io/pypi/l/pyEDAA.CLITool?longCache=true&amp;style=flat-square&amp;logo=Apache&amp;label=Code" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://edaa-org.github.io/pyEDAA.CLITool"><img alt="Documentation (GitHub Pages) - Read Now!" class="shield" src="https://img.shields.io/website?longCache=true&amp;style=flat-square&amp;label=edaa-org.github.io%2FpyEDAA.CLITool&amp;logo=GitHub&amp;logoColor=fff&amp;up_color=blueviolet&amp;up_message=Read%20now%20%E2%9E%9A&amp;url=https%3A%2F%2Fedaa-org.github.io%2FpyEDAA.CLITool%2Findex.html" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/edaa-org/pyEDAA.CLITool/blob/main/doc/Doc-License.rst"><img alt="Documentation License" class="shield" src="https://img.shields.io/badge/Doc-CC--BY%204.0-green?longCache=true&amp;style=flat-square&amp;logo=CreativeCommons&amp;logoColor=fff" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://pypi.org/project/pyEDAA.CLITool"><img alt="PyPI - Tag" class="shield" src="https://img.shields.io/pypi/v/pyEDAA.CLITool?longCache=true&amp;style=flat-square&amp;logo=PyPI&amp;logoColor=FBE072" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://pypi.org/project/pyEDAA.CLITool"><img alt="PyPI - Project Status" class="shield" src="https://img.shields.io/pypi/status/pyEDAA.CLITool?longCache=true&amp;style=flat-square&amp;logo=PyPI&amp;logoColor=FBE072" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://pypi.org/project/pyEDAA.CLITool"><img alt="PyPI - Python Versions" class="shield" src="https://img.shields.io/pypi/pyversions/pyEDAA.CLITool?longCache=true&amp;style=flat-square&amp;logo=PyPI&amp;logoColor=FBE072" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://codecov.io/gh/edaa-org/pyEDAA.CLITool"><img alt="Codecov - Coverage" class="shield" src="https://img.shields.io/codecov/c/github/edaa-org/pyEDAA.CLITool?longCache=true&amp;style=flat-square&amp;logo=Codecov" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://www.codacy.com/gh/edaa-org/pyEDAA.CLITool"><img alt="Codacy - Coverage" class="shield" src="https://img.shields.io/codacy/coverage/7cc5334a04924f77ae75bbffbf48ff98?longCache=true&amp;style=flat-square&amp;logo=codacy" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://www.codacy.com/gh/edaa-org/pyEDAA.CLITool"><img alt="Codacy - Quality" class="shield" src="https://img.shields.io/codacy/grade/7cc5334a04924f77ae75bbffbf48ff98?longCache=true&amp;style=flat-square&amp;logo=codacy" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/edaa-org/pyEDAA.CLITool/tags"><img alt="GitHub Tag - latest SemVer incl. pre-release" class="shield" src="https://img.shields.io/github/v/tag/edaa-org/pyEDAA.CLITool?longCache=true&amp;style=flat-square&amp;logo=GitHub&amp;include_prereleases" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/edaa-org/pyEDAA.CLITool/releases/latest"><img alt="GitHub Release - latest SemVer incl. including pre-releases" class="shield" src="https://img.shields.io/github/v/release/edaa-org/pyEDAA.CLITool?longCache=true&amp;style=flat-square&amp;logo=GitHub&amp;include_prereleases" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/edaa-org/pyEDAA.CLITool/releases"><img alt="GitHub Release Date" class="shield" src="https://img.shields.io/github/release-date/edaa-org/pyEDAA.CLITool?longCache=true&amp;style=flat-square&amp;logo=GitHub" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/edaa-org/pyEDAA.CLITool/commits"><img alt="GitHub - Commits to branch 'dev' since latest" class="shield" src="https://img.shields.io/github/commits-since/edaa-org/pyEDAA.CLITool/latest/dev?longCache=true&amp;style=flat-square&amp;logo=GitHub" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/edaa-org/pyEDAA.CLITool/stargazers"><img alt="GitHub - Stars" class="shield" src="https://img.shields.io/github/stars/edaa-org/pyEDAA.CLITool?longCache=true&amp;style=flat-square&amp;logo=GitHub" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/edaa-org/pyEDAA.CLITool/graphs/contributors"><img alt="GitHub - Contributors" class="shield" src="https://img.shields.io/github/contributors/edaa-org/pyEDAA.CLITool?longCache=true&amp;style=flat-square&amp;logo=GitHub" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/edaa-org/pyEDAA.CLITool/watchers"><img alt="GitHub - Watchers" class="shield" src="https://img.shields.io/github/watchers/edaa-org/pyEDAA.CLITool?longCache=true&amp;style=flat-square&amp;logo=GitHub" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/edaa-org/pyEDAA.CLITool/network/members"><img alt="GitHub - Forks" class="shield" src="https://img.shields.io/github/forks/edaa-org/pyEDAA.CLITool?longCache=true&amp;style=flat-square&amp;logo=GitHub" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://libraries.io/github/edaa-org/pyEDAA.CLITool"><img alt="Libraries.io - Dependencies Status" class="shield" src="https://img.shields.io/librariesio/release/pypi/pyEDAA.CLITool?longCache=true&amp;style=flat-square&amp;logo=Libraries.io&amp;logoColor=fff" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://libraries.io/github/edaa-org/pyEDAA.CLITool/sourcerank"><img alt="Libraries.io - Rank" class="shield" src="https://img.shields.io/librariesio/sourcerank/pypi/pyEDAA.CLITool?longCache=true&amp;style=flat-square&amp;logo=Libraries.io&amp;logoColor=fff" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/edaa-org/pyEDAA.CLITool/network/dependents"><img alt="Libraries.io - Dependent Repos" class="shield" src="https://img.shields.io/librariesio/dependent-repos/pypi/pyEDAA.CLITool?longCache=true&amp;style=flat-square&amp;logo=Libraries.io&amp;logoColor=fff" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://requires.io/github/edaa-org/pyEDAA.CLITool/requirements/?branch=main"><img alt="Requires.io - Status" class="shield" src="https://img.shields.io/requires/github/edaa-org/pyEDAA.CLITool?longCache=true&amp;style=flat-square&amp;" style="height: 22px;" /></a></p></td>
+</tr>
+<tr class="row-even"><td><p>ToolSetup</p></td>
+<td><p><a class="reference external" href="https://github.com/edaa-org/pyEDAA.ToolSetup/actions/workflows/Pipeline.yml"><img alt="GitHub Actions Pipeline" class="shield" src="https://img.shields.io/github/workflow/status/edaa-org/pyEDAA.ToolSetup/Pipeline/main?longCache=true&amp;style=flat-square&amp;label=Pipeline&amp;logo=GitHub%20Actions&amp;logoColor=FFFFFF" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/edaa-org/pyEDAA.ToolSetup"><img alt="Code on GitHub" class="shield" src="https://img.shields.io/badge/pyEDAA-ToolSetup-ffca28?longCache=true&amp;style=flat-square&amp;logo=github&amp;labelColor=ff8f00" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/edaa-org/pyEDAA.ToolSetup/blob/main/LICENSE.md"><img alt="Code license" class="shield" src="https://img.shields.io/pypi/l/pyEDAA.ToolSetup?longCache=true&amp;style=flat-square&amp;logo=Apache&amp;label=Code" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://edaa-org.github.io/pyEDAA.ToolSetup"><img alt="Documentation (GitHub Pages) - Read Now!" class="shield" src="https://img.shields.io/website?longCache=true&amp;style=flat-square&amp;label=edaa-org.github.io%2FpyEDAA.ToolSetup&amp;logo=GitHub&amp;logoColor=fff&amp;up_color=blueviolet&amp;up_message=Read%20now%20%E2%9E%9A&amp;url=https%3A%2F%2Fedaa-org.github.io%2FpyEDAA.ToolSetup%2Findex.html" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/edaa-org/pyEDAA.ToolSetup/blob/main/doc/Doc-License.rst"><img alt="Documentation License" class="shield" src="https://img.shields.io/badge/Doc-CC--BY%204.0-green?longCache=true&amp;style=flat-square&amp;logo=CreativeCommons&amp;logoColor=fff" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://pypi.org/project/pyEDAA.ToolSetup"><img alt="PyPI - Tag" class="shield" src="https://img.shields.io/pypi/v/pyEDAA.ToolSetup?longCache=true&amp;style=flat-square&amp;logo=PyPI&amp;logoColor=FBE072" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://pypi.org/project/pyEDAA.ToolSetup"><img alt="PyPI - Project Status" class="shield" src="https://img.shields.io/pypi/status/pyEDAA.ToolSetup?longCache=true&amp;style=flat-square&amp;logo=PyPI&amp;logoColor=FBE072" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://pypi.org/project/pyEDAA.ToolSetup"><img alt="PyPI - Python Versions" class="shield" src="https://img.shields.io/pypi/pyversions/pyEDAA.ToolSetup?longCache=true&amp;style=flat-square&amp;logo=PyPI&amp;logoColor=FBE072" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://codecov.io/gh/edaa-org/pyEDAA.ToolSetup"><img alt="Codecov - Coverage" class="shield" src="https://img.shields.io/codecov/c/github/edaa-org/pyEDAA.ToolSetup?longCache=true&amp;style=flat-square&amp;logo=Codecov" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://www.codacy.com/gh/edaa-org/pyEDAA.ToolSetup"><img alt="Codacy - Coverage" class="shield" src="https://img.shields.io/codacy/coverage/2245747238a94667b25f75970b86a333?longCache=true&amp;style=flat-square&amp;logo=codacy" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://www.codacy.com/gh/edaa-org/pyEDAA.ToolSetup"><img alt="Codacy - Quality" class="shield" src="https://img.shields.io/codacy/grade/2245747238a94667b25f75970b86a333?longCache=true&amp;style=flat-square&amp;logo=codacy" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/edaa-org/pyEDAA.ToolSetup/tags"><img alt="GitHub Tag - latest SemVer incl. pre-release" class="shield" src="https://img.shields.io/github/v/tag/edaa-org/pyEDAA.ToolSetup?longCache=true&amp;style=flat-square&amp;logo=GitHub&amp;include_prereleases" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/edaa-org/pyEDAA.ToolSetup/releases/latest"><img alt="GitHub Release - latest SemVer incl. including pre-releases" class="shield" src="https://img.shields.io/github/v/release/edaa-org/pyEDAA.ToolSetup?longCache=true&amp;style=flat-square&amp;logo=GitHub&amp;include_prereleases" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/edaa-org/pyEDAA.ToolSetup/releases"><img alt="GitHub Release Date" class="shield" src="https://img.shields.io/github/release-date/edaa-org/pyEDAA.ToolSetup?longCache=true&amp;style=flat-square&amp;logo=GitHub" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/edaa-org/pyEDAA.ToolSetup/commits"><img alt="GitHub - Commits to branch 'dev' since latest" class="shield" src="https://img.shields.io/github/commits-since/edaa-org/pyEDAA.ToolSetup/latest/dev?longCache=true&amp;style=flat-square&amp;logo=GitHub" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/edaa-org/pyEDAA.ToolSetup/stargazers"><img alt="GitHub - Stars" class="shield" src="https://img.shields.io/github/stars/edaa-org/pyEDAA.ToolSetup?longCache=true&amp;style=flat-square&amp;logo=GitHub" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/edaa-org/pyEDAA.ToolSetup/graphs/contributors"><img alt="GitHub - Contributors" class="shield" src="https://img.shields.io/github/contributors/edaa-org/pyEDAA.ToolSetup?longCache=true&amp;style=flat-square&amp;logo=GitHub" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/edaa-org/pyEDAA.ToolSetup/watchers"><img alt="GitHub - Watchers" class="shield" src="https://img.shields.io/github/watchers/edaa-org/pyEDAA.ToolSetup?longCache=true&amp;style=flat-square&amp;logo=GitHub" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/edaa-org/pyEDAA.ToolSetup/network/members"><img alt="GitHub - Forks" class="shield" src="https://img.shields.io/github/forks/edaa-org/pyEDAA.ToolSetup?longCache=true&amp;style=flat-square&amp;logo=GitHub" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://libraries.io/github/edaa-org/pyEDAA.ToolSetup"><img alt="Libraries.io - Dependencies Status" class="shield" src="https://img.shields.io/librariesio/release/pypi/pyEDAA.ToolSetup?longCache=true&amp;style=flat-square&amp;logo=Libraries.io&amp;logoColor=fff" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://libraries.io/github/edaa-org/pyEDAA.ToolSetup/sourcerank"><img alt="Libraries.io - Rank" class="shield" src="https://img.shields.io/librariesio/sourcerank/pypi/pyEDAA.ToolSetup?longCache=true&amp;style=flat-square&amp;logo=Libraries.io&amp;logoColor=fff" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/edaa-org/pyEDAA.ToolSetup/network/dependents"><img alt="Libraries.io - Dependent Repos" class="shield" src="https://img.shields.io/librariesio/dependent-repos/pypi/pyEDAA.ToolSetup?longCache=true&amp;style=flat-square&amp;logo=Libraries.io&amp;logoColor=fff" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://requires.io/github/edaa-org/pyEDAA.ToolSetup/requirements/?branch=main"><img alt="Requires.io - Status" class="shield" src="https://img.shields.io/requires/github/edaa-org/pyEDAA.ToolSetup?longCache=true&amp;style=flat-square&amp;" style="height: 22px;" /></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Launcher</p></td>
+<td><p><a class="reference external" href="https://github.com/edaa-org/pyEDAA.Launcher/actions/workflows/Pipeline.yml"><img alt="GitHub Actions Pipeline" class="shield" src="https://img.shields.io/github/workflow/status/edaa-org/pyEDAA.Launcher/Pipeline/main?longCache=true&amp;style=flat-square&amp;label=Pipeline&amp;logo=GitHub%20Actions&amp;logoColor=FFFFFF" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/edaa-org/pyEDAA.Launcher"><img alt="Code on GitHub" class="shield" src="https://img.shields.io/badge/pyEDAA-Launcher-ffca28?longCache=true&amp;style=flat-square&amp;logo=github&amp;labelColor=ff8f00" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/edaa-org/pyEDAA.Launcher/blob/main/LICENSE.md"><img alt="Code license" class="shield" src="https://img.shields.io/pypi/l/pyEDAA.Launcher?longCache=true&amp;style=flat-square&amp;logo=Apache&amp;label=Code" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://edaa-org.github.io/pyEDAA.Launcher"><img alt="Documentation (GitHub Pages) - Read Now!" class="shield" src="https://img.shields.io/website?longCache=true&amp;style=flat-square&amp;label=edaa-org.github.io%2FpyEDAA.Launcher&amp;logo=GitHub&amp;logoColor=fff&amp;up_color=blueviolet&amp;up_message=Read%20now%20%E2%9E%9A&amp;url=https%3A%2F%2Fedaa-org.github.io%2FpyEDAA.Launcher%2Findex.html" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/edaa-org/pyEDAA.Launcher/blob/main/doc/Doc-License.rst"><img alt="Documentation License" class="shield" src="https://img.shields.io/badge/Doc-CC--BY%204.0-green?longCache=true&amp;style=flat-square&amp;logo=CreativeCommons&amp;logoColor=fff" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://pypi.org/project/pyEDAA.Launcher"><img alt="PyPI - Tag" class="shield" src="https://img.shields.io/pypi/v/pyEDAA.Launcher?longCache=true&amp;style=flat-square&amp;logo=PyPI&amp;logoColor=FBE072" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://pypi.org/project/pyEDAA.Launcher"><img alt="PyPI - Project Status" class="shield" src="https://img.shields.io/pypi/status/pyEDAA.Launcher?longCache=true&amp;style=flat-square&amp;logo=PyPI&amp;logoColor=FBE072" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://pypi.org/project/pyEDAA.Launcher"><img alt="PyPI - Python Versions" class="shield" src="https://img.shields.io/pypi/pyversions/pyEDAA.Launcher?longCache=true&amp;style=flat-square&amp;logo=PyPI&amp;logoColor=FBE072" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://codecov.io/gh/edaa-org/pyEDAA.Launcher"><img alt="Codecov - Coverage" class="shield" src="https://img.shields.io/codecov/c/github/edaa-org/pyEDAA.Launcher?longCache=true&amp;style=flat-square&amp;logo=Codecov" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://www.codacy.com/gh/edaa-org/pyEDAA.Launcher"><img alt="Codacy - Coverage" class="shield" src="https://img.shields.io/codacy/coverage/83936550d5094383bb89bb117c0abbfe?longCache=true&amp;style=flat-square&amp;logo=codacy" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://www.codacy.com/gh/edaa-org/pyEDAA.Launcher"><img alt="Codacy - Quality" class="shield" src="https://img.shields.io/codacy/grade/83936550d5094383bb89bb117c0abbfe?longCache=true&amp;style=flat-square&amp;logo=codacy" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/edaa-org/pyEDAA.Launcher/tags"><img alt="GitHub Tag - latest SemVer incl. pre-release" class="shield" src="https://img.shields.io/github/v/tag/edaa-org/pyEDAA.Launcher?longCache=true&amp;style=flat-square&amp;logo=GitHub&amp;include_prereleases" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/edaa-org/pyEDAA.Launcher/releases/latest"><img alt="GitHub Release - latest SemVer incl. including pre-releases" class="shield" src="https://img.shields.io/github/v/release/edaa-org/pyEDAA.Launcher?longCache=true&amp;style=flat-square&amp;logo=GitHub&amp;include_prereleases" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/edaa-org/pyEDAA.Launcher/releases"><img alt="GitHub Release Date" class="shield" src="https://img.shields.io/github/release-date/edaa-org/pyEDAA.Launcher?longCache=true&amp;style=flat-square&amp;logo=GitHub" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/edaa-org/pyEDAA.Launcher/commits"><img alt="GitHub - Commits to branch 'dev' since latest" class="shield" src="https://img.shields.io/github/commits-since/edaa-org/pyEDAA.Launcher/latest/dev?longCache=true&amp;style=flat-square&amp;logo=GitHub" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/edaa-org/pyEDAA.Launcher/stargazers"><img alt="GitHub - Stars" class="shield" src="https://img.shields.io/github/stars/edaa-org/pyEDAA.Launcher?longCache=true&amp;style=flat-square&amp;logo=GitHub" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/edaa-org/pyEDAA.Launcher/graphs/contributors"><img alt="GitHub - Contributors" class="shield" src="https://img.shields.io/github/contributors/edaa-org/pyEDAA.Launcher?longCache=true&amp;style=flat-square&amp;logo=GitHub" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/edaa-org/pyEDAA.Launcher/watchers"><img alt="GitHub - Watchers" class="shield" src="https://img.shields.io/github/watchers/edaa-org/pyEDAA.Launcher?longCache=true&amp;style=flat-square&amp;logo=GitHub" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/edaa-org/pyEDAA.Launcher/network/members"><img alt="GitHub - Forks" class="shield" src="https://img.shields.io/github/forks/edaa-org/pyEDAA.Launcher?longCache=true&amp;style=flat-square&amp;logo=GitHub" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://libraries.io/github/edaa-org/pyEDAA.Launcher"><img alt="Libraries.io - Dependencies Status" class="shield" src="https://img.shields.io/librariesio/release/pypi/pyEDAA.Launcher?longCache=true&amp;style=flat-square&amp;logo=Libraries.io&amp;logoColor=fff" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://libraries.io/github/edaa-org/pyEDAA.Launcher/sourcerank"><img alt="Libraries.io - Rank" class="shield" src="https://img.shields.io/librariesio/sourcerank/pypi/pyEDAA.Launcher?longCache=true&amp;style=flat-square&amp;logo=Libraries.io&amp;logoColor=fff" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://github.com/edaa-org/pyEDAA.Launcher/network/dependents"><img alt="Libraries.io - Dependent Repos" class="shield" src="https://img.shields.io/librariesio/dependent-repos/pypi/pyEDAA.Launcher?longCache=true&amp;style=flat-square&amp;logo=Libraries.io&amp;logoColor=fff" style="height: 22px;" /></a></p></td>
+<td><p><a class="reference external" href="https://requires.io/github/edaa-org/pyEDAA.Launcher/requirements/?branch=main"><img alt="Requires.io - Status" class="shield" src="https://img.shields.io/requires/github/edaa-org/pyEDAA.Launcher?longCache=true&amp;style=flat-square&amp;" style="height: 22px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="CLI.html" class="btn btn-neutral float-left" title="Interacting with CLIs" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="References.html" class="btn btn-neutral float-right" title="References" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2016-2022 Patrick Lehmann, Unai Martinez-Corral and contributors.
+      <span class="lastupdated">Last updated on 03.03.2022.
+      </span></p>
+  </div>Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/buildthedocs/sphinx.theme">theme</a>
+    provided by <a href="https://buildthedocs.github.io">Build the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
