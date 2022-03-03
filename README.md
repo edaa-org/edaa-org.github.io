@@ -78,6 +78,8 @@ That is achieved through a series of tool interfaces:
   -->
   <a title="edaa-org/pyEDAA.CLITool GitHub repository" href="https://github.com/edaa-org/pyEDAA.CLITool"><img src="https://img.shields.io/badge/pyEDAA-CLITool-ffca28.svg?longCache=true&style=flat-square&logo=GitHub&labelColor=ff8f00"></a><!--
   -->
+  <a title="edaa-org/pyEDAA.ToolSetup GitHub repository" href="https://github.com/edaa-org/pyEDAA.ToolSetup"><img src="https://img.shields.io/badge/pyEDAA-ToolSetup-ffca28.svg?longCache=true&style=flat-square&logo=GitHub&labelColor=ff8f00"></a><!--
+  -->
   <a title="edaa-org/pyEDAA.OutputFilter GitHub repository" href="https://github.com/edaa-org/pyEDAA.OutputFilter"><img src="https://img.shields.io/badge/pyEDAA-OutputFilter-ffca28.svg?longCache=true&style=flat-square&logo=GitHub&labelColor=ff8f00"></a><!--
   -->
   <a title="edaa-org/pyEDAA.Launcher GitHub repository" href="https://github.com/edaa-org/pyEDAA.Launcher"><img src="https://img.shields.io/badge/pyEDAA-Launcher-ffca28.svg?longCache=true&style=flat-square&logo=GitHub&labelColor=ff8f00"></a><!--
