@@ -73,7 +73,7 @@ Launcher
    :height: 60
    :target: https://github.com/edaa-org/pyEDAA.Launcher
 
-.. centered:: |SHIELD:svg:OutputFilter|
+.. centered:: |SHIELD:svg:Launcher|
 
 `pyEDAA.Launcher ➚ <https://edaa-org.github.io/pyEDAA.Launcher>`_
 
