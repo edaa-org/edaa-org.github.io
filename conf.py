@@ -201,12 +201,12 @@ intersphinx_mapping = {
 # -- Sphinx.Ext.ExtLinks -----------------------------------------------------------------------------------------------
 
 extlinks = {
-	'gh':      ('https://github.com/%s', 'gh:'),
-	'ghissue': ('https://github.com/edaa-org/edaa-org.github.io/issues/%s', 'issue #'),
-	'ghpull':  ('https://github.com/edaa-org/edaa-org.github.io/pull/%s', 'pull request #'),
-	'ghsrc':   ('https://github.com/edaa-org/edaa-org.github.io/blob/main/%s', ''),
-	'awesome': ('https://hdl.github.io/awesome/items/%s', ''),
-	'pypi':    ('https://pypi.org/project/%s', 'pypi:')
+	'gh':      ('https://github.com/%s', 'gh:%s'),
+	'ghissue': ('https://github.com/edaa-org/edaa-org.github.io/issues/%s', 'issue #%s'),
+	'ghpull':  ('https://github.com/edaa-org/edaa-org.github.io/pull/%s', 'pull request #%s'),
+	'ghsrc':   ('https://github.com/edaa-org/edaa-org.github.io/blob/main/%s', '%s'),
+	'awesome': ('https://hdl.github.io/awesome/items/%s', '%s'),
+	'pypi':    ('https://pypi.org/project/%s', 'pypi:%s')
 }
 
 
