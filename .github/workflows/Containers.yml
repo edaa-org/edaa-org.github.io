@@ -20,7 +20,7 @@ jobs:
     steps:
 
     - name: '🧰 Repository Checkout'
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
 
     - name: '⛴️ Build edaa/svg'
       run: make logo-build
