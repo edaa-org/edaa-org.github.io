@@ -24,7 +24,7 @@ jobs:
           skip-deploy: ${{ github.event_name == 'pull_request' }}
 
       - name: 📤 Upload artifacts
-        uses: actions/upload-artifact@master
+        uses: actions/upload-artifact@v3
         with:
           name: doc
           path: _build/html
@@ -43,7 +43,7 @@ jobs:
         run: make logo-run
 
       - name: 📤 Upload artifacts
-        uses: actions/upload-artifact@master
+        uses: actions/upload-artifact@v3
         with:
           name: logos
           path: _static/logo
