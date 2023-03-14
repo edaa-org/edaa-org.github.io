@@ -1,4 +1,5 @@
 from sys import path as sys_path
+from os import environ
 from os.path import abspath
 from pathlib import Path
 from json import loads
@@ -53,26 +54,15 @@ except:
 
 # -- Miscellaneous settings --------------------------------------------------------------------------------------------
 
-# The master toctree document.
-master_doc = 'index'
-
-# Add any paths that contain templates here, relative to this directory.
-templates_path = ['_templates']
-
-# List of patterns, relative to source directory, that match files and
-# directories to ignore when looking for source files.
-# This pattern also affects html_static_path and html_extra_path.
 exclude_patterns = [
 	"_build",
 	"_logo",
-	"_themes",
 	"Thumbs.db",
 	".DS_Store",
 	".github",
 ]
 
-# The name of the Pygments (syntax highlighting) style to use.
-pygments_style = 'stata-dark'
+master_doc = "index"
 
 
 # -- Restructured Text settings ----------------------------------------------------------------------------------------
@@ -94,34 +84,36 @@ ctx = ROOT / 'context.json'
 if ctx.is_file():
 	html_context.update(loads(ctx.open('r').read()))
 
-if (ROOT / "_theme").is_dir():
-	html_theme_path = ["."]
-	html_theme = "_theme"
-	html_theme_options = {
-		'logo_only': True,
-		'home_breadcrumbs': False,
-		'vcs_pageview_mode': 'blob',
-	}
-	html_css_files = [
-		'theme_overrides.css',
-	]
-else:
-	html_theme = "alabaster"
+html_theme = "furo"
 
-# Add any paths that contain custom static files (such as style sheets) here,
-# relative to this directory. They are copied after the builtin static files,
-# so a file named "default.css" will overwrite the builtin "default.css".
+html_css_files = [
+    "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/fontawesome.min.css",
+    "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/solid.min.css",
+    "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/brands.min.css",
+]
+
+html_theme_options = {
+    "source_repository": "https://github.com/edaa-org/edaa-org.github.io",
+    "source_branch": environ.get("GITHUB_REF_NAME", "main"),
+    "source_directory": "",
+    "sidebar_hide_name": True,
+    "footer_icons": [
+        {
+            "name": "GitHub edaa-org/edaa-org.github.io",
+            "url": "https://github.com/edaa-org/edaa-org.github.io",
+            "html": "",
+            "class": "fa-solid fa-brands fa-github",
+        },
+    ],
+}
+
 html_static_path = ['_static']
 
 html_logo = str(Path(html_static_path[0]) / "logo" / "edaa_banner_white.svg")
 html_favicon = str(Path(html_static_path[0]) / "logo" / "edaa.svg")
 
-# Output file base name for HTML help builder.
 htmlhelp_basename = 'EDAADoc'
 
-# If not None, a 'Last updated on:' timestamp is inserted at every page
-# bottom, using the given strftime format.
-# The empty string is equivalent to '%b %d, %Y'.
 html_last_updated_fmt = "%d.%m.%Y"
 
 
