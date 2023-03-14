@@ -105,8 +105,8 @@ def createProjectShields(
     ) + createDualShields(
         alt="Documentation License",
         identifier=f"{identifier}:Documentation:License",
-        shield=f"badge/Doc-CC--BY%204.0-green",
-        attrs=f"logo=CreativeCommons&logoColor=fff",
+        shield="badge/Doc-CC--BY%204.0-green",
+        attrs="logo=CreativeCommons&logoColor=fff",
         target=f"https://github.com/{fullRepoName}/blob/{mainBranch}/doc/Doc-License.rst",
     ) + createDualShields(
         alt="GitHub Actions Pipeline",
