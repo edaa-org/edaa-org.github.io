@@ -1,0 +1,475 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head><meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+<link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="prev" title="Status" href="Status.html" />
+
+    <link rel="shortcut icon" href="_static/edaa.svg"/><!-- Generated with Sphinx 6.1.3 and Furo 2022.12.07 -->
+        <title>References - Electronic Design Automation Abstraction latest documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?digest=91d0f0d1c444bdcb17a68e833c7a53903343c195" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/furo-extensions.css?digest=30d1aed668e5c3a91c3e3bf6a60b675221979f0e" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/fontawesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/solid.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/brands.min.css" />
+    <link rel="stylesheet" type="text/css" href="_static/theme_overrides.css" />
+    
+    
+
+
+<style>
+  body {
+    --color-code-background: #f8f8f8;
+  --color-code-foreground: black;
+  
+  }
+  @media not print {
+    body[data-theme="dark"] {
+      --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+    }
+    @media (prefers-color-scheme: dark) {
+      body:not([data-theme="light"]) {
+        --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+      }
+    }
+  }
+</style></head>
+  <body>
+    
+    <script>
+      document.body.dataset.theme = localStorage.getItem("theme") || "auto";
+    </script>
+    
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024">
+      <path d="M408 442h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8zm-8 204c0 4.4 3.6 8 8 8h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56zm504-486H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 632H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM115.4 518.9L271.7 642c5.8 4.6 14.4.5 14.4-6.9V388.9c0-7.4-8.5-11.5-14.4-6.9L115.4 505.1a8.74 8.74 0 0 0 0 13.8z"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-sun" viewBox="0 0 24 24">
+    <title>Light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather-sun">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon" viewBox="0 0 24 24">
+    <title>Dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-moon">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+    </svg>
+  </symbol>
+  <symbol id="svg-sun-half" viewBox="0 0 24 24">
+    <title>Auto light/dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-shadow">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+      <circle cx="12" cy="12" r="9" />
+      <path d="M13 12h5" />
+      <path d="M13 15h4" />
+      <path d="M13 18h1" />
+      <path d="M13 9h4" />
+      <path d="M13 6h1" />
+    </svg>
+  </symbol>
+</svg>
+
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc">
+<label class="overlay sidebar-overlay" for="__navigation">
+  <div class="visually-hidden">Hide navigation sidebar</div>
+</label>
+<label class="overlay toc-overlay" for="__toc">
+  <div class="visually-hidden">Hide table of contents sidebar</div>
+</label>
+
+
+
+<div class="page">
+  <header class="mobile-header">
+    <div class="header-left">
+      <label class="nav-overlay-icon" for="__navigation">
+        <div class="visually-hidden">Toggle site navigation sidebar</div>
+        <i class="icon"><svg><use href="#svg-menu"></use></svg></i>
+      </label>
+    </div>
+    <div class="header-center">
+      <a href="index.html"><div class="brand">Electronic Design Automation Abstraction latest documentation</div></a>
+    </div>
+    <div class="header-right">
+      <div class="theme-toggle-container theme-toggle-header">
+        <button class="theme-toggle">
+          <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+          <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
+          <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+          <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+        </button>
+      </div>
+      <label class="toc-overlay-icon toc-header-icon no-toc" for="__toc">
+        <div class="visually-hidden">Toggle table of contents sidebar</div>
+        <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+      </label>
+    </div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="index.html">
+  
+  <div class="sidebar-logo-container">
+    <img class="sidebar-logo" src="_static/edaa_banner_gray.svg" alt="Logo"/>
+  </div>
+  
+  
+</a><form class="sidebar-search-container" method="get" action="search.html" role="search">
+  <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form>
+<div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
+  <p class="caption" role="heading"><span class="caption-text">Introduction</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="ConceptualModel.html">Conceptual Model</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Context.html">Context</a></li>
+<li class="toctree-l1"><a class="reference internal" href="FAQ.html">Frequently Asked Questions (FAQ)</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Layers</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Configurations.html">Projects and Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SyntaxModels.html">Languages and Data</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="workflows/index.html">Workflows and integration</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="workflows/CoCoTb.html">CoCoTb</a></li>
+<li class="toctree-l2"><a class="reference internal" href="workflows/FuseSoCEdalize.html">FuseSoC and Edalize</a></li>
+<li class="toctree-l2"><a class="reference internal" href="workflows/legoHDL.html">legoHDL</a></li>
+<li class="toctree-l2"><a class="reference internal" href="workflows/PyFPGA.html">PyFPGA</a></li>
+<li class="toctree-l2"><a class="reference internal" href="workflows/pyIPCMI.html">pyIPCMI</a></li>
+<li class="toctree-l2"><a class="reference internal" href="workflows/SiliconCompiler.html">SiliconCompiler</a></li>
+<li class="toctree-l2"><a class="reference internal" href="workflows/SymbiFlow.html">SymbiFlow</a></li>
+<li class="toctree-l2"><a class="reference internal" href="workflows/tsfpga.html">tsfpga</a></li>
+<li class="toctree-l2"><a class="reference internal" href="workflows/VUnit.html">VUnit</a></li>
+<li class="toctree-l2"><a class="reference internal" href="workflows/Xeda.html">Xeda</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="CLI.html">Interacting with CLIs</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Development</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Status.html">Status</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Appendix</span></p>
+<ul class="current">
+<li class="toctree-l1 current current-page"><a class="current reference internal" href="#">References</a></li>
+</ul>
+
+</div>
+</div>
+
+      </div>
+      
+    </div>
+  </aside>
+  <div class="main">
+    <div class="content">
+      <div class="article-container">
+        <a href="#" class="back-to-top muted-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path>
+          </svg>
+          <span>Back to top</span>
+        </a>
+        <div class="content-icon-container">
+          <div class="edit-this-page">
+  <a class="muted-link" href="https://github.com/edaa-org/edaa-org.github.io/edit/main/References.rst" title="Edit this page">
+    <svg aria-hidden="true" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+      <path d="M4 20h4l10.5 -10.5a1.5 1.5 0 0 0 -4 -4l-10.5 10.5v4" />
+      <line x1="13.5" y1="6.5" x2="17.5" y2="10.5" />
+    </svg>
+    <span class="visually-hidden">Edit this page</span>
+  </a>
+</div><div class="theme-toggle-container theme-toggle-content">
+            <button class="theme-toggle">
+              <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+              <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
+              <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+              <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+            </button>
+          </div>
+          <label class="toc-overlay-icon toc-content-icon no-toc" for="__toc">
+            <div class="visually-hidden">Toggle table of contents sidebar</div>
+            <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+          </label>
+        </div>
+        <article role="main">
+          <style type="text/css">
+  span.bolditalic {font-weight: bold; font-style: italic; }
+  span.underline {text-decoration: underline; }
+  span.xlarge {font-size: x-large; }
+</style><section id="references">
+<span id="edaa-references"></span><h1>References<a class="headerlink" href="#references" title="Permalink to this heading">#</a></h1>
+<div class="docutils container" id="id1">
+<div class="citation" id="id38" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>R1<span class="fn-bracket">]</span></span>
+<p>OpenROAD. URL: <a class="reference external" href="https://theopenroadproject.org/">https://theopenroadproject.org/</a>.</p>
+</div>
+<div class="citation" id="id33" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>R2<span class="fn-bracket">]</span></span>
+<p>Vikram Adve, Chris Lattner, and LLVM Developer Group. LLVM Project, a collection of modular and reusable compiler and toolchain technologies. 2003. URL: <a class="reference external" href="https://www.llvm.org/">https://www.llvm.org/</a>.</p>
+</div>
+<div class="citation" id="id39" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>R3<span class="fn-bracket">]</span></span>
+<p>Tutu Ajayi, D. Blaauw, T.-B. Chan, CK Cheng, Vidya A. Chhabria, Daniel K. Choo, Matteo Coltella, Ronald Dreslinski, Mateus Fogaça, Seyedpedram Hashemi, Abeba Ibrahim, Andrew B. Kahng, Meesun Kim, Jie Li, Zhengli Liang, Uday Mallappa, Peter Penzes, Geraldo Pradipta, S. Reda, Austin Rovinski, Kambiz Samadi, Sachin S. Sapatnekar, L. Saul, Carl Sechen, Vegi Srinivas, Wendy Swartz, Delyse Sylvester, Danny Urquhart, Ling-song Wang, Maverick Woo, and B. Xu. OpenROAD: Toward a Self-Driving, Open-Source Digital Layout Implementation Tool Chain. In <em>Proc. Government Microcircuit Applications and Critical Technology Conference (GOMACTech)</em>. 2019. URL: <a class="reference external" href="https://par.nsf.gov/servlets/purl/10171024">https://par.nsf.gov/servlets/purl/10171024</a>.</p>
+</div>
+<div class="citation" id="id22" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>R4<span class="fn-bracket">]</span></span>
+<p>Tim Ansell and Mehdi Saligane. The Missing Pieces of Open Design Enablement: A Recent History of Google Efforts : Invited Paper. In <em>2020 IEEE/ACM International Conference On Computer Aided Design (ICCAD)</em>, 1–8. 2020. URL: <a class="reference external" href="https://dl.acm.org/doi/abs/10.1145/3400302.3415736">https://dl.acm.org/doi/abs/10.1145/3400302.3415736</a>.</p>
+</div>
+<div class="citation" id="id27" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>R5<span class="fn-bracket">]</span></span>
+<p>Lars Asplund, Olof Kraigher, and contributors. VUnit: a unit testing framework for VHDL/SystemVerilog. Sep 2014. URL: <a class="reference external" href="http://vunit.github.io">http://vunit.github.io</a>.</p>
+</div>
+<div class="citation" id="id30" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>R6<span class="fn-bracket">]</span></span>
+<p>Lars Asplund and Unai Martinez-Corral. GitHub Facts About the HDL Industry. 2020. URL: <a class="reference external" href="https://larsasplund.github.io/github-facts">https://larsasplund.github.io/github-facts</a>.</p>
+</div>
+<div class="citation" id="id15" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>R7<span class="fn-bracket">]</span></span>
+<p>Georg Brandl, Takeshi KOMIYA, and contributors. Sphinx, Python Documentation Generator. 2007. URL: <a class="reference external" href="https://www.sphinx-doc.org">https://www.sphinx-doc.org</a>.</p>
+</div>
+<div class="citation" id="id7" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>R8<span class="fn-bracket">]</span></span>
+<p>Tony Bybell and contributors. GTKWave: a is a fully featured GTK+ based wave viewer for Unix, Win32, and Mac OSX. 1998. URL: <a class="reference external" href="https://github.com/gtkwave/gtkwave">https://github.com/gtkwave/gtkwave</a>.</p>
+</div>
+<div class="citation" id="id34" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>R9<span class="fn-bracket">]</span></span>
+<p>Aliaksei Chapyzhenka and contributors. Wavedrom, digital timing diagram rendering engine. 2014. URL: <a class="reference external" href="https://github.com/wavedrom/wavedrom">https://github.com/wavedrom/wavedrom</a>.</p>
+</div>
+<div class="citation" id="id18" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>R10<span class="fn-bracket">]</span></span>
+<p>Alain Dargelas and Henner Zeller. Universal Hardware Data Model. In <em>Workshop on Open-Source EDA Technology 2020 (WOSET)</em>. 10 2020. URL: <a class="reference external" href="https://woset-workshop.github.io/PDFs/2020/a10.pdf">https://woset-workshop.github.io/PDFs/2020/a10.pdf</a>.</p>
+</div>
+<div class="citation" id="id17" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>R11<span class="fn-bracket">]</span></span>
+<p>Alain Dargelas, Henner Zeller, and contributors. Surelog, SystemVerilog 2017 Pre-processor, Parser, Elaborator, UHDM Compiler. 2019. URL: <a class="reference external" href="https://github.com/alainmarcel/Surelog/">https://github.com/alainmarcel/Surelog/</a>.</p>
+</div>
+<div class="citation" id="id16" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>R12<span class="fn-bracket">]</span></span>
+<p>David Fang, Henner Zeller, and contributors. Verible, a suite of SystemVerilog developer tools, including a parser, style-linter, and formatter. 2019. URL: <a class="reference external" href="https://chipsalliance.github.io/verible/">https://chipsalliance.github.io/verible/</a>.</p>
+</div>
+<div class="citation" id="id6" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>R13<span class="fn-bracket">]</span></span>
+<p>gatecat and contributors. nextpnr: portable FPGA place and route tool. URL: <a class="reference external" href="https://github.com/YosysHQ/nextpnr">https://github.com/YosysHQ/nextpnr</a>.</p>
+</div>
+<div class="citation" id="id8" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>R14<span class="fn-bracket">]</span></span>
+<p>Tristan Gingold and contributors. GHDL: open-source analyzer, compiler, simulator and (experimental) synthesizer for VHDL. Sep 2003. URL: <a class="reference external" href="https://github.com/ghdl/ghdl">https://github.com/ghdl/ghdl</a>.</p>
+</div>
+<div class="citation" id="id9" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>R15<span class="fn-bracket">]</span></span>
+<p>Tristan Gingold and contributors. ghdl-yosys-plugin: VHDL synthesis (based on ghdl and yosys). 2017. URL: <a class="reference external" href="https://github.com/ghdl/ghdl-yosys-plugin">https://github.com/ghdl/ghdl-yosys-plugin</a>.</p>
+</div>
+<div class="citation" id="id25" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>R16<span class="fn-bracket">]</span></span>
+<p>Chris Higgs, Stuart Hodgson, and contributors. Coroutine Cosimulation TestBench (cocotb). Jun 2013. URL: <a class="reference external" href="https://github.com/cocotb/cocotb">https://github.com/cocotb/cocotb</a>.</p>
+</div>
+<div class="citation" id="id43" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>R17<span class="fn-bracket">]</span></span>
+<p>Andrew B. Kahng. Open-Source EDA: If We Build It, Who Will Come? In <em>2020 IFIP/IEEE 28th International Conference on Very Large Scale Integration (VLSI-SOC)</em>, 1–6. 2020. <a class="reference external" href="https://doi.org/10.1109/VLSI-SOC46417.2020.9344073">doi:10.1109/VLSI-SOC46417.2020.9344073</a>.</p>
+</div>
+<div class="citation" id="id20" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>R18<span class="fn-bracket">]</span></span>
+<p>Olof Kindgren and contributors. FuseSoC: package manager and build abstraction tool for FPGA/ASIC development. 2011. URL: <a class="reference external" href="https://github.com/olofk/fusesoc">https://github.com/olofk/fusesoc</a>.</p>
+</div>
+<div class="citation" id="id21" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>R19<span class="fn-bracket">]</span></span>
+<p>Olof Kindgren and contributors. Edalize: an abstraction library for interfacing EDA tools. 2018. URL: <a class="reference external" href="https://github.com/olofk/edalize">https://github.com/olofk/edalize</a>.</p>
+</div>
+<div class="citation" id="id35" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>R20<span class="fn-bracket">]</span></span>
+<p>Olof Kraigher and contributors. rust_hdl, a collection of HDL related tools. 2018. URL: <a class="reference external" href="https://github.com/kraigher/rust_hdl">https://github.com/kraigher/rust_hdl</a>.</p>
+</div>
+<div class="citation" id="id29" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>R21<span class="fn-bracket">]</span></span>
+<p>Patrick Lehmann. A JSON library implemented in VHDL. Aug 2015. URL: <a class="reference external" href="https://github.com/Paebbels/JSON-for-VHDL">https://github.com/Paebbels/JSON-for-VHDL</a>.</p>
+</div>
+<div class="citation" id="id10" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>R22<span class="fn-bracket">]</span></span>
+<p>Patrick Lehmann. pyVHDLParser, a token-stream based parser for VHDL-2008. 2017. URL: <a class="reference external" href="https://github.com/Paebbels/pyVHDLParser">https://github.com/Paebbels/pyVHDLParser</a>.</p>
+</div>
+<div class="citation" id="id11" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>R23<span class="fn-bracket">]</span></span>
+<p>Patrick Lehmann. pyIPCMI: a Python-based IP Core Management Infrastructure. 2018. URL: <a class="reference external" href="https://github.com/Paebbels/pyIPCMI">https://github.com/Paebbels/pyIPCMI</a>.</p>
+</div>
+<div class="citation" id="id24" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>R24<span class="fn-bracket">]</span></span>
+<p>Jim Lewis and contributors. OSVVM project simulation scripts. URL: <a class="reference external" href="https://github.com/OSVVM/OSVVM-Scripts">https://github.com/OSVVM/OSVVM-Scripts</a>.</p>
+</div>
+<div class="citation" id="id23" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>R25<span class="fn-bracket">]</span></span>
+<p>Jim Lewis and contributors. Open Source VHDL Verification Methodology (OSVVM). May 2013. URL: <a class="reference external" href="https://osvvm.org/">https://osvvm.org/</a>.</p>
+</div>
+<div class="citation" id="id28" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>R26<span class="fn-bracket">]</span></span>
+<p>Unai Martinez-Corral and contributors. Open Source Verification Bundle (OSVB). March 2021. URL: <a class="reference external" href="https://umarcor.github.io/osvb">https://umarcor.github.io/osvb</a>.</p>
+</div>
+<div class="citation" id="id13" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>R27<span class="fn-bracket">]</span></span>
+<p>Rodrigo A. Melo. PyFPGA: a Python package to use FPGA development tools programmatically. 2019. URL: <a class="reference external" href="https://github.com/PyFPGA/pyfpga">https://github.com/PyFPGA/pyfpga</a>.</p>
+</div>
+<div class="citation" id="id14" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>R28<span class="fn-bracket">]</span></span>
+<p>Kamyar Mohajerani and contributors. Xeda: cross EDA Abstraction and Automation. 2020. URL: <a class="reference external" href="https://github.com/XedaHQ/xeda">https://github.com/XedaHQ/xeda</a>.</p>
+</div>
+<div class="citation" id="id41" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>R29<span class="fn-bracket">]</span></span>
+<p>Kevin E. Murray, Mohamed A. Elgammal, Vaughn Betz, Tim Ansell, Keith Rothman, and Alessandro Comodi. SymbiFlow and VPR: An Open-Source Design Flow for Commercial and Novel FPGAs. <em>IEEE Micro</em>, 40(4):49–57, 2020. <a class="reference external" href="https://doi.org/10.1109/MM.2020.2998435">doi:10.1109/MM.2020.2998435</a>.</p>
+</div>
+<div class="citation" id="id42" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>R30<span class="fn-bracket">]</span></span>
+<p>Kevin E. Murray, Oleg Petelin, Sheng Zhong, Jia Min Wang, Mohamed Eldafrawy, Jean-Philippe Legault, Eugene Sha, Aaron G. Graham, Jean Wu, Matthew J. P. Walker, Hanqing Zeng, Panagiotis Patros, Jason Luu, Kenneth B. Kent, and Vaughn Betz. VTR 8: High-Performance CAD and Customizable FPGA Architecture Modelling. <em>ACM Trans. Reconfigurable Technol. Syst.</em>, May 2020. URL: <a class="reference external" href="https://doi.org/10.1145/3388617">https://doi.org/10.1145/3388617</a>, <a class="reference external" href="https://doi.org/10.1145/3388617">doi:10.1145/3388617</a>.</p>
+</div>
+<div class="citation" id="id40" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>R31<span class="fn-bracket">]</span></span>
+<p>Austin Rovinski, Tutu Ajayi, Minsoo Kim, Guanru Wang, and Mehdi Saligane. Bridging Academic Open-Source EDA to Real-World Usability. In <em>2020 IEEE/ACM International Conference On Computer Aided Design (ICCAD)</em>, 1–7. 2020. URL: <a class="reference external" href="https://dl.acm.org/doi/10.1145/3400302.3415734">https://dl.acm.org/doi/10.1145/3400302.3415734</a>.</p>
+</div>
+<div class="citation" id="id36" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>R32<span class="fn-bracket">]</span></span>
+<p>Fabian Schuiki, Andreas Kurth, Tobias Grosser, and Luca Benini. LLHD: A Multi-Level Intermediate Representation for Hardware Description Languages. In <em>Proceedings of the 41st ACM SIGPLAN Conference on Programming Language Design and Implementation</em>, PLDI 2020, 258–271. New York, NY, USA, 2020. Association for Computing Machinery. URL: <a class="reference external" href="https://doi.org/10.1145/3385412.3386024">https://doi.org/10.1145/3385412.3386024</a>, <a class="reference external" href="https://doi.org/10.1145/3385412.3386024">doi:10.1145/3385412.3386024</a>.</p>
+</div>
+<div class="citation" id="id2" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>R33<span class="fn-bracket">]</span></span>
+<p>Wilson Snyder and contributors. Verilator, FOSS tool which converts Verilog to a cycle-accurate behavioral model in C++ or SystemC. 2003. URL: <a class="reference external" href="https://www.veripool.org/verilator/">https://www.veripool.org/verilator/</a>.</p>
+</div>
+<div class="citation" id="id31" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>R34<span class="fn-bracket">]</span></span>
+<p>Richard Stallman and contributors. GCC, the GNU Compiler Collection. May 1987. URL: <a class="reference external" href="http://gcc.gnu.org/">http://gcc.gnu.org/</a>.</p>
+</div>
+<div class="citation" id="id32" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>R35<span class="fn-bracket">]</span></span>
+<p>Richard Stallman and GNU Project. GDB: The GNU Project Debugger. 1986. URL: <a class="reference external" href="https://www.gnu.org/software/gdb/">https://www.gnu.org/software/gdb/</a>.</p>
+</div>
+<div class="citation" id="id26" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>R36<span class="fn-bracket">]</span></span>
+<p>Espen Tallaksen and contributors. Universal VHDL Verification Methodology (UVVM). Sep 2013. URL: <a class="reference external" href="https://uvvm.org/">https://uvvm.org/</a>.</p>
+</div>
+<div class="citation" id="id37" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>R37<span class="fn-bracket">]</span></span>
+<p>Kevin Thibedeau. Symbolator, a component diagramming tool for VHDL and Verilog. URL: <a class="reference external" href="https://kevinpt.github.io/symbolator">https://kevinpt.github.io/symbolator</a>.</p>
+</div>
+<div class="citation" id="id12" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>R38<span class="fn-bracket">]</span></span>
+<p>Lukas Vik and contributors. tsfpga: a project platform for modern FPGA development. URL: <a class="reference external" href="https://gitlab.com/tsfpga/tsfpga">https://gitlab.com/tsfpga/tsfpga</a>.</p>
+</div>
+<div class="citation" id="id19" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>R39<span class="fn-bracket">]</span></span>
+<p>Stephen Williams and contributors. Icarus Verilog, a Verilog simulation and synthesis tool. URL: <a class="reference external" href="http://iverilog.icarus.com/">http://iverilog.icarus.com/</a>.</p>
+</div>
+<div class="citation" id="id5" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>R40<span class="fn-bracket">]</span></span>
+<p>Claire Wolf and contributors. SymbiYosys: front-end for Yosys-based formal verification flows. URL: <a class="reference external" href="https://github.com/YosysHQ/SymbiYosys">https://github.com/YosysHQ/SymbiYosys</a>.</p>
+</div>
+<div class="citation" id="id4" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>R41<span class="fn-bracket">]</span></span>
+<p>Claire Wolf and contributors. Yosys Open SYnthesis Suite. URL: <a class="reference external" href="https://github.com/YosysHQ/yosys">https://github.com/YosysHQ/yosys</a>.</p>
+</div>
+<div class="citation" id="id3" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>R42<span class="fn-bracket">]</span></span>
+<p>Clifford Wolf and Johann Glaser. A Free Verilog Synthesis Suite. In <em>Proceedings of Austrochip 2013</em>. 2013. URL: <a class="reference external" href="https://yosyshq.net/yosys/">https://yosyshq.net/yosys/</a>.</p>
+</div>
+<div class="citation" id="id44" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>R43<span class="fn-bracket">]</span></span>
+<p>GitHub. GitHub Actions. 2019. URL: <a class="reference external" href="https://github.com/features/actions">https://github.com/features/actions</a>.</p>
+</div>
+<div class="citation" id="id45" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>R44<span class="fn-bracket">]</span></span>
+<p>GitLab. GitLab CI/CD. URL: <a class="reference external" href="https://docs.gitlab.com/ee/ci/">https://docs.gitlab.com/ee/ci/</a>.</p>
+</div>
+</div>
+</div>
+</section>
+
+        </article>
+      </div>
+      <footer>
+        
+        <div class="related-pages">
+          
+          <a class="prev-page" href="Status.html">
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title">Status</div>
+                
+              </div>
+            </a>
+        </div>
+        <div class="bottom-of-page">
+          <div class="left-details">
+            <div class="copyright">
+                Copyright &#169; 2016-2023 Patrick Lehmann, Unai Martinez-Corral and contributors
+            </div>
+            Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
+            
+            <a href="https://github.com/pradyunsg/furo">Furo</a>
+            <div class="last-updated">
+              Last updated on 14.03.2023</div>
+          </div>
+          <div class="right-details">
+            <div class="icons">
+              <a class="muted-link fa-solid fa-brands fa-gitter" href="https://gitter.im/hdl/community" aria-label="Gitter hdl/community"></a>
+              <a class="muted-link fa-solid fa-brands fa-github" href="https://github.com/edaa-org/edaa-org.github.io" aria-label="GitHub edaa-org/edaa-org.github.io"></a>
+              
+            </div>
+          </div>
+        </div>
+        
+      </footer>
+    </div>
+    <aside class="toc-drawer no-toc">
+      
+      
+      
+    </aside>
+  </div>
+</div><script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/scripts/furo.js"></script>
+    </body>
+</html>
