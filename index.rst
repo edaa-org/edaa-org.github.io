@@ -1,24 +1,5 @@
 .. _EDAA:
 
-.. |SHIELD:svg:repo| image:: https://img.shields.io/github/stars/edaa-org/edaa-org.github.io?longCache=true&style=flat-square&label=edaa-org&logo=github&color=78909c
-   :alt: Sourcecode on GitHub
-   :height: 22
-   :target: https://github.com/edaa-org/edaa-org.github.io
-
-.. |SHIELD:svg:gitter| image:: https://img.shields.io/gitter/room/hdl/community.svg?longCache=true&style=flat-square&logo=gitter&logoColor=fff&color=4db797
-   :alt: Chat on Gitter
-   :height: 22
-   :target: https://gitter.im/hdl/community
-
-.. |shieldgitter| image:: https://img.shields.io/gitter/room/hdl/community.svg?longCache=true&style=flat-square&logo=gitter&logoColor=fff&color=4db797
-.. _shieldgitter: https://gitter.im/hdl/community
-
-.. only:: html
-
-    .. centered:: |SHIELD:svg:repo| · |SHIELD:svg:gitter|
-
-    ----
-
 Electronic Design Automation Abstraction (EDA²) Documentation
 #############################################################
 

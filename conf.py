@@ -100,6 +100,12 @@ html_theme_options = {
     "sidebar_hide_name": True,
     "footer_icons": [
         {
+            "name": "Gitter hdl/community",
+            "url": "https://gitter.im/hdl/community",
+            "html": "",
+            "class": "fa-solid fa-brands fa-gitter",
+        },
+        {
             "name": "GitHub edaa-org/edaa-org.github.io",
             "url": "https://github.com/edaa-org/edaa-org.github.io",
             "html": "",
