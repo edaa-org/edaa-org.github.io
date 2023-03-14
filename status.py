@@ -111,8 +111,8 @@ def createProjectShields(
     ) + createDualShields(
         alt="GitHub Actions Pipeline",
         identifier=f"{identifier}:CI:Pipeline",
-        shield=f"github/workflow/status/{fullRepoName}/Pipeline/{mainBranch}",
-        attrs=f"label=Pipeline&logo=GitHub%20Actions&logoColor=FFFFFF",
+        shield=f"github/actions/workflow/status/{fullRepoName}/Pipeline.yml",
+        attrs=f"branch={mainBranch}&label=Pipeline&logo=GitHub%20Actions&logoColor=FFFFFF",
         target=f"https://github.com/{fullRepoName}/actions/workflows/Pipeline.yml",
     ) + createDualShields(
         alt="GitHub - Contributors",
