@@ -109,7 +109,7 @@ html_theme_options = {
 
 html_static_path = ['_static']
 
-html_logo = str(Path(html_static_path[0]) / "logo" / "edaa_banner_white.svg")
+html_logo = str(Path(html_static_path[0]) / "logo" / "edaa_banner_gray.svg")
 html_favicon = str(Path(html_static_path[0]) / "logo" / "edaa.svg")
 
 htmlhelp_basename = 'EDAADoc'

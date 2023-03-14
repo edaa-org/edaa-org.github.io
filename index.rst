@@ -22,7 +22,7 @@
 Electronic Design Automation Abstraction (EDA²) Documentation
 #############################################################
 
-.. image:: _static/logo/edaa_banner.svg
+.. image:: _static/logo/edaa_banner_gray.svg
    :width: 500 px
    :align: center
    :target: https://github.com/edaa-org
