@@ -25,14 +25,11 @@ jobs:
     - name: '⛴️ Build edaa/svg'
       run: make logo-build
 
-    - name: '🔑 Login to ghcr.io'
+    - name: '🛰️ Push container image to ghcr.io'
       if: github.event_name != 'pull_request'
-      uses: docker/login-action@v1
+      uses: pyTooling/Actions/with-post-step@r0
       with:
-        registry: ghcr.io
-        username: ${{ github.actor }}
-        password: ${{ github.token }}
-
-    - name: '🛰️ Push image to ghcr.io'
-      if: github.event_name != 'pull_request'
-      run: docker push ghcr.io/edaa-org/edaa/svg
+        main: |
+          echo '${{ github.token }}' | docker login ghcr.io -u gha --password-stdin
+          docker push ghcr.io/edaa-org/edaa/svg
+        post: docker logout ghcr.io
