@@ -1,0 +1,109 @@
+name: Build Docker Images
+
+on:
+  push:
+    paths:
+      - '.github/workflows/DockerImages.yml'
+      - '.github/Docker/*/Dockerfile'
+      - '.github/Docker/*/*.packages'
+  pull_request:
+    paths:
+      - '.github/workflows/DockerImages.yml'
+      - '.github/Docker/*/Dockerfile'
+      - '.github/Docker/*/*.packages'
+  schedule:
+      - cron: '0 0 * * 5'
+  workflow_dispatch:
+
+jobs:
+  SVG:
+    runs-on: ubuntu-latest
+    name: '🛳️ edaa/svg'
+
+    steps:
+      - name: '🧰 Repository Checkout'
+        uses: actions/checkout@v4
+
+      - name: '⛴️ Build edaa/svg'
+        id: build
+        run: |
+          ANSI_RED=$'\x1b[31m'
+          ANSI_GREEN=$'\x1b[32m'
+          ANSI_YELLOW=$'\x1b[33m'
+          ANSI_BLUE=$'\x1b[34m'
+          ANSI_CYAN=$'\x1b[36m'
+          ANSI_DARK_GRAY=$'\x1b[90m'
+          ANSI_NOCOLOR=$'\x1b[0m'
+          
+          base_os_name=Bookworm
+          base_py_version=3.13
+          base_name=python
+          base_tag=${base_py_version}-slim-${base_os_name,,}
+          base_image=${base_name}:${base_tag}
+          
+          image_ns=ghcr.io/edaa-org
+          image_name=edaa/svg
+          image_tag=latest
+          image=${image_ns}/${image_name}:${image_tag}
+          
+          tee "${GITHUB_OUTPUT}" <<EOF
+          image_ns=${image_ns}
+          image_name=${image_name}
+          image_tag=${image_tag}
+          image=${image}
+          EOF
+          
+          RemoveComments() {
+            local OutputFile="${2:-$1}"
+        
+            printf "%s\n" "Removing comments from '$1' and writing to '${OutputFile}'."
+            grep -v '^\s*$\|^\s*\#' "$1" > "${OutputFile}"
+        
+            printf "%s\n" "${ANSI_BLUE}${OutputFile}${ANSI_NOCOLOR}"
+            printf "%s\n" "${ANSI_BLUE}--------------------------------------------------------------------------------${ANSI_NOCOLOR}"
+            while IFS='' read -r line; do
+              printf "%s\n" "  ${ANSI_CYAN}$line${ANSI_NOCOLOR}"
+            done < "${OutputFile}"
+            printf "%s\n" "${ANSI_BLUE}--------------------------------------------------------------------------------${ANSI_NOCOLOR}"
+          }
+
+          DockerImageSizeUncompressed() {
+            docker image inspect $1 --format='{{.Size}}' | numfmt --to=iec --format '%.2f'
+          }
+
+          printf "Prepare context in './context' ...\n"
+          mkdir -p ./context
+
+          printf "%s\n" "Convert '.github/Docker/edaa-svg/debian.packages' to 'context/debian.list' ..."
+          RemoveComments .github/Docker/edaa-svg/debian.packages context/debian.list
+          printf "%s\n" "Convert '.github/Docker/edaa-svg/python.packages' to 'context/python.list' ..."
+          RemoveComments .github/Docker/edaa-svg/python.packages context/python.list
+          printf "%s\n" "Convert '.github/Docker/edaa-svg/npm.packages' to 'context/npm.list' ..."
+          RemoveComments .github/Docker/edaa-svg/npm.packages context/npm.list
+          
+          printf "%s\n" "Building docker file '.github/Docker/edaa-svg/Dockerfile' ..."
+          docker buildx build \
+            --file .github/Docker/edaa-svg/Dockerfile \
+            --build-arg IMAGE=${base_image} \
+            --build-arg OS_VERSION=${base_os_name} \
+            --build-arg PY_VERSION=${base_py_version} \
+            --tag "${image}" \
+            ./context 2>&1 \
+          | .github/Docker/Docker.buildx.sh
+
+          printf "%s\n" "Docker image '${image}' has $(DockerImageSizeUncompressed ${image})"
+
+      - name: '🔑 Login to ghcr.io'
+        id: login
+        if: github.event_name != 'pull_request'
+        uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ github.token }}
+
+      - name: '🛰️ Push image to ghcr.io'
+        id: push
+        if: github.event_name != 'pull_request'
+        run: |
+          docker push ${{ steps.build.outputs.image }}
